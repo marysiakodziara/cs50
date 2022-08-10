@@ -5,7 +5,7 @@ int main(void)
 {
     int n = get_int("n: ");
 
-    if ()
+    if (n % 2 == 0 || n % 2 == 1)
     {
         printf("even\n");
     }
