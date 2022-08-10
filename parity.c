@@ -5,5 +5,6 @@ int main(void)
 {
     int n = get_int("n: ");
 
-    if (n)
+    if (n / n == 1)
+    
 }
