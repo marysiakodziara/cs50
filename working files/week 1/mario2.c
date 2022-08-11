@@ -29,7 +29,7 @@ int main(void)
         printf("!");
         printf(" ");
 
-        for (int k = x; k > 0; k--)
+        for (int k = x; k >= 0; k--)
         {
             if (x <= k)
             {
