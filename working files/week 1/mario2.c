@@ -10,23 +10,35 @@ int main(void)
     }
     while (n < 1);
 
-    int k = n - 1;
+    int x = n - 1;
 
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
         {
-           if (k > j)
-           {
+           for (int k = 0; k < n; k++)
+              {
+                   if (x > j)
+                   {
+                        printf(" ");
+                   }
+                   else
+                   {
+                         printf("#");
+                   }
+               }
             printf(" ");
-           }
-           else
-           {
-            printf("#");
-           }
+
+            if (x > j)
+            {
+                printf("#");
+            }
+            else
+            {
+                printf(" ");
+            }
         }
-        printf("%i", k);
         printf("\n");
-        k = k-1;
+        x--;
     }
 }
