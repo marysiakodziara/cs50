@@ -3,15 +3,7 @@
 
 int main(void)
 {
-    int n = get_int("n: ");
+    char c = get_char("Do you agree? ");
 
-    if (n % 2 == 0)
-    {
-        printf("even\n");
-    }
-    else
-    {
-        printf("odd\n");
-    }
-
+    
 }
