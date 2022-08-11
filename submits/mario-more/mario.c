@@ -10,11 +10,18 @@ int main(void)
     }
     while (n<1);
 
-    for (i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        for (j = 0; j < n; j++)
+        for (int j = 0; j < n; j++)
         {
-            printf()
+            for (int k = 0; k < n; k++)
+            {
+                printf("#");
+            }
+
+            printf(" ");
         }
+
+        printf("\n");
     }
 }
