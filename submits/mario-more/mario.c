@@ -14,7 +14,11 @@ int main(void)
     {
         for (int j = 0; j < n; j++)
         {
-           printf()
+           printf(%i * " ", n-j);
+           printf(%i * "#", j);
+           printf(" ");
+           printf(%i * "#", j);
+           printf(%i * " ", n-j);
         }
 
         printf("\n");
