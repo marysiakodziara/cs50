@@ -11,6 +11,7 @@ int main(void)
     while (n < 1);
 
     int x = n - 1;
+    int z = 1;
 
     for (int i = 0; i < n; i++)
     {
@@ -26,12 +27,11 @@ int main(void)
             }
         }
 
-        printf("!");
         printf(" ");
 
-        for (int k = x; k >= 0; k--)
+        for (int k = 0; k < n; k++)
         {
-            if (x <= k)
+            if (z > k)
             {
                  printf("#");
             }
@@ -41,8 +41,9 @@ int main(void)
             }
 
          }
-    printf("%i", x);
+
     printf("\n");
     x--;
+    z++;
     }
 }
