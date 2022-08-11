@@ -38,6 +38,7 @@ int main(void)
                 printf(" ");
             }
         }
+        printf("%i", x);
         printf("\n");
         x--;
     }
