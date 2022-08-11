@@ -12,15 +12,19 @@ int main(void)
 
     for (int i = 0; i < n; i++)
     {
-        int k = n;
+        int k = n - 1;
 
         for (int j = 0; j < n; j++)
         {
-           while (k > j)
+           if (k > j)
            {
             printf(" ");
            }
-           while ()
+           else
+           {
+            printf("#");
+           }
+           printf(k);
         }
 
         printf("\n");
