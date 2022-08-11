@@ -27,7 +27,7 @@ int main(void)
                          printf("#");
                    }
                }
-
+        printf("!");
         printf(" ");
 
         if (x > j)
