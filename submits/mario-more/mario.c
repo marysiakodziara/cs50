@@ -12,11 +12,6 @@ int main(void)
 
     for (int i = 0; i < n; i++) //wysokość, enter
     {
-        for (int j = 0; j < n; j++) //symetria, spacja
-        {
-          for (int k = 0
-        }
-
-        printf("\n");
+       
     }
 }
