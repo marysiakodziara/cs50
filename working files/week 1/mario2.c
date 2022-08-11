@@ -27,16 +27,17 @@ int main(void)
                          printf("#");
                    }
                }
-            printf(" ");
 
-            if (x > j)
-            {
-                printf("#");
-            }
-            else
-            {
-                printf(" ");
-            }
+        printf(" ");
+
+        if (x > j)
+        {
+        printf("#");
+        }
+        else
+        {
+            printf(" ");
+        }
         }
         printf("%i", x);
         printf("\n");
