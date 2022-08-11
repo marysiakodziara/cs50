@@ -3,5 +3,8 @@
 
 int main(void)
 {
-    printf
+    while(true)
+    {
+        printf("meow\n");
+    }
 }
