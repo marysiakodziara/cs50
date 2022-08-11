@@ -10,7 +10,7 @@ int calculate_pennies(int cents);
 int main(void)
 {
     // Ask how many cents the customer is owed
-    int cents = get_cents();
+    int cents = get_cents(cents);
 
     // Calculate the number of quarters to give the customer
     int quarters = calculate_quarters(cents);
@@ -35,11 +35,11 @@ int main(void)
     printf("%i\n", coins);
 }
 
-int get_cents(int cents)
+get_cents(int cents)
 {
     do
     {
-        cents = get_int("How many cents do you have? ");
+       int cents = get_int("How many cents do you have? ");
     }
     while (cents < 0);
     return cents;
