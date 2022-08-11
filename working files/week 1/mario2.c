@@ -10,10 +10,10 @@ int main(void)
     }
     while (n < 1);
 
+    int k = n - 1;
+
     for (int i = 0; i < n; i++)
     {
-        int k = n - 1;
-
         for (int j = 0; j < n; j++)
         {
            if (k > j)
@@ -24,10 +24,9 @@ int main(void)
            {
             printf("#");
            }
-           printf("%i", k);
         }
-
+        printf("%i", k);
         printf("\n");
-        k--;
+        k = k-1;
     }
 }
