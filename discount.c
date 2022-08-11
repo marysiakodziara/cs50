@@ -4,7 +4,7 @@
 int main(void)
 {
     float regular = get_float("Regular Price: ");
-    float sale = regular 0.85;
+    float sale = regular * 0.85;
     printf("Sale Price: %f\n", sale);
 }
 
