@@ -3,11 +3,12 @@
 
 int main(void)
 {
+    int n;
     do
     {
-        int n = get_int("What size: ");
+        n = get_int("What size: ");
     }
-    while (n < 1)
+    while (n < 1);
 
     for (int i = 0; i < n; i++)
     {
