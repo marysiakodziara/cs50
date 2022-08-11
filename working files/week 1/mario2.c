@@ -16,7 +16,7 @@ int main(void)
 
         for (int j = 0; j < n; j++)
         {
-           if (k > j)
+           if (k >= j)
            {
             printf(" ");
            }
@@ -26,7 +26,7 @@ int main(void)
            }
         }
 
-        k++;
         printf("\n");
+        k++;
     }
 }
