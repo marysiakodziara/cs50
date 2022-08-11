@@ -8,7 +8,7 @@ int main(void)
     {
         n = get_int("What size: ");
     }
-    while (n < 1 && n > 8);
+    while (n < 1 || n > 8);
 
     int x = n - 1;
     int z = 1;
