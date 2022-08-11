@@ -19,11 +19,11 @@ int main(void)
         {
             if (x > j)
             {
-                 printf(" ");
+                printf(" ");
             }
             else
             {
-                 printf("#");
+                printf("#");
             }
         }
 
@@ -33,9 +33,9 @@ int main(void)
         {
             if (z > k)
             {
-                 printf("#");
+                printf("#");
             }
-         }
+        }
 
     printf("\n");
     x--;
