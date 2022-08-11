@@ -12,11 +12,21 @@ int main(void)
 
     for (int i = 0; i < n; i++)
     {
+        int k = 0;
+
         for (int j = 0; j < n; j++)
         {
-           while ()
+           if (k == j)
+           {
+            printf(" ");
+           }
+           else
+           {
+            printf("#");
+           }
         }
 
+        k++;
         printf("\n");
     }
 }
