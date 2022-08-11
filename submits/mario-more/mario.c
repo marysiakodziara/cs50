@@ -37,8 +37,8 @@ int main(void)
             }
         }
 
-    printf("\n");
-    x--;
-    z++;
+        printf("\n");
+        x--;
+        z++;
     }
 }
