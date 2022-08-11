@@ -38,9 +38,10 @@ int main(void)
         {
             printf(" ");
         }
+
         }
-        printf("%i", x);
-        printf("\n");
-        x--;
+    printf("%i", x);
+    printf("\n");
+    x--;
     }
 }
