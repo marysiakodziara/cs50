@@ -18,7 +18,7 @@ int main(void)
         {
            for (int k = 0; k < n; k++)
               {
-                   if (x > j)
+                   if (x > k)
                    {
                         printf(" ");
                    }
