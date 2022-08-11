@@ -24,7 +24,7 @@ int main(void)
            {
             printf("#");
            }
-           printf(k);
+           printf("%i", k);
         }
 
         printf("\n");
