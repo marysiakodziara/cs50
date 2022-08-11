@@ -8,17 +8,13 @@ int main(void)
     {
         n = get_int("Size of the pyramid: ");
     }
-    while (n<1);
+    while (n < 1);
 
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
         {
-           printf(%i * " ", n-j);
-           printf(%i * "#", j);
-           printf(" ");
-           printf(%i * "#", j);
-           printf(%i * " ", n-j);
+           while ()
         }
 
         printf("\n");
