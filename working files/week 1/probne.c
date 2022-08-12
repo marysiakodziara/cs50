@@ -35,3 +35,4 @@ int valid_number(long number, int wanted)
 
    return wanted;
 }
+
