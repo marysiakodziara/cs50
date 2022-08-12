@@ -15,6 +15,13 @@ int main(void)
    n = n / 10;
    }
 
-   printf("%i\n", digits);
+if (digits < 13 || digits == 14 || digits > 16)
+{
+    printf("INVALID\n");
+}
+else
+{
+    printf("code in progress\n");
+}
 }
 
