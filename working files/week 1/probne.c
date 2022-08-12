@@ -3,8 +3,6 @@
 
 int valid_number(long x);
 int lunhs_algorithm(long x);
-int
-
 
 int main(void)
 {
@@ -14,8 +12,6 @@ int main(void)
 
    n = get_long("What is the number? "); //input użytkownika
    digits = valid_number(n); //liczba cyfr
-   // zmieniłam zapis funkcji powyżej i sprawdzam czy nadal działa, na razie nie jest mi potrzebna
-   printf("%i\n", digits);
    validation = lunhs_algorithm(n);
    printf("%i\n", validation);
 
