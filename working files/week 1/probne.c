@@ -16,8 +16,7 @@ int main(void)
    for (int i = 0; n > 0; i++)
    {
      int every_other = (2*((n / 10) - ((n / 100) * 10)));
-     int remaining_numb = (n - ((n / 10) * 10));
-     suma = suma + every_other + remaining_numb;
+     suma = suma + every_other;
      n = n / 100;
 
      printf("%i and %i\n", every_other, remaining_numb);
