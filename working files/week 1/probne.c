@@ -13,7 +13,7 @@ int main(void)
    digits = valid_number(n, digits);
 
    int suma = 0;
-   for (int i = 0; n > 1; i++)
+   for (int i = 0; n > 0; i++)
    {
      int every_other = (2*((n / 10) - ((n / 100) * 10)));
      int remaining_numb = (n - ((n / 10) * 10));
