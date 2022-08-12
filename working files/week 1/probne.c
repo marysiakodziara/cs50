@@ -24,7 +24,6 @@ else
 
 int valid_digits(long number, int wanted)
 {
-   long number;
    while (number > 1)
    {
     if (number > 10)
