@@ -8,13 +8,15 @@ void answer(long x, int k, int y);
 int main(void)
 {
     long n;
-    int digits;
-    int validation;
+    n = get_long("What is the number? ");
 
-   n = get_long("What is the number? "); //input użytkownika
-   digits = digits_num(n); //liczba cyfr
-   validation = lunhs_algorithm(n);
-   answer(n, digits, validation);
+    int digits;
+    digits = digits_num(n);
+
+    int validation;
+    validation = lunhs_algorithm(n);
+
+    answer(n, digits, validation);
 }
 
 int digits_num(long x)
