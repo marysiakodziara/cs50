@@ -11,6 +11,7 @@ int main(void)
     n = n / ten;
     ten = ten * 10;
     digits++;
+    printf("%li\n", n);
    }
 
    printf("%i\n", digits);
