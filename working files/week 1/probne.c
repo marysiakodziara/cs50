@@ -1,8 +1,9 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int valid_number(long x);
+int digits_num(long x);
 int lunhs_algorithm(long x);
+int 
 
 int main(void)
 {
@@ -11,14 +12,14 @@ int main(void)
     int validation;
 
    n = get_long("What is the number? "); //input użytkownika
-   digits = valid_number(n); //liczba cyfr
+   digits = digits_num(n); //liczba cyfr
    validation = lunhs_algorithm(n);
    printf("%i\n", validation);
 
 
 }
 
-int valid_number(long x)
+int digits_num(long x)
 {
    int k = 1;
    while (x > 1)
@@ -62,5 +63,7 @@ int lunhs_algorithm(long x)
    {
     return 0;
    }
+
+
 
 }
