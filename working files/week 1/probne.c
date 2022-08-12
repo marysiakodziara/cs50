@@ -3,6 +3,7 @@
 
 int valid_number(long x);
 int lunhs_algorithm(long x);
+int 
 
 
 int main(void)
