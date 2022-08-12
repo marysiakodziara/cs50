@@ -1,6 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
+int 
+
 int main(void)
 {
    long n = get_long("What is the number? ");
