@@ -16,7 +16,17 @@ int main(void)
    for (int i = 0; n > 0; i++)
    {
      int every_other = (2*((n / 10) - ((n / 100) * 10)));
-     suma = suma + every_other;
+     int prod_digits;
+     if( every_other > 9)
+     {
+        prod_digits = every_other + (every_other - ((every_other / 10)*10));
+     }
+     else
+     {
+        prod_digits = every_other;
+     }
+
+     suma = suma + every_other + prod_digits;
      n = n / 100;
 
      printf("%i and %i\n", every_other, remaining_numb);
