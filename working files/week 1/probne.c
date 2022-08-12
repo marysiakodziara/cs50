@@ -1,13 +1,14 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int valid_number(long n, int digits);
+int valid_number(long number, int wanted);
 
-long n;
-int digits = 1;
 
 int main(void)
 {
+    long n;
+    int digits = 1;
+
    n = get_long("What is the number? ");
    digits = valid_number(n, digits);
 
@@ -21,17 +22,17 @@ else
 }
 }
 
-int valid_digits(long n, int digits)
+int valid_digits(long number, int wanted)
 {
-   long n;
-   while (n > 1)
+   long number;
+   while (number > 1)
    {
-    if (n > 10)
+    if (number > 10)
     {
-        digits++;
+        wanted++;
     }
-   n = n / 10;
+   number = number / 10;
    }
 
-   return digits;
+   return wanted;
 }
