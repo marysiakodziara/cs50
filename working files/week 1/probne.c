@@ -47,7 +47,7 @@ int valid_number(long x)
 
 int lunhs_algorithm(long x)
 {
-   int suma = 0;
+   int sum = 0;
    for (int i = 0; x > 0; i++)
    {
      int every_other = (2*((x / 10) - ((x / 100) * 10)));
@@ -62,9 +62,9 @@ int lunhs_algorithm(long x)
         prod_digits = every_other;
      }
 
-     suma = suma + prod_digits + remaining_numb;
+     sum = sum + prod_digits + remaining_numb;
      x = x / 100;
    }
-return suma;
+return sum;
 
 }
