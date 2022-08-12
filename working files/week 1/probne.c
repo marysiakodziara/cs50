@@ -9,7 +9,6 @@ int main(void)
    while (n > 1)
    {
     n = n / ten;
-    ten = ten * 10;
     digits++;
     printf("%li\n", n);
    }
