@@ -17,6 +17,7 @@ int main(void)
    {
      int every_other = (2*((n / 10) - ((n / 100) * 10)));
      int prod_digits;
+     int remaining_numb = (n - ((n/10)*10));
      if( every_other > 9)
      {
         prod_digits = (every_other / 10 ) + (every_other - ((every_other / 10)*10));
@@ -26,10 +27,10 @@ int main(void)
         prod_digits = every_other;
      }
 
-     suma = suma + every_other + prod_digits;
+     suma = suma + prod_digits + remaining_numb;
      n = n / 100;
 
-     printf("%i and %i\n", every_other, prod_digits);
+     printf("%i and %i\n", prod_digits, remaining_numb);
    }
 printf("%i\n", suma);
 
