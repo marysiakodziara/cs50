@@ -19,7 +19,7 @@ int main(void)
      int prod_digits;
      if( every_other > 9)
      {
-        prod_digits = every_other + (every_other - ((every_other / 10)*10));
+        prod_digits = (every_other / 10 ) + (every_other - ((every_other / 10)*10));
      }
      else
      {
