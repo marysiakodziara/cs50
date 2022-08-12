@@ -3,7 +3,7 @@
 
 int digits_num(long x);
 int lunhs_algorithm(long x);
-int 
+void answer(long x, int k, int y);
 
 int main(void)
 {
@@ -63,7 +63,9 @@ int lunhs_algorithm(long x)
    {
     return 0;
    }
+}
 
-
-
+void answer(long x, int k, int y)
+{
+    
 }
