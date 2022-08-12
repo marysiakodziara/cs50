@@ -15,7 +15,7 @@ int main(void)
     }
     else
     {
-        return digits;
+        digits = 1;
     }
    }
 
