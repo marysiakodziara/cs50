@@ -85,7 +85,7 @@ void answer(long x, int k, int y)
     {
         printf("AMEX\n");
     }
-    else if((start_sum == 51 || start_sum == 52 || start_sum == 53 || start_sum == 54 || start_sum == 55) && k ==16 && y == 1)
+    else if((start_num == 51 || start_num == 52 || start_num == 53 || start_num == 54 || start_num == 55) && k ==16 && y == 1)
     {
         printf("MASTERCARD\n");
     }
