@@ -3,7 +3,7 @@
 
 int main(void)
 {
-   long n = get_int("What is the number? ");
+   long n = get_long("What is the number? ");
    int ten = 10;
    int digits = 1;
    while (n > 1)
