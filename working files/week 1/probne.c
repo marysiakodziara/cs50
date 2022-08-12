@@ -3,8 +3,9 @@
 
 int main(void)
 {
-   long n = get_li("What is the number? ");
-   for (long i = 1; i > n; i = i * 10)
+   long n = get_int("What is the number? ");
+   long i;
+   for (i = 1; i > n; i = i * 10)
    {
     return i;
    }
