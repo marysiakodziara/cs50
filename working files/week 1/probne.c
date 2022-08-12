@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int valid_number(long);
+int valid_number(long x);
 
 long n;
 int digits = 1;
@@ -21,15 +21,16 @@ else
 }
 }
 
-int valid_digits(long)
+valid_digits(long x)
 {
-   while (n > 1)
+   long x;
+   while (x > 1)
    {
-    if (n > 10)
+    if (x > 10)
     {
         digits++;
     }
-   n = n / 10;
+   x = x / 10;
    }
 
    return digits;
