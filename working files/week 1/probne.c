@@ -74,5 +74,12 @@ void answer(long x, int k, int y)
         start_num = k;
     }
 
-    if
+    if(start_num / 10 == 4)
+    {
+        start_num = 4;
+    }
+    else
+    {
+        
+    }
 }
