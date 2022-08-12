@@ -20,6 +20,7 @@ else
 {
     printf("code in progress\n");
 }
+printf("%li \n", n);
 }
 
 int valid_number(long number, int wanted)
