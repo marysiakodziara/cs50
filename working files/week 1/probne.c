@@ -4,12 +4,10 @@
 int main(void)
 {
    long n = get_int("What is the number? ");
-   long i;
-   for (i = 1; i < n; i = i * 10)
+   int digits=
+   while (n > 0)
    {
-    return i;
-    printf("%li/n", i);
+    n=
    }
-   printf("wielkosc %li/n", i);
 }
 
