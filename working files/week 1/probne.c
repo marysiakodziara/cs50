@@ -68,10 +68,10 @@ int lunhs_algorithm(long x)
 void answer(long x, int k, int y)
 {
     int start_num;
-    while (k > 99)
+    while (x > 99)
     {
-        k = k / 10;
-        start_num = k;
+        x = x / 10;
+        start_num = x;
     }
 
     if(start_num / 10 == 4)
@@ -79,5 +79,20 @@ void answer(long x, int k, int y)
         start_num = 4;
     }
 
-    
+    if(start_num == 4 && (k == 13 || k == 16) && y == 1)
+    {
+        printf("VISA\n");
+    }
+    else if((start_num == 34 || start_num == 37) && k == 15 && y == 1)
+    {
+        printf("AMEX\n");
+    }
+    else if((start_sum == 51 || start_sum == 52 || start_sum == 53 || start_sum == 54 || start_sum == 55) && k ==16 && y == 1)
+    {
+        printf("MASTERCARD\n");
+    }
+    else
+    {
+        printf("INVALID\n");
+    }
 }
