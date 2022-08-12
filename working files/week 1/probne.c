@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int valid_number(long number, int wanted);
-int lunhs_algorithm()
+int lunhs_algorithm(long number);
 
 
 int main(void)
@@ -67,3 +67,7 @@ int valid_number(long number, int wanted)
    return wanted;
 }
 
+int lunhs_algorithm(long number)
+{
+    
+}
