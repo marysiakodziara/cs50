@@ -1,11 +1,13 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int 
+int valid_number(long )
+
+long n;
 
 int main(void)
 {
-   long n = get_long("What is the number? ");
+   n = get_long("What is the number? ");
    int digits = 1;
 
    while (n > 1)
@@ -27,3 +29,7 @@ else
 }
 }
 
+valid_digits(long)
+{
+
+}
