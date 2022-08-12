@@ -29,10 +29,17 @@ int main(void)
 
      suma = suma + prod_digits + remaining_numb;
      n = n / 100;
-
-     printf("%i and %i\n", prod_digits, remaining_numb);
    }
 printf("%i\n", suma);
+if ( suma % 10 == 0)
+{
+    printf("That is a credit card number\n");
+}
+else
+{
+    printf("Wrong number\n");
+}
+
 
 //if (digits < 13 || digits == 14 || digits > 16)
 //{
