@@ -10,13 +10,9 @@ int main(void)
    {
     if (n > 10)
     {
-        n = n / 10;
         digits++;
     }
-    else
-    {
-        digits = 1;
-    }
+   n = n / 10;
    }
 
    printf("%i\n", digits);
