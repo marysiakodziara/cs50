@@ -22,7 +22,7 @@ else
 }
 }
 
-int valid_digits(long number, int wanted)
+int valid_number(long number, int wanted)
 {
    while (number > 1)
    {
