@@ -4,8 +4,8 @@
 int main(void)
 {
    long n = get_int("What is the number? ");
-   int digits=
-   while (n > 0)
+   int 
+   while (n > 1)
    {
     n=
    }
