@@ -29,7 +29,7 @@ int main(void)
      suma = suma + every_other + prod_digits;
      n = n / 100;
 
-     printf("%i and %i\n", every_other, remaining_numb);
+     printf("%i and %i\n", every_other, prod_digits);
    }
 printf("%i\n", suma);
 
