@@ -78,8 +78,6 @@ void answer(long x, int k, int y)
     {
         start_num = 4;
     }
-    else
-    {
-        
-    }
+
+    
 }
