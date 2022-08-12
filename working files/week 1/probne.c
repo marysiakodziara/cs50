@@ -13,10 +13,11 @@ int main(void)
    digits = valid_number(n, digits);
 
    int suma = 0;
-   for (int i = 0; i < digits/2; i++)
+   for (int i = 1; i < (digits/2); i++)
    {
      int every_other = (2*((n / 10) - ((n / 100) * 10)));
      suma = suma + every_other;
+     printf("%i\n", every_other);
    }
 printf("%i\n", suma);
 
