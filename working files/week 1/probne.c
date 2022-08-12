@@ -17,15 +17,7 @@ int main(void)
    // zmieniłam zapis funkcji powyżej i sprawdzam czy nadal działa, na razie nie jest mi potrzebna
    printf("%i\n", digits);
    validation = lunhs_algorithm(n);
-
-   if ( validation % 10 == 0)
-{
-    printf("That is a credit card number\n");
-}
-else
-{
-    printf("Wrong number\n");
-}
+   printf("%i\n", validation);
 
 
 }
@@ -65,6 +57,14 @@ int lunhs_algorithm(long x)
      sum = sum + prod_digits + remaining_numb;
      x = x / 100;
    }
-return sum;
+
+   if ( sum % 10 == 0)
+   {
+    return 1;
+   }
+   else
+   {
+    return 0;
+   }
 
 }
