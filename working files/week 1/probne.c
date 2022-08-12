@@ -2,20 +2,29 @@
 #include <stdio.h>
 
 int valid_number(long x);
-string lunhs_algorithm(long x);
+int lunhs_algorithm(long x);
 
 
 int main(void)
 {
     long n;
     int digits;
-    string validation;
+    int validation;
 
    n = get_long("What is the number? ");
    digits = valid_number(n);
    // zmieniłam zapis funkcji powyżej i sprawdzam czy nadal działa, na razie nie jest mi potrzebna
    printf("%i\n", digits);
    validation = lunhs_algorithm(n);
+
+   if ( validation % 10 == 0)
+{
+    printf("That is a credit card number\n");
+}
+else
+{
+    printf("Wrong number\n");
+}
 
 
 
@@ -33,7 +42,7 @@ int main(void)
 
 int valid_number(long x)
 {
-   int k;
+   int k = 1;
    while (x > 1)
    {
     if (x > 10)
@@ -46,7 +55,7 @@ int valid_number(long x)
    return k;
 }
 
-string lunhs_algorithm(long x)
+int lunhs_algorithm(long x)
 {
    int suma = 0;
    for (int i = 0; x > 0; i++)
@@ -66,13 +75,6 @@ string lunhs_algorithm(long x)
      suma = suma + prod_digits + remaining_numb;
      x = x / 100;
    }
-printf("%i\n", suma);
-if ( suma % 10 == 0)
-{
-    printf("That is a credit card number\n");
-}
-else
-{
-    printf("Wrong number\n");
-}
+return suma;
+
 }
