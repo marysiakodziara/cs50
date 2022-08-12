@@ -8,11 +8,11 @@ int main(void)
    int digits = 1;
    do
    {
-    n = n / ten;
-    if (n > 1)
+        if (n > 1)
     {
         digits++;
     }
+    n = n / ten;
    }
    while (n > 1);
 
