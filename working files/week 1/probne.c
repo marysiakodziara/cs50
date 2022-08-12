@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 int valid_number(long number, int wanted);
+int lunhs_algorithm()
 
 
 int main(void)
