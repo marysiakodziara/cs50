@@ -8,7 +8,8 @@ int main(void)
    for (i = 1; i > n; i = i * 10)
    {
     return i;
+    printf("%li/n", i);
    }
-   printf("%li", i);
+   printf("wielkosc %li/n", i);
 }
 
