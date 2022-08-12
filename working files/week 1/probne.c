@@ -67,5 +67,12 @@ int lunhs_algorithm(long x)
 
 void answer(long x, int k, int y)
 {
-    
+    int start_num;
+    while (k > 99)
+    {
+        k = k / 10;
+        start_num = k;
+    }
+
+    if
 }
