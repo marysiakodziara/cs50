@@ -14,9 +14,7 @@ int main(void)
    n = get_long("What is the number? "); //input użytkownika
    digits = digits_num(n); //liczba cyfr
    validation = lunhs_algorithm(n);
-   printf("%i\n", validation);
-
-
+   answer(n, digits, validation);
 }
 
 int digits_num(long x)
