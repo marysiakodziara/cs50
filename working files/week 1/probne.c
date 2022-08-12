@@ -1,18 +1,22 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int valid_number(long x, int wanted);
-int lunhs_algorithm(long x);
+int valid_number(long x);
+string lunhs_algorithm(long x);
 
 
 int main(void)
 {
     long n;
-    int digits = 1;
+    int digits;
+    string validation;
 
    n = get_long("What is the number? ");
-   digits = valid_number(n, digits);
-   
+   digits = valid_number(n);
+   // zmieniłam zapis funkcji powyżej i sprawdzam czy nadal działa, na razie nie jest mi potrzebna
+   printf("%i\n", digits);
+   validation = lunhs_algorithm(n);
+
 
 
 
@@ -27,21 +31,22 @@ int main(void)
 //printf("%li \n", n);
 }
 
-int valid_number(long x, int wanted)
+int valid_number(long x)
 {
+   int k;
    while (x > 1)
    {
     if (x > 10)
     {
-        wanted++;
+        k++;
     }
    x = x / 10;
    }
 
-   return wanted;
+   return k;
 }
 
-int lunhs_algorithm(long x)
+string lunhs_algorithm(long x)
 {
    int suma = 0;
    for (int i = 0; x > 0; i++)
