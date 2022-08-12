@@ -16,6 +16,7 @@ int main(void)
    for (int i = 0; i < (digits/2); i++)
    {
      int every_other = (2*((n / 10) - ((n / 100) * 10)));
+     int 
      suma = suma + every_other;
      n = n / 100;
    }
