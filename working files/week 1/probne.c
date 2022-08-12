@@ -12,15 +12,23 @@ int main(void)
    n = get_long("What is the number? ");
    digits = valid_number(n, digits);
 
-if (digits < 13 || digits == 14 || digits > 16)
-{
-    printf("INVALID\n");
-}
-else
-{
-    printf("code in progress\n");
-}
-printf("%li \n", n);
+   int suma = 0;
+   for (int i = 0; i < digits/2; i++)
+   {
+     int every_other = (2*((n / 10) - ((n / 100) * 10)));
+     suma = suma + every_other;
+   }
+printf("%i\n", suma);
+
+//if (digits < 13 || digits == 14 || digits > 16)
+//{
+//    printf("INVALID\n");
+//}
+//else
+//{
+//    printf("code in progress\n");
+//}
+//printf("%li \n", n);
 }
 
 int valid_number(long number, int wanted)
