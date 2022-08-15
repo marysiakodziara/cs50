@@ -4,5 +4,6 @@
 int main(void)
 {
     string word1 = get_string("give me the word: ");
-    char literation[] = {}
+    strlen
+    //char literation[] = {}
 }
