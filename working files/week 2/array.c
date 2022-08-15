@@ -1,9 +1,11 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
     string word1 = get_string("give me the word: ");
-    strlen
+    int lenght = strlen(word1);
+    printf("%i\n", lenght);
     //char literation[] = {}
 }
