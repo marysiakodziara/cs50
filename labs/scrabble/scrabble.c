@@ -15,14 +15,16 @@ int main(void)
     string word2 = get_string("Player 2: ");
     string worda[1] = {"word"};
 
+    printf
+
     // Score both words
     //int score1 = compute_score(word1);
-    int score2 = compute_score(word2);
+    //int score2 = compute_score(word2);
 
     // TODO: Print the winner
 }
 
 //int compute_score(string word)
-{
+//{
     // TODO: Compute and return score for string
-}
+//}
