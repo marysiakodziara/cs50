@@ -8,4 +8,5 @@ int main(void)
     int lenght = strlen(word1);
     printf("%i\n", lenght);
     //char literation[] = {}
+    while ()
 }
