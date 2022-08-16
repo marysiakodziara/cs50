@@ -36,7 +36,7 @@ int compute_score(string word)
 {
     int score = 0;
 
-    for(int i = 0; len = strlen(word); i < len; i++)
+    for(int i = 0; int len = strlen(word); i < len; i++)
     {
         if (isupper(word[i]))
         {
@@ -47,5 +47,5 @@ int compute_score(string word)
             score += POINTS[word[i] - 'a']
         }
     }
-    return score; 
+    return score;
 }
