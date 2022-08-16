@@ -39,7 +39,6 @@ int compute_score(string word)
     int lenght = strlen(word);
     while ( i != lenght )
     {
-        string word[i];
         if(strcmp(word[i], "a") == 1)
         {
             suma = suma + POINTS[0];
