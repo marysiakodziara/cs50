@@ -7,6 +7,5 @@ int main(void)
     string word1 = get_string("give me the word: ");
     int lenght = strlen(word1);
     printf("%i\n", lenght);
-    //char literation[] = {}
-    while ()
+    while (word1[])
 }
