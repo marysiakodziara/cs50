@@ -138,5 +138,4 @@ int compute_score(string word)
     }
     return suma;
 
-    // TODO: Compute and return score for string
 }
