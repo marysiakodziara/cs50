@@ -136,6 +136,7 @@ int compute_score(string word)
             suma = suma;
         }
     }
+    return suma;
 
     // TODO: Compute and return score for string
 }
