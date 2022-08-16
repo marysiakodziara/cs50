@@ -36,7 +36,7 @@ int compute_score(string word)
 {
     int i = 0;
     int suma = 0;
-    while (word[i] != "\o")
+    while (word[i] !== "\o")
     {
         if(word[i] == "a" || word[i] == "A")
         {
