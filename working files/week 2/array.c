@@ -20,7 +20,15 @@ int main(void)
 
     if(score1 > score2)
     {
-        printf("")
+        printf("Player 1 wins!");
+    }
+    if else( score1 == score2)
+    {
+        printf("Tie!");
+    }
+    else
+    {
+        printf("Player 2 wins!");
     }
 }
 
