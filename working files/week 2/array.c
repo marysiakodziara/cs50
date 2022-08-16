@@ -34,121 +34,13 @@ int main(void)
 
 int compute_score(string word)
 {
-    int i = 0;
-    int suma = 0;
-    int lenght = strlen(word);
-    while ( i != lenght )
-    {
-        if(strcmp(word[i], "a") == 0)
-        {
-            suma = suma + POINTS[0];
-        }
-        else if (word[i] == "b" || word[i] == "B")
-        {
-            suma = suma + POINTS[1];
-        }
-        else if (word[i] == "c" || word[i] == "C")
-        {
-            suma = suma + POINTS[2];
-        }
-        else if (word[i] == "d" || word[i] == "D")
-        {
-            suma = suma + POINTS[3];
-        }
-        else if (word[i] == "e" || word[i] == "E")
-        {
-            suma = suma + POINTS[4];
-        }
-        else if (word[i] == "f" || word[i] == "F")
-        {
-            suma = suma + POINTS[5];
-        }
-        else if (word[i] == "g" || word[i] == "G")
-        {
-            suma = suma + POINTS[6];
-        }
-        else if (word[i] == "h" || word[i] == "H")
-        {
-            suma = suma + POINTS[7];
-        }
-        else if (word[i] == "i" || word[i] == "I")
-        {
-            suma = suma + POINTS[8];
-        }
-        else if (word[i] == "j" || word[i] == "J")
-        {
-            suma = suma + POINTS[9];
-        }
-        else if (word[i] == "k" || word[i] == "K)
-        {
-            suma = suma + POINTS[10];
-        }
-        else if (word[i] == "l" || word[i] == "L")
-        {
-            suma = suma + POINTS[11];
-        }
-        else if (word[i] == "m" || word[i] == "M")
-        {
-            suma = suma + POINTS[12];
-        }
-        else if (word[i] == "n" || word[i] == "N")
-        {
-            suma = suma + POINTS[13];
-        }
-        else if (word[i] == "o" || word[i] == "O")
-        {
-            suma = suma + POINTS[14];
-        }
-        else if (word[i] == "p" || word[i] == "P")
-        {
-            suma = suma + POINTS[15];
-        }
-        else if (word[i] == "q" || word[i] == "Q")
-        {
-            suma = suma + POINTS[16];
-        }
-        else if (word[i] == "r" || word[i] == "R")
-        {
-            suma = suma + POINTS[17];
-        }
-        else if (word[i] == "s" || word[i] == "S")
-        {
-            suma = suma + POINTS[18];
-        }
-        else if (word[i] == "t" || word[i] == "T")
-        {
-            suma = suma + POINTS[19];
-        }
-        else if (word[i] == "u" || word[i] == "U")
-        {
-            suma = suma + POINTS[20];
-        }
-        else if (word[i] == "v" || word[i] == "V")
-        {
-            suma = suma + POINTS[21];
-        }
-        else if (word[i] == "w" || word[i] == "W")
-        {
-            suma = suma + POINTS[22];
-        }
-        else if (word[i] == "x" || word[i] == "X")
-        {
-            suma = suma + POINTS[23];
-        }
-        else if (word[i] == "y" || word[i] == "Y")
-        {
-            suma = suma + POINTS[24];
-        }
-        else if (word[i] == "z" || word[i] == "Z")
-        {
-            suma = suma + POINTS[25];
-        }
-        else
-        {
-            suma = suma;
-        }
-        i++;
-    }
-    return suma;
+    int score = 0;
 
+    for(int i = 0; len = strlen(word); i < len; i++)
+    {
+        if (isupper(word[i]))
+        {
+            score += POINTS[word[i] - 'A']
+        }
+    }
 }
