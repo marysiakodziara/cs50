@@ -24,7 +24,10 @@ int main(void)
 int compute_score(string word)
 {
     int i = 0;
-    while (word[i] != "/o)
+    while (word[i] != "\o")
+    {
+        if(word[i] == "a")
+    }
 
     // TODO: Compute and return score for string
 }
