@@ -10,11 +10,11 @@ int main(int argc, string argv[])
 {
 
     int open = key_validation(argv, argc);
-    if (open == 0)
+    if (open == 0) // po tym przechodzę do szyfru
     {
-        printf("valid key\n");
+        string origin = get_string("plaintext: ");
     }
-    else
+    else          // po tym wyrzucam z programu
     {
         printf("invalid key\n");
     }
