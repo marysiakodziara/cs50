@@ -18,7 +18,6 @@ int main(int argc, string argv[])
            score += 1;
         }
      }
-
      if (score == 0)
      {
         printf("Key passed\n");
@@ -26,6 +25,12 @@ int main(int argc, string argv[])
      else
      {
        printf("Key must contain 26 letters.\n");
+     }
+
+     int tab[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+     for (int i = 0; i < 26; i++)
+     {
+        
      }
    } // tylko wtedy program puszcza dalej
 
