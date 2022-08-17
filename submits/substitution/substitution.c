@@ -37,11 +37,10 @@ int key_validation(string arg_v[], int arg_c)
         string key = arg_v[1];
         for (int i = 0; i < command; i++) //sprawdzam czy wszystkie znaki są alfabetyczne
         {
-            if (isaplpha(key[i]))
+            if (isupper(key[i]) == 0 && islower(key[i]) == 0)
             {
                 score += 1;
             }
-        }
             if (score == 0)
                 {
                     int tab[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
@@ -67,6 +66,7 @@ int key_validation(string arg_v[], int arg_c)
                     }
                 }
         }
+    }
     else
     {
         answer = 1;
