@@ -67,7 +67,6 @@ int key_validation(string arg_v[], int arg_c)
                     }
                 }
         }
-    }
     else
     {
         answer = 1;
