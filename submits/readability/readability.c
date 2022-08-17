@@ -37,7 +37,6 @@ int count_words(string textb)
 {
     int n = strlen(textb);
     int words = 0;
-    char 
 
     return words;
 }
