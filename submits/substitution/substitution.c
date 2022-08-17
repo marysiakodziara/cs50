@@ -1,9 +1,12 @@
+#include <ctype.h>
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
+#include <math.h>
 
 int main(int argc, string argv[])
 {
-   int command = strlen(argv[1])
+   int command = strlen(argv[1]);
    if (argc == 2  && command == 26)
    {
 
