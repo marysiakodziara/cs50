@@ -39,7 +39,7 @@ int count_words(string textb)
     int words = 0;
     for (int i = 0; i < n; i++ )
     {
-        if (strcmp(textb[i], ' ') == 0)
+        if (strcmp(textb[i], " ") == 0)
         {
             words += 1;
         }
