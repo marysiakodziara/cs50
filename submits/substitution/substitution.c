@@ -30,7 +30,11 @@ int main(int argc, string argv[])
      int tab[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
      for (int i = 0; i < 26; i++)
      {
-        
+        if (isupper(key[i]))
+        {
+            tab[key[i] - 'A'] += 1;
+        }
+        else if (islower(key[i]))
      }
    } // tylko wtedy program puszcza dalej
 
