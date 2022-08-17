@@ -37,8 +37,10 @@ int count_words(string textb)
 {
     int n = strlen(textb);
     int words = 0;
-    char textc[] = textb;
-    
+    if (textb[i] == " ")
+    {
+        words += 1;
+    }
 
     return words;
 }
