@@ -18,9 +18,7 @@ int main(int argc, string argv[])
            score += 1;
         }
      }
-
      
-
      if (score == 0)
      {
         printf("Key passed\n");
