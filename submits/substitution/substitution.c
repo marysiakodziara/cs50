@@ -3,5 +3,5 @@
 
 int main(int argc, string argv[])
 {
-   if 
+   argc == 2 // tylko wtedy program puszcza dalej
 }
