@@ -35,13 +35,13 @@ int count_letters(string text)
 {
     int n = strlen(text);
     int letters = 0;
-    for (int i = 0; i < n; i++ )
+    for (int i = 0; i < n; i++)
     {
-        if(isupper(text[i]))
+        if (isupper(text[i]))
         {
             letters += 1;
         }
-        if(islower(text[i]))
+        if (islower(text[i]))
         {
             letters += 1;
         }
