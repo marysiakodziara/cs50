@@ -5,7 +5,7 @@
 #include <math.h>
 
 int key_validation(string arg_v[], int arg_c);
-string cipher(string text);
+string cipher(string text, string arg_v[]);
 
 int main(int argc, string argv[])
 {
@@ -79,8 +79,13 @@ int key_validation(string arg_v[], int arg_c)
     }
 }
 
-string cipher(string text)
+string cipher(string text, string arg_v[])
 {
    string tab3[26];
-   
+   int len = strlen(arg_v[1]);
+   for (int i = 0; i < len; i++)
+   {
+      
+   }
+
 }
