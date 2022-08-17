@@ -25,6 +25,7 @@ int main(int argc, string argv[])
 
 int key_validation(string arg_v[], int arg_c)
 {
+   int answer;
    int command = strlen(arg_v[arg_c - 1]);
    if (arg_c == 2  && command == 26)
    {
@@ -56,7 +57,7 @@ int key_validation(string arg_v[], int arg_c)
               }
                if (tab2 == 1)
               {
-                    return 0;
+                    answer = 0;
               }
            }
         }
@@ -64,6 +65,14 @@ int key_validation(string arg_v[], int arg_c)
    }
 else
 {
+   answer = 1;
+}
+if (answer == 1)
+{
     return 1;
+}
+else
+{
+    return 0;
 }
 }
