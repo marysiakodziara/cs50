@@ -39,9 +39,10 @@ int key_validation(string arg_v[], int arg_c)
         {
             if (isalpha(key[i]))
             {
-                score = 1;
+                score += 1;
             }
-            if (score == 0)
+        }
+        if (score == 26)
                 {
                     int tab[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
                     for (int k = 0; k < 26; k++)
@@ -66,7 +67,6 @@ int key_validation(string arg_v[], int arg_c)
                     }
                 }
         }
-    }
     else
     {
         answer = 1;
