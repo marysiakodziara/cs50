@@ -13,11 +13,14 @@ int main(int argc, string argv[])
    if (open == 0)
    {
     printf("valid key\n");
+    return 0;
    }
    else
    {
     printf("invalid key\n");
+    return 1;
    }
+
 }
 
 int key_validation(string arg_v[], int arg_c)
