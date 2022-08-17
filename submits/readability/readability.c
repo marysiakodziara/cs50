@@ -18,11 +18,11 @@ int count_letters(string text)
     int letters = 0;
     for (int i = 0; i < n; i++ )
     {
-        if(isupper(word[i]))
+        if(isupper(text[i]))
         {
             letters += 1;
         }
-        if(islower(word[i]))
+        if(islower(text[i]))
         {
             letters += 1;
         }
