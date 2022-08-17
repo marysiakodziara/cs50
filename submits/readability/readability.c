@@ -13,7 +13,7 @@ int main(void)
     int letters = count_letters(text1);
     int words = count_words(text1);
     int sentences = count_sentences(text1);
-    float L = (letters / words * 100);
+    float L = letters * 100 / words;
     float S = (sentences / words * 100);
     float index = (0.0588 * L) - (0.296 * S) - 15.8;
     printf("%f, %i\n", L, count_letters(text1));
