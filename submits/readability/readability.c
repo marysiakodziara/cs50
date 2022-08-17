@@ -8,10 +8,12 @@ int count_letters(string text);
 int main(void)
 {
     string text1 = get_string("Write text sample: ");
-    printf("%s\n", text);
+    int score = count_letters(text1);
+    printf("%i\n", score);
 }
 
 int count_letters(string text)
 {
-    
+    int i = strlen(text);
+    return i;
 }
