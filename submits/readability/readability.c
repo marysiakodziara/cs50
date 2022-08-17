@@ -10,9 +10,9 @@ int count_sentences(string text);
 int main(void)
 {
     string text1 = get_string("Write text sample: ");
-    int letters = count_letters(text1);
-    int words = count_words(text1);
-    int sentences = count_sentences(text1);
+    float letters = count_letters(text1);
+    float words = count_words(text1);
+    float sentences = count_sentences(text1);
     float L = letters * 100 / words;
     float S = (sentences / words * 100);
     float index = (0.0588 * L) - (0.296 * S) - 15.8;
