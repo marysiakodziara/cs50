@@ -20,11 +20,11 @@ int main(int argc, string argv[])
      }
      if (score == 0)
      {
-        printf("Key must contain 26 letters.\n");
+        printf("Key passed\n");
      }
      else
      {
-        printf("Key passed\n");
+       printf("Key must contain 26 letters.\n");
      }
    } // tylko wtedy program puszcza dalej
    else if (argc == 1)
