@@ -87,11 +87,11 @@ string cipher(string text, string arg_v[])
    {
       if (isupper(text[i]))
       {
-         text[i] = key[text[i] - 'A'];
+         text[i] = toupper(key[text[i] - 'A']);
       }
       else if (islower(text[i]))
       {
-         text[i] = key[text[i] - 'a'];
+         text[i] = tolower(key[text[i] - 'a']);
       }
       else
       {
