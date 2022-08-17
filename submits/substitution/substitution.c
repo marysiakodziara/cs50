@@ -9,18 +9,22 @@ int main(int argc, string argv[])
    int command = strlen(argv[argc - 1]);
    if (argc == 2  && command == 26)
    {
+     int score = 0;
      string key = argv[1];
      for (int i = 0; i < command; i++ )
      {
-        if (isupper(key[i]) != 0 && islower(key[i]) != 0)
+        if (isupper(key[i]) == 0 && islower(key[i]) == 0)
         {
-           printf("Key must contain 26 letters.\n");
+           score += 1;
         }
-        else
-        {
-            printf("Key passed\n");
-        }
-
+     }
+     if (score == 0)
+     {
+        printf("Key must contain 26 letters.\n");
+     }
+     else
+     {
+        printf("Key passed\n");
      }
    } // tylko wtedy program puszcza dalej
    else if (argc == 1)
