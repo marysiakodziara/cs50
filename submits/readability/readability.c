@@ -4,6 +4,7 @@
 #include <string.h>
 
 int count_letters(string text);
+int count_words(string textb);
 
 int main(void)
 {
@@ -28,4 +29,9 @@ int count_letters(string text)
         }
     }
     return letters;
+}
+
+int count_words(string textb)
+{
+    
 }
