@@ -25,6 +25,8 @@ int key_validation(int arg_c, string arg_v[])
            score += 1;
         }
      }
+
+
      if (score == 0)
      {
         printf("Key passed\n");
