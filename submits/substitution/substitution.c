@@ -9,7 +9,7 @@ int main(int argc, string argv[])
    int command = strlen(argv[argc - 1]);
    if (argc == 2  && command == 26)
    {
-
+     command[]
    } // tylko wtedy program puszcza dalej
    else if (argc == 1)
    {
