@@ -4,11 +4,11 @@
 #include <string.h>
 #include <math.h>
 
-int key_validation(int arg_c, string arg_v[]);
+int key_validation(string arg_v[], int arg_c);
 
 int main(int argc, string argv[])
 {
-   int open = key_validation(argc, argv[])
+   int open = key_validation(argv[], argc)
    if (open == 0)
    {
     printf("valid key\n");
@@ -19,7 +19,7 @@ int main(int argc, string argv[])
    }
 }
 
-int key_validation(int arg_c, string arg_v[])
+int key_validation(string arg_v[], int arg_c)
 {
    int command = strlen(arg_v[arg_c - 1]);
    if (arg_c == 2  && command == 26)
