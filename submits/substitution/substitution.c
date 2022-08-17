@@ -35,7 +35,9 @@ int main(int argc, string argv[])
             tab[key[i] - 'A'] += 1;
         }
         else if (islower(key[i]))
-        
+        {
+            tab[key[i] - 'a'] += 1;
+        }
      }
    } // tylko wtedy program puszcza dalej
 
