@@ -13,7 +13,13 @@ int main(int argc, string argv[])
 
 int key_validation(int arg_c, string arg_v[])
 {
-   int command = strlen(argv[argc - 1]);
+
+
+
+   
+}
+
+int command = strlen(argv[argc - 1]);
    if (argc == 2  && command == 26)
    {
      int score = 0;
@@ -60,16 +66,3 @@ int key_validation(int arg_c, string arg_v[])
        printf("Key must contain 26 letters.\n");
      }
    } // tylko wtedy program puszcza dalej
-
-
-   else if (argc == 1)
-   {
-     printf("Usage: ./substitution key\n");
-   }
-   // program wyświetla Usage: ./substitution key
-   else if (argc == 2 && command != 26)
-   {
-     printf("Key must contain 26 characters.\n");
-   } // program wyświetla Key must contain 26 characters.
-
-}
