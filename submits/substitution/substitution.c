@@ -4,7 +4,14 @@
 #include <string.h>
 #include <math.h>
 
+int key_validation(int arg_c, string arg_v[]);
+
 int main(int argc, string argv[])
+{
+
+}
+
+int key_validation(int arg_c, string arg_v[])
 {
    int command = strlen(argv[argc - 1]);
    if (argc == 2  && command == 26)
