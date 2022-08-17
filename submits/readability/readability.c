@@ -9,8 +9,10 @@ int count_words(string textb);
 int main(void)
 {
     string text1 = get_string("Write text sample: ");
-    int score = count_letters(text1);
-    printf("%i letters\n", score);
+    int lett = count_letters(text1);
+    printf("%i letters\n", lett);
+    int word = count_words(text1);
+    printf("%i words\n", word);
 }
 
 int count_letters(string text)
@@ -37,7 +39,10 @@ int count_words(string textb)
     int words = 0;
     for (int i = 0; i < n; i++ )
     {
-        if (strcmp(textb[i], "32") == )
+        if (strcmp(textb[i], ' ') == 0)
+        {
+            words += 1;
+        }
     }
-    return letters;
+    return words;
 }
