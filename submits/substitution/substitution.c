@@ -12,7 +12,11 @@ int main(int argc, string argv[])
      string key = argv[1]
      for (int i = 0; i < command; i++ )
      {
-        if (isupper)
+        if (isupper(key[i]) || islower(key[i]))
+        {
+            
+        }
+
      }
    } // tylko wtedy program puszcza dalej
    else if (argc == 1)
