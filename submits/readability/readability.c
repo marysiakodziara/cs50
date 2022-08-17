@@ -10,8 +10,11 @@ int count_sentences(string text);
 int main(void)
 {
     string text1 = get_string("Write text sample: ");
-    float L = (count_letters(text1) / count_words(text1) * 100);
-    float S = (count_sentences(text1) / count_words(text1) * 100);
+    int letters = count_letters(text1);
+    int words = count_words(text1);
+    int sentences = count_sentences(text1);
+    float L = (letters / words * 100);
+    float S = (sentences / words * 100);
     float index = (0.0588 * L) - (0.296 * S) - 15.8;
     printf("%f, %i\n", L, count_letters(text1));
     printf("%f\n", S);
