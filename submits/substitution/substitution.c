@@ -46,7 +46,7 @@ int key_validation(string arg_v[], int arg_c)
                     int tab[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
                     for (int k = 0; k < 26; k++)
                     {
-                        if (isupper(key[k]))
+                        if (isupper(key[k])) // sprawdza czy litery się nie powtarzają
                         {
                             tab[key[k] - 'A'] += 1;
                         }
