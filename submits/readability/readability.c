@@ -36,14 +36,13 @@ int count_letters(string text)
 int count_words(string textb)
 {
     int n = strlen(textb);
-    int words = 0;
+    int words = 1;
     for (int i = 0; i < n; i++)
     {
         if (textb[i] == ' ')
         {
             words += 1;
         }
-        if (textb[i] ==)
     }
 
     return words;
