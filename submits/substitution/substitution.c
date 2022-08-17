@@ -8,6 +8,7 @@ int key_validation(string arg_v[], int arg_c);
 
 int main(int argc, string argv[])
 {
+    
    int open = key_validation(argv[], argc)
    if (open == 0)
    {
