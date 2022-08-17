@@ -37,7 +37,7 @@ int count_words(string textb)
     int words = 0;
     for (int i = 0; i < n; i++ )
     {
-        if ()
+        if (strcmp(textb[i], "32") == )
     }
     return letters;
 }
