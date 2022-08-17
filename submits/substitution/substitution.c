@@ -39,6 +39,19 @@ int main(int argc, string argv[])
             tab[key[i] - 'a'] += 1;
         }
      }
+     int tab = 1;
+     for (int i = 0; i < 26; i++)
+     {
+         tab = tab * tab[i];
+     }
+     if (score == 1)
+     {
+        printf("Key passed for a second time\n");
+     }
+     else
+     {
+       printf("Key must contain 26 letters.\n");
+     }
    } // tylko wtedy program puszcza dalej
 
 
