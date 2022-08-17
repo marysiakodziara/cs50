@@ -15,8 +15,8 @@ int main(int argc, string argv[])
     {
         string origin = get_string("plaintext: ");
         // tutaj wrzucam to do funkcji szyfrującej
-        //string ciphered = niesitniejącafunkcaj(origin);
-        //printf("%s\n", ciphered);
+        string ciphered = cipher(origin, argv);
+        printf("%s\n", ciphered);
     }
     else          // po tym wyrzucam z programu
     {
@@ -86,7 +86,18 @@ string cipher(string text, string arg_v[])
    int len = strlen(arg_v[1]);
    for (int i = 0; i < len; i++)
    {
-      key[i] = tab3[i]
+      if (isupper(key[i]))
+      {
+         key[i] = tab3[key[i] - 'A'];
+      }
+      else if (islower(key[i]))
+      {
+         key[i] = tab3[key[i] - 'a'];
+      }
+      else
+      {
+         key[i] = key[i];
+      }
    }
-
+   return key;
 }
