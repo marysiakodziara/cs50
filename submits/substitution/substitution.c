@@ -40,7 +40,8 @@ int key_validation(string arg_v[], int arg_c)
             if (isupper(key[i]) == 0 && islower(key[i]) == 0)
             {
                 score += 1;
-                if (score == 0)
+            }
+            if (score == 0)
                 {
                     int tab[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
                     for (int k = 0; k < 26; k++)
@@ -64,7 +65,6 @@ int key_validation(string arg_v[], int arg_c)
                         answer = 0;
                     }
                 }
-            }
         }
     }
     else
