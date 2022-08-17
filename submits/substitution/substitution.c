@@ -81,23 +81,22 @@ int key_validation(string arg_v[], int arg_c)
 
 string cipher(string text, string arg_v[])
 {
-   char tab3[26];
    string key = arg_v[1];
    int len = strlen(arg_v[1]);
    for (int i = 0; i < len; i++)
    {
-      if (isupper(key[i]))
+      if (isupper(text[i]))
       {
-         key[i] = tab3[key[i] - 'A'];
+         text[i] = key[text[i] - 'A'];
       }
-      else if (islower(key[i]))
+      else if (islower(text[i]))
       {
-         key[i] = tab3[key[i] - 'a'];
+         text[i] = key[text[i] - 'a'];
       }
       else
       {
-         key[i] = key[i];
+         text[i] = text[i];
       }
    }
-   return key;
+   return text;
 }
