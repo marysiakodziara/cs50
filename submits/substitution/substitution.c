@@ -12,9 +12,9 @@ int main(int argc, string argv[])
      string key = argv[1]
      for (int i = 0; i < command; i++ )
      {
-        if (isupper(key[i]) || islower(key[i]))
+        if (isupper(key[i]) != 0 && islower(key[i]) != 0)
         {
-            
+           printf("Key must contain 26 characters.\n");
         }
 
      }
