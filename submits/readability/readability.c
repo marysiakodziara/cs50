@@ -10,7 +10,7 @@ int count_sentences(string text);
 int main(void)
 {
     string text1 = get_string("Write text sample: ");
-    int L = 
+    int L = (count_letters(text1) / count_words(text1))
     int index =
 }
 
