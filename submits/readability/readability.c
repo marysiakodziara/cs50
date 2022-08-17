@@ -4,7 +4,8 @@
 #include <string.h>
 
 int count_letters(string text);
-int count_words(string textb);
+int count_words(string text);
+int count_sentences(string text);
 
 int main(void)
 {
@@ -13,6 +14,8 @@ int main(void)
     printf("%i letters\n", lett);
     int word = count_words(text1);
     printf("%i words\n", word);
+    int sen = count_sentences(text1);
+    printf("%i sentences\n", sen);
 }
 
 int count_letters(string text)
@@ -33,17 +36,40 @@ int count_letters(string text)
     return letters;
 }
 
-int count_words(string textb)
+int count_words(string text)
 {
-    int n = strlen(textb);
+    int n = strlen(text);
     int words = 1;
     for (int i = 0; i < n; i++)
     {
-        if (textb[i] == ' ')
+        if (text[i] == ' ')
         {
             words += 1;
         }
     }
 
     return words;
+}
+
+int count_sentences(string text)
+{
+    int n = strlen(text);
+    int sentence = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if (text[i] == '.')
+        {
+            sentence += 1;
+        }
+        else if (text[i] == '!')
+        {
+            sentence += 1;
+        }
+        else if (text[i] == '?')
+        {
+            sentence += 1;
+        }
+    }
+
+    return sentence;
 }
