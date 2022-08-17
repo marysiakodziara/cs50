@@ -12,7 +12,7 @@ int main(void)
     string text1 = get_string("Write text sample: ");
     int L = (count_letters(text1) / count_words(text1)) * 100;
     int S = (count_sentences(text1) / count_words(text1)) * 100;
-    int index = 0.0588 * L - 0.296 * S - 15.8;
+    int index = (0.0588 * L) - (0.296 * S) - 15.8;
     if (index > 16)
     {
         printf("Grade 16+\n");
