@@ -62,5 +62,8 @@ int key_validation(string arg_v[], int arg_c)
         }
      }
    }
-return 1;
+else
+{
+    return 1;
+}
 }
