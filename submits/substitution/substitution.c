@@ -39,6 +39,11 @@ int key_validation(string arg_v[], int arg_c)
         {
             if (isaplpha(key[i]))
             {
+                score += 1;
+            }
+        }
+            if (score == 0)
+                {
                     int tab[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
                     for (int k = 0; k < 26; k++)
                     {
