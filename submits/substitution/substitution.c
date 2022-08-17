@@ -9,7 +9,7 @@ int key_validation(string arg_v[], int arg_c);
 int main(int argc, string argv[])
 {
 
-   int open = key_validation(argv, argc)
+   int open = key_validation(argv, argc);
    if (open == 0)
    {
     printf("valid key\n");
@@ -35,21 +35,21 @@ int key_validation(string arg_v[], int arg_c)
            if (score == 0)
            {
               int tab[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-              for (int i = 0; i < 26; i++)
+              for (int k = 0; k < 26; k++)
               {
-                  if (isupper(key[i]))
+                  if (isupper(key[k]))
                   {
-                      tab[key[i] - 'A'] += 1;
+                      tab[key[k] - 'A'] += 1;
                   }
-                  else if (islower(key[i]))
+                  else if (islower(key[k]))
                   {
-                      tab[key[i] - 'a'] += 1;
+                      tab[key[k] - 'a'] += 1;
                   }
               }
               int tab2 = 1;
-              for (int i = 0; i < 26; i++)
+              for (int z = 0; z < 26; z++)
               {
-                      tab2 = tab2 * tab[i];
+                      tab2 = tab2 * tab[z];
               }
                if (tab2 == 1)
               {
