@@ -39,12 +39,12 @@ int main(int argc, string argv[])
             tab[key[i] - 'a'] += 1;
         }
      }
-     int tab = 1;
+     int tab2 = 1;
      for (int i = 0; i < 26; i++)
      {
-         tab = tab * tab[i];
+         tab2 = tab2 * tab[i];
      }
-     if (score == 1)
+     if (tab2 == 1)
      {
         printf("Key passed for a second time\n");
      }
