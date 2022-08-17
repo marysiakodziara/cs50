@@ -13,7 +13,7 @@ int main(void)
     int L = (count_letters(text1) / count_words(text1)) * 100;
     int S = (count_sentences(text1) / count_words(text1)) * 100;
     int index = (0.0588 * L) - (0.296 * S) - 15.8;
-    printf("%i\n", L);
+    printf("%i, %i\n", L, count_letters(text1));
     printf("%i\n", S);
     printf("%i\n", index);
     if (index > 16)
