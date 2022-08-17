@@ -31,7 +31,7 @@ int key_validation(string arg_v[], int arg_c)
 {
     int answer;
     int command = strlen(arg_v[arg_c - 1]);
-    if (arg_c == 2  && command == 26)
+    if (arg_c == 2  && command == 26) // sprawdza czy klucz jest i czy jest wyst długi
     {
         int score = 0;
         string key = arg_v[1];
