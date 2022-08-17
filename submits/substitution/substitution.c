@@ -6,7 +6,7 @@
 
 int main(int argc, string argv[])
 {
-   int command = strlen(argv[1]);
+   int command = strlen(argv[argc - 1]);
    if (argc == 2  && command == 26)
    {
 
