@@ -5,6 +5,7 @@
 #include <math.h>
 
 int key_validation(string arg_v[], int arg_c);
+string cipher(string text);
 
 int main(int argc, string argv[])
 {
@@ -13,6 +14,9 @@ int main(int argc, string argv[])
     if (open == 0) // po tym przechodzę do szyfru
     {
         string origin = get_string("plaintext: ");
+        // tutaj wrzucam to do funkcji szyfrującej
+        //string ciphered = niesitniejącafunkcaj(origin);
+        //printf("%s\n", ciphered);
     }
     else          // po tym wyrzucam z programu
     {
@@ -73,4 +77,10 @@ int key_validation(string arg_v[], int arg_c)
     {
         return 0;
     }
+}
+
+string cipher(string text)
+{
+   string tab3[26];
+   
 }
