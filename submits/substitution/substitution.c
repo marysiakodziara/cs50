@@ -3,8 +3,19 @@
 
 int main(int argc, string argv[])
 {
-   argc == 2  && strlen(argv[1]) == 26 // tylko wtedy program puszcza dalej
-   argc == 1 // program wyświetla Usage: ./substitution key
-   argc == 2 && strlen(argv[1]) != 26 // program wyświetla Key must contain 26 characters.
-   
+
+   if (argc == 2  && strlen(argv[1]) == 26)
+   {
+
+   } // tylko wtedy program puszcza dalej
+   else if (argc == 1)
+   {
+     printf("Usage: ./substitution key\n");
+   }
+   // program wyświetla Usage: ./substitution key
+   else if (argc == 2 && strlen(argv[1]) != 26)
+   {
+     printf("Key must contain 26 characters.\n");
+   } // program wyświetla Key must contain 26 characters.
+
 }
