@@ -17,10 +17,12 @@ int main(int argc, string argv[])
         // tutaj wrzucam to do funkcji szyfrującej
         string ciphered = cipher(origin, argv);
         printf("ciphertext: %s\n", ciphered);
+        return 0;
     }
     else          // po tym wyrzucam z programu
     {
         printf("invalid key\n");
+        return 1;
     }
 
 }
