@@ -20,9 +20,8 @@ int main(int argc, string argv[])
     else          // po tym wyrzucam z programu
     {
         printf("invalid key\n");
-        return open;
     }
-
+return open;
 }
 
 int key_validation(string arg_v[], int arg_c)
