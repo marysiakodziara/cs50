@@ -2,13 +2,11 @@
 #include <stdio.h>
 
 int collatz(int n);
-int sum(int n, int sum2);
 
 int main(void)
 {
-  int score = 0;
   int number = get_int("Give the number: ");
-  int sum3 = sum(number, score);
+  int sum3 = collatz(number);
   printf("%i\n", sum3);
 }
 
