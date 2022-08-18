@@ -30,7 +30,7 @@ int key_validation(string arg_v[], int arg_c)
     int answer;
     int command = strlen(arg_v[arg_c - 1]);
     int score = 0;
-    string key = arg_v[1]; 
+    string key = arg_v[1];
     if (command == 26)
     {
         for (int i = 0; i < command; i++) //sprawdzam czy wszystkie znaki są alfabetyczne
@@ -47,13 +47,13 @@ int key_validation(string arg_v[], int arg_c)
 
         for(int k = 0; k < command; k++)
         {
-        for(int z = 0; z < command; z++)
-        {
+           for(int z = 0; z < command; z++)
+           {
                 if(key[k] == key[z] && k != z)
                 {
                       same += 1;
                 }
-        }
+           }
         }
     // powyżej sprawdza czy znaki się nie powtarzają
     if (arg_c == 2  && command == 26 && score == 26 && same == 0) // sprawdza czy klucz jest i czy jest wyst długi
