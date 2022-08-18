@@ -29,7 +29,7 @@ int sum(int n)
   {
     to_one = collatz(n);
     sum2 += 1;
+    return sum2;
   }
-  return sum2;
 }
 
