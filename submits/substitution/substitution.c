@@ -47,7 +47,7 @@ int key_validation(string arg_v[], int arg_c)
 
         for(int k = 0; k < command; k++)
         {
-           for(int z = 0; z < command; z++)
+           for(int z = 0; z <= k; z++)
            {
                 if(key[k] == key[z] && k != z)
                 {
