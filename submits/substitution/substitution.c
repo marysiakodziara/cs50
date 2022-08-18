@@ -15,7 +15,7 @@ int main(int argc, string argv[])
         string origin = get_string("plaintext: ");
         // tutaj wrzucam to do funkcji szyfrującej
         string ciphered = cipher(origin, argv);
-        printf("ciphertext:%s\n", ciphered);
+        printf("ciphertext: %s\n", ciphered);
     }
     else          // po tym wyrzucam z programu
     {
