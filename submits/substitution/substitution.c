@@ -10,7 +10,7 @@ int main(int argc, string argv[])
 {
 
     int open = key_validation(argv, argc);
-    if (open == 1) // po tym przechodzę do szyfru
+    if (open == 0) // po tym przechodzę do szyfru
     {
         string origin = get_string("plaintext: ");
         // tutaj wrzucam to do funkcji szyfrującej
@@ -57,11 +57,11 @@ int key_validation(string arg_v[], int arg_c)
     // powyżej sprawdza czy znaki się nie powtarzają
     if (arg_c == 2  && command == 26 && score == 26 && same == 0) // sprawdza czy klucz jest i czy jest wyst długi
     {
-       answer = 1;
+       answer = 0;
     }
     else
     {
-       answer = 0;
+       answer = 1;
     }
 
     return answer;
