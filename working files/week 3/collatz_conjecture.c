@@ -8,7 +8,7 @@ int main(void)
 {
   int score = 0;
   int number = get_int("Give the number: ");
-  int sum3 = sum(number);
+  int sum3 = sum(number, score);
   printf("%i\n", sum3);
 }
 
