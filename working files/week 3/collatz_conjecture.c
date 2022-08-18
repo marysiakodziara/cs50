@@ -22,14 +22,3 @@ int collatz(int n)
     return collatz(3 * n + 1);
 }
 
-int sum(int n, int sum2)
-{
-  int to_one = n;
-  while (to_one != 1)
-  {
-    sum2 += 1;
-    to_one = collatz(n);
-  }
-return sum2;
-}
-
