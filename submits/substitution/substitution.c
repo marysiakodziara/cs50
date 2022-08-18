@@ -57,14 +57,14 @@ int key_validation(string arg_v[], int arg_c)
     // powyżej sprawdza czy znaki się nie powtarzają
     if (arg_c == 2  && command == 26 && score == 26 && same == 0) // sprawdza czy klucz jest i czy jest wyst długi
     {
-       return answer = 1;
+       answer = 1;
     }
     else
     {
-        return answer = 0;
+       answer = 0;
     }
 
-
+    return answer; 
 }
 
 string cipher(string text, string arg_v[])
