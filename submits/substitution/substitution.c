@@ -81,10 +81,6 @@ string cipher(string text, string arg_v[])
       {
          text[i] = tolower(key[text[i] - 'a']);
       }
-      else
-      {
-         text[i] = text[i];
-      }
    }
    return text;
 }
