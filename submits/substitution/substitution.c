@@ -11,7 +11,7 @@ int main(int argc, string argv[])
 {
 
     int open = key_validation(argv, argc);
-    if (open == 0) // po tym przechodzę do szyfru
+    if (open == 1) // po tym przechodzę do szyfru
     {
         string origin = get_string("plaintext: ");
         // tutaj wrzucam to do funkcji szyfrującej
@@ -31,9 +31,7 @@ int key_validation(string arg_v[], int arg_c)
 {
     int answer;
     int command = strlen(arg_v[arg_c - 1]);
-    if (arg_c == 2  && command == 26) // sprawdza czy klucz jest i czy jest wyst długi
-    {
-        int score = 0;
+    int score = 0;
         string key = arg_v[1];
         for (int i = 0; i < command; i++) //sprawdzam czy wszystkie znaki są alfabetyczne
         {
@@ -42,23 +40,31 @@ int key_validation(string arg_v[], int arg_c)
                 score += 1;
             }
         }
-        int same = 0;
-        if (score == 26)
+    // powyżej deklaracja zmiennych i czy znaki są alfabetyczne
+
+    int same = 0;
+
+        for(int k = 0; k < command; k++)
         {
-            for(int k = 0; k < command; k++)
-            {
-                for(int z = 0; z < command; z++)
+        for(int z = 0; z < command; z++)
+        {
+                if(key[k] == key[z] && k != z)
                 {
-                   if(key[k] == key[z] && k != z)
-                   {
                       same += 1;
-                   }
                 }
-            }
         }
+        }
+    // powyżej sprawdza czy znaki się nie powtarzają
+    if (arg_c == 2  && command == 26 && score == 26 && same == 0) // sprawdza czy klucz jest i czy jest wyst długi
+    {
+       return answer = 1;
+    }
+    else
+    {
+        return answer = 0;
+    }
 
 
-}
 }
 
 string cipher(string text, string arg_v[])

@@ -1,3 +1,8 @@
+ && score == 26 && same == 0
+
+
+
+
 else if (argc == 1)
    {
      printf("Usage: ./substitution key\n");
@@ -103,4 +108,38 @@ if (score == 0)
     {
         return 0;
     }
+}
+
+
+
+
+// nowy kod na sprawdzenie czy litery się nie powtarzają, bez zmian w zagnieżdżeniu ifów
+if (arg_c == 2  && command == 26) // sprawdza czy klucz jest i czy jest wyst długi
+    {
+        int score = 0;
+        string key = arg_v[1];
+        for (int i = 0; i < command; i++) //sprawdzam czy wszystkie znaki są alfabetyczne
+        {
+            if (isalpha(key[i]))
+            {
+                score += 1;
+            }
+        }
+        int same = 0;
+        if (score == 26)
+        {
+            for(int k = 0; k < command; k++)
+            {
+                for(int z = 0; z < command; z++)
+                {
+                   if(key[k] == key[z] && k != z)
+                   {
+                      same += 1;
+                   }
+                }
+            }
+        }
+
+
+}
 }
