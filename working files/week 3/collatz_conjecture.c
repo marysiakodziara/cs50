@@ -24,10 +24,10 @@ int collatz(int n)
 
 int sum(int n, int sum2)
 {
-  sum2 += 1;
   int to_one = n;
   while (to_one != 1)
   {
+    sum2 += 1;
     to_one = collatz(n);
   }
 return sum2;
