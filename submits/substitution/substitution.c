@@ -70,7 +70,7 @@ int key_validation(string arg_v[], int arg_c)
 string cipher(string text, string arg_v[])
 {
    string key = arg_v[1];
-   int len = strlen(arg_v[1]);
+   int len = strlen(text);
    for (int i = 0; i < len; i++)
    {
       if (isupper(text[i]))
