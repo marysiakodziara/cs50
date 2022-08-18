@@ -42,13 +42,15 @@ int key_validation(string arg_v[], int arg_c)
                 score += 1;
             }
         }
+        int same = 0;
         if (score == 26)
         {
             for(int k = 0; k < command; k++)
             {
                 for(int z = 0; z < command; z++)
                 {
-                    
+                   if(key[k] == key[z] && k != z)
+                   
                 }
             }
         }
