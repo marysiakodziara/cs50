@@ -14,10 +14,11 @@ int main(void)
 
 int collatz(int n)
 {
+    int how_many;
     if (n == 1)
     return 1;
     else if ((n % 2) == 0)
-    return collatz(n/2);
+    return  collatz(n/2);
     else
     return collatz(3 * n + 1);
 }
