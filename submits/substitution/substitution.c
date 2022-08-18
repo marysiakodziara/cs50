@@ -2,7 +2,6 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
-#include <math.h>
 
 int key_validation(string arg_v[], int arg_c);
 string cipher(string text, string arg_v[]);
