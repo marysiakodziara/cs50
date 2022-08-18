@@ -6,10 +6,9 @@ int sum(int n);
 
 int main(void)
 {
-  int k2 = 0;
   int number = get_int("Give the number: ");
-  int one = collatz(number);
-  printf("%i\n", one);
+  int sum3 = sum(number);
+  printf("%i\n", sum3);
 }
 
 int collatz(int n)
@@ -22,13 +21,15 @@ int collatz(int n)
     return collatz(3 * n + 1);
 }
 
-int sum(int n);
+int sum(int n)
 {
   int sum2 = 1;
-  while (n != 1)
+  int to_one = n;
+  while (to_one != 1)
   {
-    int one = collatz(number);
+    to_one = collatz(n);
     sum2 += 1;
   }
+  return sum2;
 }
 
