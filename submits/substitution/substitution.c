@@ -37,12 +37,21 @@ int key_validation(string arg_v[], int arg_c)
         string key = arg_v[1];
         for (int i = 0; i < command; i++) //sprawdzam czy wszystkie znaki są alfabetyczne
         {
-            if (isalpha(key[i]) == 0)
+            if (isalpha(key[i]))
             {
-                answer = 1;
+                score += 1;
             }
         }
         if (score == 26)
+        {
+            for(int k = 0; k < command; k++)
+            {
+                for(int z = 0; z < command; z++)
+                {
+                    
+                }
+            }
+        }
 
 }
 
