@@ -43,43 +43,7 @@ int key_validation(string arg_v[], int arg_c)
             }
         }
         if (score == 26)
-                {
-                    int tab[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-                    for (int k = 0; k < 26; k++)
-                    {
-                        if (isupper(key[k])) // sprawdza czy litery się nie powtarzają
-                        {
-                            tab[key[k] - 'A'] += 1;
-                        }
-                        else if (islower(key[k]))
-                        {
-                            tab[key[k] - 'a'] += 1;
-                        }
-                    }
-                    int tab2 = 1;
-                    for (int z = 0; z < 26; z++)
-                    {
-                        tab2 = tab2 * tab[z];
-                    }
-                    if (tab2 == 1)
-                    {
-                        answer = 0;
-                    }
-                }
-        }
-    else
-    {
-        answer = 1;
-    }
-
-    if (answer == 1)
-    {
-        return 1;
-    }
-    else
-    {
-        return 0;
-    }
+               
 }
 
 string cipher(string text, string arg_v[])
