@@ -6,7 +6,8 @@ int collatz(int n);
 int main(void)
 {
   int number = get_int("Give the number: ");
-  printf("%i\n", number);
+  int one = collatz(number);
+  printf("%i\n", one);
 }
 
 int collatz(int n)
