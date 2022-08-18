@@ -50,11 +50,15 @@ int key_validation(string arg_v[], int arg_c)
                 for(int z = 0; z < command; z++)
                 {
                    if(key[k] == key[z] && k != z)
-                   
+                   {
+                      same += 1;
+                   }
                 }
             }
         }
 
+
+}
 }
 
 string cipher(string text, string arg_v[])
