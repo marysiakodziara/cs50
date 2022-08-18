@@ -24,7 +24,6 @@ int collatz(int n)
 
 int sum(int n, int sum2)
 {
-  int sum2 = 0;
   sum2 += 1;
   int to_one = n;
   while (to_one != 1)
