@@ -21,7 +21,7 @@ int main(int argc, string argv[])
     {
         printf("invalid key\n");
     }
-return open;
+    return open;
 }
 
 int key_validation(string arg_v[], int arg_c)
@@ -44,24 +44,24 @@ int key_validation(string arg_v[], int arg_c)
 
     int same = 0;
 
-        for(int k = 0; k < command; k++)
+    for (int k = 0; k < command; k++)
+    {
+        for (int z = 0; z < k; z++)
         {
-           for(int z = 0; z < k; z++)
-           {
-                if(key[k] == key[z] && k != z)
-                {
-                      same += 1;
-                }
-           }
+            if (key[k] == key[z] && k != z)
+            {
+                same += 1;
+            }
         }
+    }
     // powyżej sprawdza czy znaki się nie powtarzają
     if (arg_c == 2  && command == 26 && score == 26 && same == 0) // sprawdza czy klucz jest i czy jest wyst długi
     {
-       answer = 0;
+        answer = 0;
     }
     else
     {
-       answer = 1;
+        answer = 1;
     }
 
     return answer;
@@ -69,18 +69,18 @@ int key_validation(string arg_v[], int arg_c)
 
 string cipher(string text, string arg_v[])
 {
-   string key = arg_v[1];
-   int len = strlen(text);
-   for (int i = 0; i < len; i++)
-   {
-      if (isupper(text[i]))
-      {
-         text[i] = toupper(key[text[i] - 'A']);
-      }
-      else if (islower(text[i]))
-      {
-         text[i] = tolower(key[text[i] - 'a']);
-      }
-   }
-   return text;
+    string key = arg_v[1];
+    int len = strlen(text);
+    for (int i = 0; i < len; i++)
+    {
+        if (isupper(text[i]))
+        {
+            text[i] = toupper(key[text[i] - 'A']);
+        }
+        else if (islower(text[i]))
+        {
+            text[i] = tolower(key[text[i] - 'a']);
+        }
+    }
+    return text;
 }
