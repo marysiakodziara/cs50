@@ -31,5 +31,6 @@ int sum(int n)
     sum2 += 1;
     return sum2;
   }
+return sum2;
 }
 
