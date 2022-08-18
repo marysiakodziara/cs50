@@ -30,7 +30,9 @@ int key_validation(string arg_v[], int arg_c)
     int answer;
     int command = strlen(arg_v[arg_c - 1]);
     int score = 0;
-        string key = arg_v[1];
+    string key = arg_v[1]; 
+    if (command == 26)
+    {
         for (int i = 0; i < command; i++) //sprawdzam czy wszystkie znaki są alfabetyczne
         {
             if (isalpha(key[i]))
@@ -38,7 +40,8 @@ int key_validation(string arg_v[], int arg_c)
                 score += 1;
             }
         }
-    // powyżej deklaracja zmiennych i czy znaki są alfabetyczne
+    }
+    // powyżej deklaracja zmiennych (długość szyfru, output funkcji) i czy znaki są alfabetyczne
 
     int same = 0;
 
