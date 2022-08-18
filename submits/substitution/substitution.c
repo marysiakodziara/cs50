@@ -71,7 +71,7 @@ string cipher(string text, string arg_v[])
 {
    string key = arg_v[1];
    int len = strlen(arg_v[1]);
-   for (int i = 0; i <= len; i++)
+   for (int i = 0; i < len; i++)
    {
       if (isupper(text[i]))
       {
