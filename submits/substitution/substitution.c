@@ -59,8 +59,7 @@ int key_validation(string arg_v[], int arg_c)
     {
         answer = 0;
     }
-    else
-    {
+    else {
         answer = 1;
     }
 
