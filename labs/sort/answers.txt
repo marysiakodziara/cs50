@@ -10,4 +10,5 @@ It matches merge sort's time complexity definition - O(n log n).
 
 sort3 uses: selection sort
 
-How do you know?: real time of running reversed files (worst case scenario) was a little better comparing to sort1's time but there was a very 
+How do you know?: real time of running reversed files (worst case scenario) was a little better comparing to sort1's time.
+Moreover the difference in time of running best and worst case scenario was insignificant. 
