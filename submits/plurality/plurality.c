@@ -85,7 +85,6 @@ void print_winner(void)
     if (candidate_count == 1)
     {
         printf("%s\n", candidates[0].name);
-        return;
     }
     for (int i = 0; i <= (candidate_count - 1); i++)
     {
