@@ -12,8 +12,8 @@ int main(void)
 
 void draw(int n)
 {
-    if (n == 1)
- 
+    if (n == 0)
+    
     else
     {
         return draw(n-1);
