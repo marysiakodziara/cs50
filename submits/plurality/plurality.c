@@ -16,7 +16,7 @@ candidate;
 // Array of candidates
 candidate candidates[MAX];
 
-// Number of candidates
+// Number of candidatesmake
 int candidate_count;
 
 // Function prototypes
