@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 typedef struct{
     string name;
@@ -20,7 +21,7 @@ int main(void)
     {
         if (strcmp(people[i].name, "David") == 0)
         {
-            printf("Found %s\n", poeple[i].number);
+            printf("Found %s\n", people[i].number);
             return 0;
         }
     }
