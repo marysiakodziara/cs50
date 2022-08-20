@@ -13,7 +13,7 @@ int main(void)
 void draw(int n)
 {
     if (n == 1)
-    printf("*");
+ 
     else
     {
         return draw(n-1);
