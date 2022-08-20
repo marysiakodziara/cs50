@@ -12,15 +12,18 @@ int main(void)
 
 void draw(int n)
 {
-    if (n == 0)
-    return 1;
-    else
+    if (n == 1)
     {
-        return draw(n-1);
-        for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++)
         {
             printf("*");
         }
+    n++;
+    }
+    else
+    {
+        return draw(n-1);
+
     }
 
 }
