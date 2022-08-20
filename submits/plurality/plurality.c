@@ -84,7 +84,7 @@ void print_winner(void)
     int k = 0;
     if (candidate_count == 1)
     {
-        printf("%s\n", candidates[0].name);
+        printf("%s\n", candidates[candidate_count - 1].name);
     }
     else {
     for (int i = 0; i < (candidate_count - 1); i++)
