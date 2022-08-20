@@ -80,11 +80,19 @@ bool vote(string name)
 void print_winner(void)
 {
     int k = 0;
+    for (int i = 0; i < (candidate_count - 1); i++)
+    {
+        if (candidates[i].votes >= candidates[i+1].votes)
+            k = candidates[i].votes;
+        else
+            k = candidates[i+1];
+    }
+
     for (int i = 0; i < candidate_count; i++)
     {
-        if (candidates[i].votes <= candidates[i+1].votes)
+        if ( candidates[i].votes == k)
         {
-            
+            printf("%s\n", candidates[i].name
         }
     }
 
