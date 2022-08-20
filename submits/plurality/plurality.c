@@ -58,12 +58,7 @@ int main(int argc, string argv[])
             printf("Invalid vote.\n");
         }
     }
-
-    for (int i = 0; i < candidate_count; i++)
-    {
-        printf("%i, ", candidates[i].votes);
-    }
-
+ 
     // Display winner of election
     print_winner();
 }
@@ -89,10 +84,7 @@ void print_winner(void)
     int k = 0;
     if (candidate_count == 1)
     {
-        if (candidates[0].votes > 0)
-        {
-            
-        }
+        printf("%s\n", candidates[0].name);
     }
     for (int i = 0; i < (candidate_count - 1); i++)
     {
