@@ -13,7 +13,14 @@ int main(void)
 void draw(int n)
 {
     if (n == 0)
-    return n;
+    return 1;
     else
-    return 
+    {
+        return draw(n-1);
+        for (int i = 1; i <= n; i++)
+        {
+            printf("*");
+        }
+    }
+
 }
