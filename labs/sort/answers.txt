@@ -1,7 +1,7 @@
 sort1 uses: bubble sort
 
 How do you know?: sort1 had the longest real time of sorting reversed50000.txt although it went fairly quickly trough sorted50000.txt.
-In comparison to bubble sort's O(n^2)and O
+I run this two files to check the difference between best and worst case scenario.
 
 sort2 uses: TODO
 
