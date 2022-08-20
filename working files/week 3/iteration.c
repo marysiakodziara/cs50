@@ -17,10 +17,7 @@ void draw(int n)
     else
     {
         return draw(n-1);
-        for (int i = 1; i <= n; i++)
-        {
-            printf("*");
-        }
+
 
     }
 
