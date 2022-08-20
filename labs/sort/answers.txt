@@ -6,8 +6,8 @@ I run this two files to check the difference between best and worst case scenari
 sort2 uses: merge sort
 
 How do you know?: sort 2 has the best times in running reversed and sorted files with very small difference between them.
-It matches merge sort's time 
+It matches merge sort's time complexity definition - O(n log n).
 
-sort3 uses: TODO
+sort3 uses: selection sort
 
-How do you know?: TODO
+How do you know?: real time of running reversed files (worst case scenario) was a little better comparing to sort1's time but there was a very 
