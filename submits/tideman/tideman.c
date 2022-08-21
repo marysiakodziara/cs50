@@ -139,7 +139,7 @@ void record_preferences(int ranks[])
 // Record pairs of candidates where one is preferred over the other
 void add_pairs(void)
 {
-     int x;
+    int x;
     int z;
     for (int i = 0; i < (candidate_count - 1); i++)
     {
@@ -147,6 +147,7 @@ void add_pairs(void)
         {
             x = ranks[i];
             z = ranks[j];
+            if (x < z)
             preferences[x][z] += 1;
         }
     }
