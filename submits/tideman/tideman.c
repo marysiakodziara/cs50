@@ -84,15 +84,15 @@ int main(int argc, string argv[])
                 printf("Invalid vote.\n");
             }
         }
-        for (int z = 0; z < candidate_count; z++)
-        {
-            printf("%i, ", ranks[z]);
-        }
 
 
         record_preferences(ranks);
 
         printf("\n");
+    }
+    for (int z = 0; z < candidate_count; z++)
+    {
+        printf("%i, ", ranks[z]);
     }
 
     add_pairs();
