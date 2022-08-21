@@ -90,10 +90,7 @@ int main(int argc, string argv[])
 
         printf("\n");
     }
-    for (int z = 0; z < candidate_count; z++)
-    {
-        printf("%i, ", ranks[z]);
-    }
+
 
     add_pairs();
     sort_pairs();
