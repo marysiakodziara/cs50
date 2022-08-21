@@ -94,7 +94,7 @@ void print_winner(void)
     {
         for (int i = 0; i < (candidate_count); i++)
         {
-            if (candidates[i].votes >= k)
+            cif (candidates[i].votes >= k)
             {
                 k = candidates[i].votes;
             }
