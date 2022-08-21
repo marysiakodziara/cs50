@@ -67,12 +67,6 @@ int main(int argc, string argv[])
     pair_count = 0;
     int voter_count = get_int("Number of voters: ");
 
-     for (int z = 0; z < candidate_count; z++)
-        {
-            printf("%s, ", candidates[z]);
-        }
-        printf("\n");
-
     // Query for votes
     for (int i = 0; i < voter_count; i++)
     {
@@ -110,7 +104,7 @@ bool vote(int rank, string name, int ranks[])
     {
         if (strcmp(candidates[i], name) == 0)
         {
-            
+
             return true;
         }
     }
