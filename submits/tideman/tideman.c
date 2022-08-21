@@ -67,11 +67,17 @@ int main(int argc, string argv[])
     pair_count = 0;
     int voter_count = get_int("Number of voters: ");
 
+     for (int z = 0; z < candidate_count; z++)
+        {
+            printf("%s, ", candidates[z]);
+        }
+
     // Query for votes
     for (int i = 0; i < voter_count; i++)
     {
         // ranks[i] is voter's ith preference
         int ranks[candidate_count];
+
 
         // Query for each rank
         for (int j = 0; j < candidate_count; j++)
