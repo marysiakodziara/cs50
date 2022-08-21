@@ -149,7 +149,7 @@ void add_pairs(void)
             z = preferences[j][i];
             if (x < z)
             {
-                
+                pairs[]
             }
         }
     }
