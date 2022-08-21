@@ -88,7 +88,6 @@ int main(int argc, string argv[])
             if (!vote(j, name, ranks))
             {
                 printf("Invalid vote.\n");
-                return 3;
             }
         }
 
