@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 // Max number of candidates
 #define MAX 9
@@ -109,9 +110,9 @@ bool vote(int rank, string name, int ranks[])
         else
         {
             ranks[rank] += 0;
-            return false;
         }
     }
+    return false;
 }
 
 // Update preferences given one voter's ranks
