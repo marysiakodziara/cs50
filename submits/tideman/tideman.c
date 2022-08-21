@@ -97,8 +97,9 @@ int main(int argc, string argv[])
         printf("\n");
     }
 
-
     add_pairs();
+    for()
+
     sort_pairs();
     lock_pairs();
     print_winner();
