@@ -145,10 +145,12 @@ void add_pairs(void)
     {
         for (int j = i +1; j < candidate_count; j++)
         {
-            x = ranks[i];
-            z = ranks[j];
+            x = preferences[i][j];
+            z = preferences[j][i];
             if (x < z)
-            preferences[x][z] += 1;
+            {
+                
+            }
         }
     }
     return;
