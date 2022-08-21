@@ -71,6 +71,7 @@ int main(int argc, string argv[])
         {
             printf("%s, ", candidates[z]);
         }
+        printf("\n");
 
     // Query for votes
     for (int i = 0; i < voter_count; i++)
