@@ -174,7 +174,15 @@ void swap(int a*, int b*)
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
-    for (int i = )
+    int lenght = MAX * (MAX - 1) / 2;
+    for (int i = 0; i < lenght - 1; i++)
+    {
+        int max_pos = i //index of the max element
+        for (int j = i +1; j < lenght; j++)
+        {
+            if (pairs[pair_count].winner)
+        }
+    }
 
     return;
 }
