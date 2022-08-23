@@ -176,7 +176,7 @@ void sort_pairs(void)
             int a = pairs[j].winner;
             int b = pairs[j].loser;
             int d = pairs[max_pos].winner;
-            int e = pairs[max_pos].loserl
+            int e = pairs[max_pos].loser;
             if (preferences[a][b] > preferences[d][e])
             {
                 max_pos = j;
