@@ -167,7 +167,7 @@ void add_pairs(void)
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
-    int lenght = MAX * (MAX - 1) / 2;
+    int lenght = pair_count;
     for (int i = 0; i < lenght - 1; i++)
     {
         int max_pos = i //index of the max element
