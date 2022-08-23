@@ -29,7 +29,7 @@ int candidate_count;
 // Function prototypes
 bool vote(int rank, string name, int ranks[]);
 void record_preferences(int ranks[]);
-void swap(int* a, int* b);
+void swap(int *a, int *b);
 void add_pairs(void);
 void sort_pairs(void);
 void lock_pairs(void);
@@ -164,7 +164,7 @@ void add_pairs(void)
     return;
 }
 
-void swap(int* a, int* b)
+void swap(int *a, int *b)
 {
     int tmp = *a;
     *a = *b
