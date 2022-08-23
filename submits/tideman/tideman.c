@@ -170,7 +170,7 @@ void sort_pairs(void)
     int lenght = pair_count;
     for (int i = 0; i < lenght - 1; i++)
     {
-        int max_pos = i //index of the max element
+        int max_pos = i; //index of the max element
         for (int j = i + 1; j < lenght; j++)
         {
             int a = pairs[j].winner;
