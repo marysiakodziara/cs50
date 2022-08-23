@@ -157,7 +157,7 @@ void add_pairs(void)
                 pairs[pair_count].winner = j;
                 pairs[pair_count].loser = i;
             }
-            pair_count++; //im using pair_count in here so that it wont 'restart' in the next iteration of i-loop
+            pair_count++;
         }
     }
     return;
