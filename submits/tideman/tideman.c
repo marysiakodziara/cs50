@@ -137,13 +137,6 @@ void record_preferences(int ranks[])
     return;
 }
 
-void swap(int a*, int b*)
-{
-    int tmp = *a;
-    *a = *b
-    *b = tmp;
-}
-
 // Record pairs of candidates where one is preferred over the other
 void add_pairs(void)
 {
@@ -171,10 +164,17 @@ void add_pairs(void)
     return;
 }
 
+void swap(int a*, int b*)
+{
+    int tmp = *a;
+    *a = *b
+    *b = tmp;
+}
+
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
-    // TODO
+    
     return;
 }
 
