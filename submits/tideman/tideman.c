@@ -178,9 +178,17 @@ void sort_pairs(void)
     for (int i = 0; i < lenght - 1; i++)
     {
         int max_pos = i //index of the max element
-        for (int j = i +1; j < lenght; j++)
+        for (int j = i + 1; j < lenght; j++)
         {
-            if (pairs[pair_count].winner)
+            if (pairs[j].winner > pairs[max_pos].winner)
+            {
+                max_pos = j;
+            }
+        }
+        if (max_pos != i)
+        {
+            swap(&pairs[i].winner, &pairs[max_pos].winner);
+            swap(&pairs[i].loser, &pairs[max_pos].loser);
         }
     }
 
