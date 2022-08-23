@@ -174,7 +174,8 @@ void swap(int a*, int b*)
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
-    
+    for (int i = )
+
     return;
 }
 
