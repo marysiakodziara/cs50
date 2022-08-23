@@ -177,15 +177,20 @@ void sort_pairs(void)
             int b = pairs[j].loser;
             int d = pairs[max_pos].winner;
             int e = pairs[max_pos].loserl
-            if (preferences[a][b] > )
+            if (preferences[a][b] > preferences[d][e])
             {
                 max_pos = j;
             }
         }
         if (max_pos != i)
         {
-            swap(&pairs[i].winner, &pairs[max_pos].winner);
-            swap(&pairs[i].loser, &pairs[max_pos].loser);
+            int temp = pairs[i].winner;
+            pairs[i].winner = pairs[max_pos].winner;
+            pairs[max_pos].winner = temp;
+
+            int temp_sec = pairs[i].loser;
+            pairs[i].loser = pairs[max_pos].loser;
+            pairs[max_pos].loser = temp_sec;
         }
     }
 
