@@ -29,10 +29,12 @@ int candidate_count;
 // Function prototypes
 bool vote(int rank, string name, int ranks[]);
 void record_preferences(int ranks[]);
+void swap(int a*, int b*);
 void add_pairs(void);
 void sort_pairs(void);
 void lock_pairs(void);
 void print_winner(void);
+
 
 int main(int argc, string argv[])
 {
@@ -133,6 +135,13 @@ void record_preferences(int ranks[])
         }
     }
     return;
+}
+
+void swap(int a*, int b*)
+{
+    int tmp = *a;
+    *a = *b
+    *b = tmp;
 }
 
 // Record pairs of candidates where one is preferred over the other
