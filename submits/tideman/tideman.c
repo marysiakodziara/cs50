@@ -173,7 +173,11 @@ void sort_pairs(void)
         int max_pos = i //index of the max element
         for (int j = i + 1; j < lenght; j++)
         {
-            if (preferences[] > pairs[max_pos].winner)
+            int a = pairs[j].winner;
+            int b = pairs[j].loser;
+            int d = pairs[max_pos].winner;
+            int e = pairs[max_pos].loserl
+            if (preferences[a][b] > )
             {
                 max_pos = j;
             }
