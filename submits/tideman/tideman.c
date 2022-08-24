@@ -238,14 +238,16 @@ void print_winner(void)
 {
     for (int i = 0; i < MAX; i++ )
     {
+        bool winner = false;
         for (int j = 0; j < MAX; j++)
         {
-            if (locked[j][i] == false)
+            if (locked[j][i])
             {
-                count += 1;
+                winner = false;
+                break;
             }
         }
-        if (count == MAX)
+        if (winner)
         {
             printf("%s\n", candidates[winner]);
             return;
