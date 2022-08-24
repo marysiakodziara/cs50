@@ -210,8 +210,9 @@ bool cycle_check(int winner, int loser)
                 return true;
             }
         }
-        winner 
+        winner = -1;
     }
+    
 }
 
 // Lock pairs into the candidate graph in order, without creating cycles
