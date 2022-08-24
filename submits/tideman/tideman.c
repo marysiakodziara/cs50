@@ -212,13 +212,23 @@ bool cycle_check(int winner, int loser)
         }
         winner = -1;
     }
-    
+    return false;
 }
 
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
-    // TODO
+    for (int i = 0; i < pair_count; i++)
+    {
+        if (check_cycle(pairs[i].winner, pairs[i].loser))
+        {
+            return;
+        }
+        else
+        {
+            locked[pairs[i].winner][pairs[i].loser] = true;
+        }
+    }
     return;
 }
 
