@@ -207,10 +207,15 @@ bool cycle_check(int winner, int loser)
         {
             if(locked[i][winner])
             {
-                return true;
+                cycle = true;
+                winner = i;
             }
         }
-        winner = -1;
+
+        if(!cycle)
+        {
+            winner = -1;
+        }
     }
     return false;
 }
