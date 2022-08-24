@@ -145,13 +145,15 @@ void add_pairs(void)
             {
                 pairs[pair_count].winner = i;
                 pairs[pair_count].loser = j;
+                pair_count++;
             }
             else if (x > z)
             {
                 pairs[pair_count].winner = j;
                 pairs[pair_count].loser = i;
+                pair_count++;
             }
-            pair_count++;
+
         }
     }
     return;
