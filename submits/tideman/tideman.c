@@ -217,6 +217,11 @@ bool cycle_check(int winner, int loser)
             winner = -1;
         }
     }
+
+    if (winner == loser)
+    {
+        return true;
+    }
     return false;
 }
 
