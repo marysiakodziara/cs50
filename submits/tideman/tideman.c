@@ -120,7 +120,7 @@ void record_preferences(int ranks[])
     int z;
     for (int i = 0; i < (candidate_count - 1); i++)
     {
-        for (int j = i +1; j < candidate_count; j++)
+        for (int j = i + 1; j < candidate_count; j++)
         {
             x = ranks[i];
             z = ranks[j];
@@ -195,19 +195,19 @@ void sort_pairs(void)
 
 bool cycle_check(int winner, int loser)
 {
-    while ( winner != -1 && winner != loser)
+    while (winner != -1 && winner != loser)
     {
         bool cycle = false;
         for (int i = 0; i < candidate_count; i++)
         {
-            if(locked[i][winner])
+            if (locked[i][winner])
             {
                 cycle = true;
                 winner = i;
             }
         }
 
-        if(!cycle)
+        if (!cycle)
         {
             winner = -1;
         }
@@ -236,7 +236,7 @@ void lock_pairs(void)
 // Print the winner of the election
 void print_winner(void)
 {
-    for (int i = 0; i < MAX; i++ )
+    for (int i = 0; i < MAX; i++)
     {
         int count = 0;
         for (int j = 0; j < MAX; j++)
