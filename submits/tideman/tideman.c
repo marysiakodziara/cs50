@@ -254,7 +254,7 @@ void print_winner(void)
         }
         if (winner == pair_count)
         {
-            
+
         }
     }
     return;
