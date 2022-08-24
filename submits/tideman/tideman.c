@@ -200,9 +200,9 @@ void sort_pairs(void)
 
 bool cycle_check(int winner, int loser)
 {
-    bool cycle = false;
     while ( winner != -1 && winner != loser)
     {
+        bool cycle = false;
         for (int i = 0; i < candidate_count; i++)
         {
             if(locked[i][winner])
