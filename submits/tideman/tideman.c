@@ -249,7 +249,7 @@ void print_winner(void)
                 count += 1;
             }
         }
-        if (count == pair_count)
+        if (count == MAX)
         {
             printf("%s\n", candidates[winner]);
             return;
