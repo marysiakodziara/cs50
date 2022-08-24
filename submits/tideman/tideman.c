@@ -31,6 +31,7 @@ bool vote(int rank, string name, int ranks[]);
 void record_preferences(int ranks[]);
 void add_pairs(void);
 void sort_pairs(void);
+bool cycle_check(int winner, int loser);
 void lock_pairs(void);
 void print_winner(void);
 
@@ -195,6 +196,11 @@ void sort_pairs(void)
     }
 
     return;
+}
+
+bool cycle_check(int winner, int loser)
+{
+    
 }
 
 // Lock pairs into the candidate graph in order, without creating cycles
