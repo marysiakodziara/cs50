@@ -234,6 +234,8 @@ void lock_pairs(void)
         {
             locked[pairs[i].winner][pairs[i].loser] = true;
         }
+    }
+    return;
 }
 
 // Print the winner of the election
