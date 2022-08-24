@@ -249,7 +249,7 @@ void print_winner(void)
         }
         if (winner)
         {
-            printf("%s\n", candidates[winner]);
+            printf("%s\n", candidates[i]);
             return;
         }
     }
