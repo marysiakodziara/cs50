@@ -84,18 +84,11 @@ int main(int argc, string argv[])
             if (!vote(j, name, ranks))
             {
                 printf("Invalid vote.\n");
+                return 3;
             }
         }
         record_preferences(ranks);
 
-        printf("\n");
-    }
-    for (int p = 0; p < candidate_count; p++)
-    {
-        for (int r = 0; r < candidate_count; r++)
-        {
-            printf("%i, ", preferences[p][r]);
-        }
         printf("\n");
     }
 
