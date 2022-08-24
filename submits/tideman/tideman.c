@@ -244,7 +244,7 @@ void print_winner(void)
         {
             winner = j;
             count = 0;
-            if (!locked[j][i])
+            if (locked[j][i] == false)
             {
                 count += 1;
             }
