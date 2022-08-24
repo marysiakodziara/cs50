@@ -240,8 +240,6 @@ void print_winner(void)
     {
         for (int j = 0; j < MAX; j++)
         {
-            int winner = j;
-            int count = 0;
             if (locked[j][i] == false)
             {
                 count += 1;
