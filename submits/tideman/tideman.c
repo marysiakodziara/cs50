@@ -238,7 +238,7 @@ void print_winner(void)
 {
     for (int i = 0; i < MAX; i++ )
     {
-        bool winner = false;
+        bool winner = true;
         for (int j = 0; j < MAX; j++)
         {
             if (locked[j][i])
