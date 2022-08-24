@@ -243,7 +243,10 @@ void print_winner(void)
 {
     for (int i = 0; i < pair_count; i++ )
     {
-        for (int j = )
+        for (int j = 0; j < pair_count; j++)
+        {
+            if 
+        }
     }
     return;
 }
