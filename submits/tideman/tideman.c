@@ -238,9 +238,9 @@ void print_winner(void)
 {
     int count;
     int winner;
-    for (int i = 0; i < pair_count; i++ )
+    for (int i = 0; i < MAX; i++ )
     {
-        for (int j = 0; j < pair_count; j++)
+        for (int j = 0; j < MAX; j++)
         {
             winner = j;
             count = 0;
