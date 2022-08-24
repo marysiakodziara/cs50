@@ -244,12 +244,12 @@ void print_winner(void)
         {
             winner = j;
             count = 0;
-            if (locked[j][i])
+            if (!locked[j][i])
             {
                 count += 1;
             }
         }
-        if (count == pair_count)
+        if (count == 0)
         {
             printf("%s\n", candidates[winner]);
             return;
