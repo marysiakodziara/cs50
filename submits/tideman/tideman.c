@@ -200,7 +200,19 @@ void sort_pairs(void)
 
 bool cycle_check(int winner, int loser)
 {
-    
+    bool cycle = false;
+    while ( winner != -1 && winner != loser)
+    {
+        for (int i = 0; i < candidate_count; i++)
+        {
+            if(locked[i][winner])
+            {
+                return true;
+            }
+
+            
+        }
+    }
 }
 
 // Lock pairs into the candidate graph in order, without creating cycles
