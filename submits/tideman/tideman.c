@@ -249,7 +249,7 @@ void print_winner(void)
                 count += 1;
             }
         }
-        if (count == 0)
+        if (count == pair_count)
         {
             printf("%s\n", candidates[winner]);
             return;
