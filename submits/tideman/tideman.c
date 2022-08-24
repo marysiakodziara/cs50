@@ -209,9 +209,8 @@ bool cycle_check(int winner, int loser)
             {
                 return true;
             }
-
-            
         }
+        winner 
     }
 }
 
