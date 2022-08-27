@@ -41,10 +41,10 @@ int main(int argc, char *argv[])
     free(arr);
 
     // TODO: Read samples from input file and write updated data to output file
-    char ch;
-    while((ch = fgetc(input)) != EOF)
+    char* arr2 = malloc(2);
+    while(( != EOF)
     {
-        
+
     }
 
     // Close files
