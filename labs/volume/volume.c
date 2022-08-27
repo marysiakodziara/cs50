@@ -35,11 +35,14 @@ int main(int argc, char *argv[])
 
     // TODO: Copy header from input file to output file
 
-    char* arr = malloc(sizeof(header_size));
-    fread(arr, sizeof(char), header_size, input);
-    fwrite(arr, sizeof(char), header_size, output);
+    char* arr = malloc(sizeof(HEADER_SIZE));
+    fread(arr, sizeof(char), HEADER_SIZE, input);
+    fwrite(arr, sizeof(char), HEADER_SIZE, output);
+    free(arr);
 
     // TODO: Read samples from input file and write updated data to output file
+
+    while()
 
     // Close files
     fclose(input);
