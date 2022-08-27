@@ -42,9 +42,10 @@ int main(int argc, char *argv[])
 
     // TODO: Read samples from input file and write updated data to output file
     char* arr2 = malloc(2);
-    while(( != EOF)
+    while((&arr2[0] != EOF && &arr2[1] != EOF)
     {
-
+       fread(arr2, sizeof(char), 2, input);
+       *arr2
     }
 
     // Close files
