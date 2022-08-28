@@ -108,8 +108,8 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         }
     }
 
-    //blurr
-
+    //blurring the copy pixels and overwriting them into image
+    
     return;
 }
 
