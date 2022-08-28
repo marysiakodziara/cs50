@@ -66,20 +66,20 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     //checking if weidth is a odd number
     if ((weidth % 2) == 0)
     {
-        half = weidth / 2;
+        half = width / 2;
     }
     else
     {
-        half = 
+        half = round(width/2);
     }
     int opp;
     for (int i = 0; i < height; i++)
     {
-        opp =
-        for (int j = 0; j < width; j++)
+        opp = width - 1;
+        for (int j = 0; j < half; j++)
         {
             int tmp = image[i][j];
-            a = b;
+            image [i][opp] =
             b = tmp;
         }
     }
