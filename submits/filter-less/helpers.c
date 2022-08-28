@@ -6,19 +6,19 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     int average;
     for (int i = 0; i < height; i++)
     {
-        average = round((RGBTRIPLE[i].rgbtBlue + RGBTRIPLE[i].rgbtGreen + RGBTRIPLE[i].rgbtRed) / 3.0);
-        RGBTRIPLE[i].rgbtBlue = average;
-        RGBTRIPLE[i].rgbtGreen = average;
-        RGBTRIPLE[i].rgbtRed = average;
+        average = round((image[i].rgbtBlue + image[i].rgbtGreen + image[i].rgbtRed) / 3.0);
+        image[i].rgbtBlue = average;
+        image[i].rgbtGreen = average;
+        image[i].rgbtRed = average;
     }
     for (int j = 0; j < height; j++)
     {
         for (int k = 0; k < width; k++)
         {
-            average = round((RGBTRIPLE[j][k].rgbtBlue + RGBTRIPLE[j][k].rgbtGreen + RGBTRIPLE[j][k].rgbtRed) / 3.0);
-            RGBTRIPLE[j][k].rgbtBlue = average;
-            RGBTRIPLE[j][k].rgbtGreen = average;
-            RGBTRIPLE[j][k].rgbtRed = average;
+            average = round((image[j][k].rgbtBlue + image[j][k].rgbtGreen + image[j][k].rgbtRed) / 3.0);
+            image[j][k].rgbtBlue = average;
+            image[j][k].rgbtGreen = average;
+            image[j][k].rgbtRed = average;
         }
     }
     return;
@@ -35,9 +35,9 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; j++)
         {
-            r = .393 * RGBTRIPLE[i][j].rgbtRed + .769 * RGBTRIPLE[i][j].rgbtGreen + .189 * RGBTRIPLE[i][j].rgbtBlue;
-            g = .349 * RGBTRIPLE[i][j].rgbtRed + .686 * RGBTRIPLE[i][j].rgbtGreen + .168 * RGBTRIPLE[i][j].rgbtBlue;
-            b = .272 * RGBTRIPLE[i][j].rgbtRed + .534 * RGBTRIPLE[i][j].rgbtGreen + .131 * RGBTRIPLE[i][j].rgbtBlue;
+            r = .393 * image[i][j].rgbtRed + .769 * image[i][j].rgbtGreen + .189 * image[i][j].rgbtBlue;
+            g = .349 * image[i][j].rgbtRed + .686 * image[i][j].rgbtGreen + .168 * image[i][j].rgbtBlue;
+            b = .272 * image[i][j].rgbtRed + .534 * image[i][j].rgbtGreen + .131 * image[i][j].rgbtBlue;
             if (r > y)
             {
                 r = y;
@@ -50,9 +50,9 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             {
                 b = y;
             }
-            RGBTRIPLE[i][j].rgbtRed = r;
-            RGBTRIPLE[i][j].rgbtGreen = g;
-            RGBTRIPLE[i][j].rgbtBlue = b;
+            image[i][j].rgbtRed = r;
+            image[i][j].rgbtGreen = g;
+            image[i][j].rgbtBlue = b;
 
         }
     }
@@ -75,7 +75,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     }
     //integer that will count down in the nested loop
     int opp;
-    
+
     for (int i = 0; i < height; i++)
     {
         opp = width - 1;
@@ -96,6 +96,8 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
+    //i
+    RGBTRIPLE copy[height][width];
     return;
 }
 
