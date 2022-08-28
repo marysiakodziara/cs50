@@ -63,24 +63,31 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     int half;
-    //checking if weidth is a odd number
+    //checking if weidth is a odd number to calculate
+    //how many times the nested loop should iterate
     if ((weidth % 2) == 0)
     {
-        half = (width / 2) - 1;
+        half = (width / 2);
     }
     else
     {
         half = round(width/2);
     }
+    //integer that will count down in the nested loop
     int opp;
+    
     for (int i = 0; i < height; i++)
     {
         opp = width - 1;
         for (int j = 0; j < half; j++)
         {
-            int tmp = image[i][j];
-            image [i][opp] =
-            b = tmp;
+            if (j < opp)
+            {
+                int tmp = image[i][j];
+                image[i][j] = image[i][opp];
+                image[i][opp] = tmp;
+            }
+            opp--;
         }
     }
     return;
