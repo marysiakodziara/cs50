@@ -122,10 +122,16 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             }
             else if(i == 0)
             {
-                copy[i][j].rgbtRed = (image[i][j - 1].rgbtRed + image[i][j].rgbtRed + image[i + 1][j].rgbtRed + image[i + 1][j - 1].rgbtRed + image[i][j].rgbtRed + image[i][j].rgbtRed) / 6;
+                copy[i][j].rgbtRed = (image[i][j - 1].rgbtRed + image[i][j].rgbtRed + image[i][j + 1].rgbtRed + image[i + 1][j - 1].rgbtRed + image[i + 1][j].rgbtRed + image[i + 1][j + 1].rgbtRed) / 6;
+                copy[i][j].rgbtGreen = (image[i][j - 1].rgbtGreen + image[i][j].rgbtGreen + image[i][j + 1].rgbtGreen + image[i + 1][j - 1].rgbtGreen + image[i + 1][j].rgbtGreen + image[i + 1][j + 1].rgbtGreen) / 6;
+                copy[i][j].rgbtBlue = (image[i][j - 1].rgbtBlue + image[i][j].rgbtBlue + image[i][j + 1].rgbtBlue + image[i + 1][j - 1].rgbtBlue + image[i + 1][j].rgbtBlue + image[i + 1][j + 1].rgbtBlue) / 6;
             }
             else if(j == (width - 1) && i == (height - 1))
-            {}
+            {
+                copy[i][j].rgbtRed = (image[i][j].rgbtRed + image[i][j + 1].rgbtRed + image[i + 1][j].rgbtRed + image[i + 1][j + 1].rgbtRed) / 4;
+                copy[i][j].rgbtGreen = (image[i][j].rgbtGreen + image[i][j + 1].rgbtGreen + image[i + 1][j].rgbtGreen + image[i + 1][j + 1].rgbtGreen) / 4;
+                copy[i][j].rgbtBlue = (image[i][j].rgbtBlue + image[i][j + 1].rgbtBlue + image[i + 1][j].rgbtBlue + image[i + 1][j + 1].rgbtBlue) / 4;
+            }
             else if(j == (width -1))
             {}
             else if(i == (height - 1) && j == 0)
