@@ -96,14 +96,10 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    image[i][j].rgbtRed
-    image[i][j].rgbtGreen
-    image[i][j].rgbtBlue
-
     //implementing a copy of image
     RGBTRIPLE copy[height][width];
 
-    //making copy of image into copy 2d array
+    //making copy of blurred pixels into copy
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
@@ -158,20 +154,21 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             }
             else
             {
-                copy[i][j].rgbtRed = (image[i - 1][j].rgbtRed + image[i - 1][j + 1].rgbtRed + image[i][j].rgbtRed + image[i][j + 1].rgbtRed + image[i + 1][j].rgbtRed + image[i + 1][j + 1].rgbtRed) / 6;
+                copy[i][j].rgbtRed = (image[i - 1][j].rgbtRed + image[i - 1][j + 1].rgbtRed + image[i][j].rgbtRed + image[i][j + 1].rgbtRed + image[i + 1][j].rgbtRed + image[i + 1][j + 1].rgbtRed + image[i - 1][j - 1].rgbtRed + image[i - 1][j].rgbtRed + image[i + 1][j - 1].rgbtRed) /9;
+                copy[i][j].rgbtGreen = (image[i - 1][j].rgbtGreen + image[i - 1][j + 1].rgbtGreen + image[i][j].rgbtGreen + image[i][j + 1].rgbtGreen + image[i + 1][j].rgbtGreen + image[i + 1][j + 1].rgbtGreen + image[i - 1][j - 1].rgbtGreen + image[i - 1][j].rgbtGreen + image[i + 1][j - 1].rgbtGreen) /9;
+                copy[i][j].rgbtBlue = (image[i - 1][j].rgbtBlue + image[i - 1][j + 1].rgbtBlue + image[i][j].rgbtBlue + image[i][j + 1].rgbtBlue + image[i + 1][j].rgbtBlue + image[i + 1][j + 1].rgbtBlue + image[i - 1][j - 1].rgbtBlue + image[i - 1][j].rgbtBlue + image[i + 1][j - 1].rgbtBlue) /9;
             }
+        }
 
+    //rewriting blured picture into image
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width; j++)
+        {
+            image[i][j].rgbtRed = copy[i][j].rgbtRed;
+            image[i][j].rgbtGreen = copy[i][j].rgbtGreen;
+            image[i][j].rgbtBlue = copy[i][j].rgbtBlue;
         }
     }
-
-    //blurring the copy pixels and overwriting them into image
-
     return;
 }
-
-
-    BYTE  rgbtBlue;
-    BYTE  rgbtGreen;
-    BYTE  rgbtRed;
-} __attribute__((__packed__))
-RGBTRIPLE;
