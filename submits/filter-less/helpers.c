@@ -105,11 +105,12 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j < width; j++)
         {
             copy[i][j] = image[i][j];
+            if ()
         }
     }
 
     //blurring the copy pixels and overwriting them into image
-    
+
     return;
 }
 
