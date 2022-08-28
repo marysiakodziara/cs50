@@ -66,7 +66,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     //checking if weidth is a odd number
     if ((weidth % 2) == 0)
     {
-        half = width / 2;
+        half = (width / 2) - 1;
     }
     else
     {
