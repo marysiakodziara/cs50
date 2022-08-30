@@ -78,7 +78,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
         {
             if (j < opp)
             {
-                int tmp = image[i][j];
+                RGBTRIPLE tmp = image[i][j];
                 image[i][j] = image[i][opp];
                 image[i][opp] = tmp;
             }
