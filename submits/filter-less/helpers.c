@@ -162,13 +162,13 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         }
 
     //rewriting blured picture into image
-    for (int i = 0; i < height; i++)
+    for (int k = 0; k < height; k++)
     {
-        for (int j = 0; j < width; j++)
+        for (int l = 0; l < width; l++)
         {
-            image[i][j].rgbtRed = copy[i][j].rgbtRed;
-            image[i][j].rgbtGreen = copy[i][j].rgbtGreen;
-            image[i][j].rgbtBlue = copy[i][j].rgbtBlue;
+            image[k][l].rgbtRed = copy[k][l].rgbtRed;
+            image[k][l].rgbtGreen = copy[k][l].rgbtGreen;
+            image[k][l].rgbtBlue = copy[k][l].rgbtBlue;
         }
     }
     return;
