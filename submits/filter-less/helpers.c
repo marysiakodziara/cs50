@@ -66,7 +66,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     int half;
     //checking if weidth is a odd number to calculate
     //how many times the nested loop should iterate
-    if ((weidth % 2) == 0)
+    if ((width % 2) == 0)
     {
         half = (width / 2);
     }
