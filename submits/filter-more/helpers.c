@@ -56,9 +56,6 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    int r;
-    int g;
-    int b;
 
     //implementing a copy of image
     RGBTRIPLE copy[height][width];
@@ -170,13 +167,21 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 // Detect edges
 void edges(int height, int width, RGBTRIPLE image[height][width])
 {
+
+    //implementing a copy of image
+    RGBTRIPLE copy[height][width];
+
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
         {
             if (i == 0 && j == 0)
             {
-                
+                copy[i][j].rgbtRed = (image[i][j].rgbtRed + image[i][j + 1].rgbtRed + image[i + 1][j].rgbtRed + image[i + 1][j + 1].rgbtRed);
+                copy[i][j].rgbtGreen = round((image[i][j].rgbtGreen + image[i][j + 1].rgbtGreen + image[i + 1][j].rgbtGreen + image[i + 1][j +
+                                              1].rgbtGreen) / 4.0);
+                copy[i][j].rgbtBlue = round((image[i][j].rgbtBlue + image[i][j + 1].rgbtBlue + image[i + 1][j].rgbtBlue + image[i + 1][j +
+                                             1].rgbtBlue) / 4.0);
             }
             else if (i == 0 && j == (width - 1))
             {
