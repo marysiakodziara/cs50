@@ -14,6 +14,8 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
             image[j][k].rgbtBlue = average;
             image[j][k].rgbtGreen = average;
             image[j][k].rgbtRed = average;
+        }
+    }
     return;
 }
 
@@ -162,6 +164,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             image[k][l].rgbtGreen = copy[k][l].rgbtGreen;
             image[k][l].rgbtBlue = copy[k][l].rgbtBlue;
         }
+    }
     return;
 }
 
