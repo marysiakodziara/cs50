@@ -12,4 +12,4 @@ void edges(int height, int width, RGBTRIPLE image[height][width]);
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width]);
 
-int new_value(int g);
+int check(int g);
