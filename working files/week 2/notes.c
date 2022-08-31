@@ -143,3 +143,9 @@ if (arg_c == 2  && command == 26) // sprawdza czy klucz jest i czy jest wyst dł
 
 }
 }
+
+
+
+copy[i][j].rgbtRed = round(sqrt((gx * gx) + (gy * gy)));
+copy[i][j].rgbtGreen = round(sqrt((gxg * gxg) + (gyg * gyg)));
+copy[i][j].rgbtBlue = round(sqrt((gxb * gxb) + (gyb * gyb)));

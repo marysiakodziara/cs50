@@ -186,13 +186,34 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             {
                 gx = (0 * image[i][j].rgbtRed + 2 * image[i][j + 1].rgbtRed + 0 * image[i + 1][j].rgbtRed + image[i + 1][j + 1].rgbtRed);
                 gy = (0 * image[i][j].rgbtRed + 0 * image[i][j + 1].rgbtRed + 2 * image[i + 1][j].rgbtRed + image[i + 1][j + 1].rgbtRed);
-                copy[i][j].rgbtRed = round(sqrt((gx * gx) + (gy * gy)));
+                if(round(sqrt((gx * gx) + (gy * gy))) > 255)
+                {
+                    copy[i][j].rgbtRed = 255;
+                }
+                else
+                {
+                    copy[i][j].rgbtRed = round(sqrt((gx * gx) + (gy * gy)));
+                }
                 gxg = (0 * image[i][j].rgbtGreen + 2 * image[i][j + 1].rgbtGreen + 0 * image[i + 1][j].rgbtGreen + image[i + 1][j + 1].rgbtGreen);
                 gyg = (0 * image[i][j].rgbtGreen + 0 * image[i][j + 1].rgbtGreen + 2 * image[i + 1][j].rgbtGreen + image[i + 1][j + 1].rgbtGreen);
-                copy[i][j].rgbtGreen = round(sqrt((gxg * gxg) + (gyg * gyg)));
+                if(round(sqrt((gxg * gxg) + (gyg * gyg))) > 255)
+                {
+                    copy[i][j].rgbtGreen = 255;
+                }
+                else
+                {
+                    copy[i][j].rgbtGreen = round(sqrt((gxg * gxg) + (gyg * gyg)));
+                }
                 gxb = (0 * image[i][j].rgbtBlue + 2 * image[i][j + 1].rgbtBlue + 0 * image[i + 1][j].rgbtBlue + image[i + 1][j + 1].rgbtBlue);
                 gyb = (0 * image[i][j].rgbtBlue + 0 * image[i][j + 1].rgbtBlue + 2 * image[i + 1][j].rgbtBlue + image[i + 1][j + 1].rgbtBlue);
-                copy[i][j].rgbtBlue = round(sqrt((gxb * gxb) + (gyb * gyb)));
+                if(round(sqrt((gxb * gxb) + (gyb * gyb))) > 255)
+                {
+                    copy[i][j].rgbtBlue = 255;
+                }
+                else
+                {
+                    copy[i][j].rgbtBlue = round(sqrt((gxb * gxb) + (gyb * gyb)));
+                }
             }
             else if (i == 0 && j == (width - 1))
             {
