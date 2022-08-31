@@ -283,10 +283,21 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 gx = ((-1) * image[i - 1][j - 1].rgbtGreen + 0 * image[i - 1][j].rgbtGreen + image[i - 1][j + 1].rgbtGreen + (-2) * image[i][j - 1].rgbtGreen + 0 * image[i][j].rgbtGreen + 2 * image[i][j + 1].rgbtGreen + (-1) * image[i + 1][j - 1].rgbtGreen + 0 * image[i + 1][j].rgbtGreen + image[i + 1][j + 1].rgbtGreen);
                 gy = ((-1) * image[i - 1][j - 1].rgbtGreen + (-2) * image[i - 1][j].rgbtGreen + (-1) * image[i - 1][j + 1].rgbtGreen + 0 * image[i][j - 1].rgbtGreen + 0 * image[i][j].rgbtGreen + 0 * image[i][j + 1].rgbtGreen + image[i + 1][j - 1].rgbtGreen + 2 * image[i + 1][j].rgbtGreen + image[i + 1][j + 1].rgbtGreen);
                 copy[i][j].rgbtGreen = check(sqrt((gx * gx) + (gy * gy)));
-                gx = ((-1) * image[i - 1][j - 1].rgbtBlue + 0 * image[i - 1][j].rgbtBlue + image[i - 1][j + 1].rgbtBlue + (-2) * image[i][j - 1].rgbtBlue + 0 * image[i][j].rgbtBlue + 2 * image[i][j + 1].rgbtBlue + image[i + 1][j - 1].rgbtBlue + image[i + 1][j].rgbtBlue + image[i + 1][j + 1].rgbtBlue);
-                gy = (image[i - 1][j - 1].rgbtBlue + image[i - 1][j].rgbtBlue + image[i - 1][j + 1].rgbtBlue + image[i][j - 1].rgbtBlue + image[i][j].rgbtBlue + image[i][j + 1].rgbtBlue + image[i + 1][j - 1].rgbtBlue + image[i + 1][j].rgbtBlue + image[i + 1][j + 1].rgbtBlue);
+                gx = ((-1) * image[i - 1][j - 1].rgbtBlue + 0 * image[i - 1][j].rgbtBlue + image[i - 1][j + 1].rgbtBlue + (-2) * image[i][j - 1].rgbtBlue + 0 * image[i][j].rgbtBlue + 2 * image[i][j + 1].rgbtBlue + (-1) * image[i + 1][j - 1].rgbtBlue + 0 * image[i + 1][j].rgbtBlue + image[i + 1][j + 1].rgbtBlue);
+                gy = ((-1) * image[i - 1][j - 1].rgbtBlue + (-2) * image[i - 1][j].rgbtBlue + (-1) * image[i - 1][j + 1].rgbtBlue + 0 * image[i][j - 1].rgbtBlue + 0 * image[i][j].rgbtBlue + 0 * image[i][j + 1].rgbtBlue + image[i + 1][j - 1].rgbtBlue + 2 * image[i + 1][j].rgbtBlue + image[i + 1][j + 1].rgbtBlue);
                 copy[i][j].rgbtBlue = check(sqrt((gx * gx) + (gy * gy)));
             }
+        }
+    }
+    
+     //rewriting blured picture into image
+    for (int k = 0; k < height; k++)
+    {
+        for (int l = 0; l < width; l++)
+        {
+            image[k][l].rgbtRed = copy[k][l].rgbtRed;
+            image[k][l].rgbtGreen = copy[k][l].rgbtGreen;
+            image[k][l].rgbtBlue = copy[k][l].rgbtBlue;
         }
     }
     return;
