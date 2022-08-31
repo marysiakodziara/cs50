@@ -279,13 +279,13 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             {
                 gx = ((-1) * image[i - 1][j - 1].rgbtRed + 0 * image[i - 1][j].rgbtRed + image[i - 1][j + 1].rgbtRed + (-2) * image[i][j - 1].rgbtRed + 0 * image[i][j].rgbtRed + 2 * image[i][j + 1].rgbtRed + (-1) * image[i + 1][j - 1].rgbtRed + 0 * image[i + 1][j].rgbtRed + image[i + 1][j + 1].rgbtRed);
                 gy = ((-1) * image[i - 1][j - 1].rgbtRed + (-2) * image[i - 1][j].rgbtRed + (-1) * image[i - 1][j + 1].rgbtRed + 0 * image[i][j - 1].rgbtRed + 0 * image[i][j].rgbtRed + 0 * image[i][j + 1].rgbtRed + image[i + 1][j - 1].rgbtRed + 2 * image[i + 1][j].rgbtRed + image[i + 1][j + 1].rgbtRed);
-                copy[i][j].rgbtRed = check(sqrt((gx * gx) + (gy * gy)));
+                copy[i][j].rgbtRed = sqrt((gx * gx) + (gy * gy));
                 gx = ((-1) * image[i - 1][j - 1].rgbtGreen + 0 * image[i - 1][j].rgbtGreen + image[i - 1][j + 1].rgbtGreen + (-2) * image[i][j - 1].rgbtGreen + 0 * image[i][j].rgbtGreen + 2 * image[i][j + 1].rgbtGreen + (-1) * image[i + 1][j - 1].rgbtGreen + 0 * image[i + 1][j].rgbtGreen + image[i + 1][j + 1].rgbtGreen);
                 gy = ((-1) * image[i - 1][j - 1].rgbtGreen + (-2) * image[i - 1][j].rgbtGreen + (-1) * image[i - 1][j + 1].rgbtGreen + 0 * image[i][j - 1].rgbtGreen + 0 * image[i][j].rgbtGreen + 0 * image[i][j + 1].rgbtGreen + image[i + 1][j - 1].rgbtGreen + 2 * image[i + 1][j].rgbtGreen + image[i + 1][j + 1].rgbtGreen);
-                copy[i][j].rgbtGreen = check(sqrt((gx * gx) + (gy * gy)));
+                copy[i][j].rgbtGreen = sqrt((gx * gx) + (gy * gy));
                 gx = ((-1) * image[i - 1][j - 1].rgbtBlue + 0 * image[i - 1][j].rgbtBlue + image[i - 1][j + 1].rgbtBlue + (-2) * image[i][j - 1].rgbtBlue + 0 * image[i][j].rgbtBlue + 2 * image[i][j + 1].rgbtBlue + (-1) * image[i + 1][j - 1].rgbtBlue + 0 * image[i + 1][j].rgbtBlue + image[i + 1][j + 1].rgbtBlue);
                 gy = ((-1) * image[i - 1][j - 1].rgbtBlue + (-2) * image[i - 1][j].rgbtBlue + (-1) * image[i - 1][j + 1].rgbtBlue + 0 * image[i][j - 1].rgbtBlue + 0 * image[i][j].rgbtBlue + 0 * image[i][j + 1].rgbtBlue + image[i + 1][j - 1].rgbtBlue + 2 * image[i + 1][j].rgbtBlue + image[i + 1][j + 1].rgbtBlue);
-                copy[i][j].rgbtBlue = check(sqrt((gx * gx) + (gy * gy)));
+                copy[i][j].rgbtBlue = sqrt((gx * gx) + (gy * gy));
             }
         }
     }
