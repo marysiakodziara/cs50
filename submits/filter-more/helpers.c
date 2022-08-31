@@ -192,14 +192,14 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             }
             else if (i == 0 && j == (width - 1))
             {
-                gx = (image[i][j - 1].rgbtRed + image[i][j].rgbtRed + image[i + 1][j].rgbtRed + image[i + 1][j - 1].rgbtRed);
-                gy = (image[i][j - 1].rgbtRed + image[i][j].rgbtRed + image[i + 1][j].rgbtRed + image[i + 1][j - 1].rgbtRed);
+                gx = ((-2) * image[i][j - 1].rgbtRed + 0 * image[i][j].rgbtRed + 0 * image[i + 1][j].rgbtRed + (-1) * image[i + 1][j - 1].rgbtRed);
+                gy = (0 * image[i][j - 1].rgbtRed + 0 * image[i][j].rgbtRed + 2 * image[i + 1][j].rgbtRed + image[i + 1][j - 1].rgbtRed);
                 copy[i][j].rgbtRed = sqrt((gx * gx) + (gy * gy));
-                gx = (image[i][j - 1].rgbtGreen + image[i][j].rgbtGreen + image[i + 1][j].rgbtGreen + image[i + 1][j - 1].rgbtGreen);
-                gy = (image[i][j - 1].rgbtGreen + image[i][j].rgbtGreen + image[i + 1][j].rgbtGreen + image[i + 1][j - 1].rgbtGreen);
+                gx = ((-2) * image[i][j - 1].rgbtGreen + 0 * image[i][j].rgbtGreen + 0 * image[i + 1][j].rgbtGreen + (-1) * image[i + 1][j - 1].rgbtGreen);
+                gy = (0 * image[i][j - 1].rgbtGreen + 0 * image[i][j].rgbtGreen + 2 * image[i + 1][j].rgbtGreen + image[i + 1][j - 1].rgbtGreen);
                 copy[i][j].rgbtGreen = sqrt((gx * gx) + (gy * gy));
-                gx = (image[i][j - 1].rgbtBlue + image[i][j].rgbtBlue + image[i + 1][j].rgbtBlue + image[i + 1][j - 1].rgbtBlue);
-                gy = (image[i][j - 1].rgbtBlue + image[i][j].rgbtBlue + image[i + 1][j].rgbtBlue + image[i + 1][j - 1].rgbtBlue);
+                gx = ((-2) * image[i][j - 1].rgbtBlue + 0 * image[i][j].rgbtBlue + 0 * image[i + 1][j].rgbtBlue + (-1) * image[i + 1][j - 1].rgbtBlue);
+                gy = (0 * image[i][j - 1].rgbtBlue + 0 * image[i][j].rgbtBlue + 2 * image[i + 1][j].rgbtBlue + image[i + 1][j - 1].rgbtBlue);
                 copy[i][j].rgbtnGreeBlue = sqrt((gx * gx) + (gy * gy));
             }
             else if (i == 0)
