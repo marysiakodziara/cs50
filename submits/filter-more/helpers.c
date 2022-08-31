@@ -272,7 +272,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 {
                     copy[i][j].rgbtRed = round(sqrt((gx * gx) + (gy * gy)));
                 }
-            if (round(sqrt((gxg * gxg) + (gyg * gyg))) > 255)
+            if (round(sqrt((gxg * gxg * 1.0) + (gyg * gyg * 1.0))) > 255)
                 {
                     copy[i][j].rgbtGreen = 255;
                 }
