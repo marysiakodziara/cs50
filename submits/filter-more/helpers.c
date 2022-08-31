@@ -235,3 +235,12 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
     return;
 }
 
+int new_value(int g)
+{
+    if (g > 255)
+    {
+        g = 255;
+    }
+
+    return g;
+}
