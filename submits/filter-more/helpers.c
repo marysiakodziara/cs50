@@ -188,9 +188,11 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 gy = (0 * image[i][j].rgbtGreen + 0 * image[i][j + 1].rgbtGreen + 2 * image[i + 1][j].rgbtGreen + image[i + 1][j +
                                               1].rgbtGreen);
                 copy[i][j].rgbtGreen = sqrt((gx * gx) + (gy * gy));
-                copy[i][j].rgbtGreen = round( / 4.0);
-                copy[i][j].rgbtBlue = round((image[i][j].rgbtBlue + image[i][j + 1].rgbtBlue + image[i + 1][j].rgbtBlue + image[i + 1][j +
-                                             1].rgbtBlue) / 4.0);
+                gx = 0 * image[i][j].rgbtBlue + 2 * image[i][j + 1].rgbtBlue + 0 * image[i + 1][j].rgbtBlue + image[i + 1][j +
+                                             1].rgbtBlue
+                gy = 0 * image[i][j].rgbtBlue + 0 * image[i][j + 1].rgbtBlue + 2 * image[i + 1][j].rgbtBlue + image[i + 1][j +
+                                             1].rgbtBlue
+                copy[i][j].rgbtnGreeBlue = sqrt((gx * gx) + (gy * gy));
             }
             else if (i == 0 && j == (width - 1))
             {
