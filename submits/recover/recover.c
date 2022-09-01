@@ -37,6 +37,7 @@ int main(int argc, char *argv[])
                     fwrite(buffer[k], 1, 1, filename);
                     k++;
                 }
+                flose(filename);
 
             }
             else if (j_count != 0)
