@@ -17,8 +17,12 @@ int main(int argc, char *argv[])
 
     //buffer for reading the file
     string buffer[256];
+
     while (fread (buffer, 2, 256, inptr) == 512)
-{
-      // DO WHAT YOU NEED HERE
-}
+    {
+        for (int i = 0; i < 256; i++)
+        {
+            if (buffer[i] == )
+        }
+    }
 }
