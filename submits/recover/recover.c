@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
 
     //buffer for reading the file
     char buffer[512];
+    string filename;
 
     while (fread (buffer, 1, 512, inptr) == 512)
     {
@@ -28,7 +29,16 @@ int main(int argc, char *argv[])
             if (buffer[i] == 0xff, buffer[i + 1] == 0xd8, buffer[i + 2] == 0xff, (buffer[i + 3] & 0xf0) == 0xe0)
             {
                 int j_count += 1;
-                sprintf(filename, "%03i.jpg, j_count)
+                sprintf(filename, "%03i.jpg", j_count)
+                FILE *img = fopen(filename, "w");
+                int k = i;
+                while (buffer[k] == 0xff, buffer[k + 1] == 0xd8, buffer[k + 2] == 0xff, (buffer[k + 3] & 0xf0) == 0xe0)
+                {
+                    fwrite(buffer[k], 1, 1, filename);
+                    k++;
+                }
+
+                
             }
         }
     }
