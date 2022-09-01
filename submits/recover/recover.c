@@ -15,14 +15,21 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    //buffer for reading the file
-    string buffer[256];
+    //number of read jpegs
+    int j_count = 0;
 
-    while (fread (buffer, 2, 256, inptr) == 512)
+    //buffer for reading the file
+    char buffer[512];
+
+    while (fread (buffer, 1, 512, inptr) == 512)
     {
-        for (int i = 0; i < 256; i++)
+        for (int i = 0; i < 512; i++)
         {
-            if (strcmp(buffer[i], )
+            if (buffer[i] == 0xff, buffer[i + 1] == 0xd8, buffer[i + 2] == 0xff, (buffer[i + 3] & 0xf0) == 0xe0 )
+            {
+                int j_count += 1;
+                sprintf(filename, "%03i.jpg)
+            }
         }
     }
 }
