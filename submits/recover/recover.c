@@ -17,9 +17,8 @@ int main(int argc, char *argv[])
 
     //buffer for reading the file
     string buffer[256];
-    fread (buffer, 2, 256, argv[argc - 1])
-    {
-        
-    }
-
+    while (fread (buffer, 2, 256, inptr) == 512)
+{
+      // DO WHAT YOU NEED HERE
+}
 }
