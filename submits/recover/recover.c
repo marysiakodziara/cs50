@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
     //buffer for reading the file
     char buffer[512];
-    string filename;
+    char filename[512];
 
     while (fread (buffer, 1, 512, inptr) == 512)
     {
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
                 int k = i;
                 while ((buffer[k] != 0xff && buffer[k + 1] != 0xd8 && buffer[k + 2] != 0xff && (buffer[k + 3] & 0xf0) != 0xe0) && k < 512)
                 {
-                    fputc(buffer[k], &filename);
+                    fputc(buffer[k], filename);
                     k++;
                 }
                 flose(filename);
