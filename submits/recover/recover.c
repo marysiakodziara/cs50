@@ -9,8 +9,8 @@ int main(int argc, char *argv[])
         printf("incorrect usage, type: ./recover 'file name'\n");
         return 1;
     }
-    FILE *inptr = fopen(argv[argc - 1], "r");
-    if (inptr == NULL)
+    FILE* file = fopen(argv[argc - 1], "r");
+    if (file == NULL)
     {
         printf("Could not open the file.\n");
         return 1;
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     int j_count = 0;
 
     //buffer for reading the file
-    char buffer[512];
+    unsigned char buffer[512];
     char filename[512];
 
     while (fread (buffer, 1, 512, inptr) == 512)
