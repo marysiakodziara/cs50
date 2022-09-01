@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     }
 
     //buffer for reading the file
-    string buffer[]
-    fread ()
+    string buffer[256];
+    fread (buffer, 2, 256, )
 
 }
