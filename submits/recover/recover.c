@@ -27,15 +27,16 @@ int main(int argc, char *argv[])
     {
         for (int i = 0; i < 512; i++)
         {
-            if (buffer[i] == 0xff && buffer[i + 1] == 0xd8 && buffer[i + 2] == 0xff && (buffer[i + 3] & 0xf0) == 0xe0)
-            {
-                j_count += 1;
+            j_count += 1;
                 sprintf(filename, "%03i.jpg", j_count);
                 FILE *img = fopen(filename, "w");
+            if (buffer[i] == 0xff && buffer[i + 1] == 0xd8 && buffer[i + 2] == 0xff && (buffer[i + 3] & 0xf0) == 0xe0)
+            {
+
                 int k = i;
                 while ((buffer[k] != 0xff && buffer[k + 1] != 0xd8 && buffer[k + 2] != 0xff && (buffer[k + 3] & 0xf0) != 0xe0) && k < 512)
                 {
-                    fputc(buffer[k], *filename);
+                    fputc(buffer[k], filename);
                     k++;
                 }
                 flose(filename);
