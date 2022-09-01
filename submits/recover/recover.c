@@ -23,7 +23,8 @@ int main(int argc, char *argv[])
     unsigned char buffer[512];
     char filename[512];
 
-    while (fread (buffer, 1, 512, inptr) == 512)
+    FILE* img = NULL;
+    while (fread (buffer, 1, 512, file) == 512)
     {
         for (int i = 0; i < 512; i++)
         {
