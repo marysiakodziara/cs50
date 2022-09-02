@@ -36,6 +36,8 @@ int main(int argc, char *argv[])
                     img = fopen(filename, "w");
                     fwrite(buffer, 1 ,512, img);
                 }
+
+                
             }
 
     }
