@@ -39,7 +39,12 @@ int main(int argc, char *argv[])
 
                 else
                 {
-                    fclose(filename);
+                    fclose(img);
+                    j_count += 1;
+                    sprintf(filename, "%03i.jpg", j_count);
+                    img = fopen(filename, "w");
+                    fwrite(buffer, 1 ,512, img);
+
                 }
 
 
