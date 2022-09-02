@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
                 }
 
     }
-    flose(filename);
+    fclose(filename);
 }
 
 
