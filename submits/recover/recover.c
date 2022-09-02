@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
                 {
                     j_count += 1;
                     sprintf(filename, "%03i.jpg", j_count);
-                    img = fopen(filename, "w");
+                    img = fopen(filename, "a");
                     fwrite(buffer, 1 ,512, img);
                 }
 
@@ -42,12 +42,12 @@ int main(int argc, char *argv[])
                     fclose(img);
                     j_count += 1;
                     sprintf(filename, "%03i.jpg", j_count);
-                    img = fopen(filename, "w");
+                    img = fopen(filename, "a");
                     fwrite(buffer, 1 ,512, img);
 
                 }
             }
-            
+
             else if (j_count != 0)
             {
                 fwrite(buffer, 1, 512, img);
