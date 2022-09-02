@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     }
 
     //number of read jpegs
-    int j_count = 0;
+    int j_count = -1;
 
     //buffer for reading the file
     unsigned char buffer[512];
@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
                     sprintf(filename, "%03i.jpg", j_count);
                     img = fopen(filename, "a");
                     fwrite(buffer, 1 ,512, img);
+
                 }
 
                 else
@@ -48,7 +49,7 @@ int main(int argc, char *argv[])
                 }
             }
 
-            else if (j_count != 0)
+            else if (j_count != -1)
             {
                 fwrite(buffer, 1, 512, img);
             }
