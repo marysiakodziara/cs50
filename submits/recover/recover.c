@@ -38,26 +38,7 @@ int main(int argc, char *argv[])
                 }
 
 
-                int k = i;
-                while ((buffer[k] != 0xff && buffer[k + 1] != 0xd8 && buffer[k + 2] != 0xff && (buffer[k + 3] & 0xf0) != 0xe0) && k < 512)
-                {
-                    fputc(buffer[k], filename);
-                    k++;
-                }
-                flose(filename);
-
-            }
-            else if (j_count != 0)
-            {
-                FILE *img = fopen(filename, "w");
-                int k = i;
-                while ((buffer[k] != 0xff && buffer[k + 1] != 0xd8 && buffer[k + 2] != 0xff && (buffer[k + 3] & 0xf0) != 0xe0) && k < 512)
-                {
-                    fwrite(buffer[k], 1, 1, filename);
-                    k++;
-                }
-                flose(filename);
-            }
+                
     }
     flose(filename);
 }
