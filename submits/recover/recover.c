@@ -37,7 +37,13 @@ int main(int argc, char *argv[])
                     fwrite(buffer, 1 ,512, img);
                 }
 
-                
+
+
+            }
+
+            else if (j_count != 0)
+            {
+                fwrite(buffer, 1, 512, img);
             }
 
     }
