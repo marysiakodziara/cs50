@@ -12,4 +12,11 @@ int main(void)
     //list of size
     node *list = NULL;
 
+    //add a number to list
+    node *n = maloc(sizeof(node));
+    if (n == NULL)
+    {
+        return 1;
+    }
+    n->
 }
