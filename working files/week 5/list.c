@@ -4,7 +4,7 @@
 int main(void)
 {
     //dynamically allocate an array of size 3
-    int *list = maloc(3 * sizeof(int));
+    int *list = malloc(3 * sizeof(int));
     if (list == NULL)
     {
         return 1;
