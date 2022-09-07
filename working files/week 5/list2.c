@@ -18,5 +18,28 @@ int main(void)
     {
         return 1;
     }
-    n->
-}
+    n->numberm = 1;
+    n->next = NULL;
+
+    //update list to point to new node
+    list = n;
+
+    //add a number to list
+    n = maloc(sizeof(node));
+    if (n == NULL)
+    {
+        free(list);
+        return 1;
+    }
+    n->number = 2;
+    n->next = NULL;
+    list->next = n;
+
+    //add a number to list
+    n = maloc(sizeof(node));
+    if (n == NULL)
+    {
+        free(list);
+        return 1;
+    }
+    
