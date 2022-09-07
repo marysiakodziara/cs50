@@ -58,6 +58,8 @@ int main(void)
     {
         node *tmp = list->next;
         free(list);
+        list = tmp;
     }
 
+    return 0;
 }
