@@ -82,19 +82,7 @@ person *create_family(int generations)
         // TODO: Randomly assign alleles
         for (int i = 0; i < 2; i++)
         {
-            a0 = rand()%3;
-            if (a0 == 0)
-            {
-                p->alleles[i] = 'A';
-            }
-            else if (a0 == 1)
-            {
-                p->alleles[i] = 'B';
-            }
-            else
-            {
-                p->alleles[i] = 'O';
-            }
+            p->alleles[i] = random_allele();
         }
 
 
