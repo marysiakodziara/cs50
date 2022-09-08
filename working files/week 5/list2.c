@@ -63,3 +63,5 @@ int main(void)
 
     return 0;
 }
+p->parents[0] = parent0;
+        p->parents[1] = parent1;
