@@ -61,7 +61,8 @@ bool load(const char *dictionary)
         //call the hash function on the given string
         int index = hash(word[0]);
         //copy string into node using strcpy
-        
+        n->word = 
+
         //-set tmp var to point at node chaing, -set head to point at new beginning
 
     }
