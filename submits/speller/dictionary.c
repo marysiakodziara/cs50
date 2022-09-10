@@ -49,6 +49,8 @@ bool load(const char *dictionary)
     //checks for null
     //call the hash function on the given string
     //copy string into node using strcpy
+    //-set tmp var to point at node chaing, -set head to point at new beginning
+    
 
     //)
 
