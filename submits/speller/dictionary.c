@@ -141,7 +141,7 @@ bool unload(void)
             {
                 n = n->next;
             }
-            
+            free(n->next);
         }
 
     }
