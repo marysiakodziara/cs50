@@ -134,7 +134,17 @@ bool unload(void)
         //iterate trought every node from hash array
         //in every node go into the list end recursively free its nodes
 
-        
+        if (p == NULL)
+    {
+        return;
+    }
+
+    // TODO: Free parents recursively
+    free_family(p->parents[0]);
+    free_family(p->parents[1]);
+
+    // TODO: Free child
+    free(p);
     }
     return false;
 }
