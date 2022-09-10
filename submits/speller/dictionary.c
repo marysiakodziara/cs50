@@ -54,8 +54,14 @@ bool load(const char *dictionary)
         //dma for each string
         node n* = malloc(sizeof(node));
         //checks for null
+        if (n == NULL)
+        {
+            return 1;
+        }
         //call the hash function on the given string
+        int index = hash(word[0]);
         //copy string into node using strcpy
+        
         //-set tmp var to point at node chaing, -set head to point at new beginning
 
     }
