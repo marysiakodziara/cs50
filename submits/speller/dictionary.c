@@ -135,17 +135,15 @@ bool unload(void)
         //in every node go into the list end recursively free its nodes
         node *n = table[i]
 
-        //base case
-        if (n == NULL)
+        while (table[i] != NULL)
         {
-            return;
+            while (n =! NULL)
+            {
+                n = n->next;
+            }
+            
         }
-        //free nodes recursively
-        
 
-
-        // TODO: Free child
-        free(n);
     }
     return false;
 }
