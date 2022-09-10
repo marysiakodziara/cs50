@@ -6,6 +6,7 @@
 #include <string.h>
 
 #include "dictionary.h"
+int count_words;
 
 // Represents a node in a hash table
 typedef struct node
@@ -70,8 +71,10 @@ bool load(const char *dictionary)
     }
 
     char word[LENGTH + 1];
+    count_words = 0;
     while(fscanf(file, "%s", word) != EOF) //run till reaching end of the file
     {
+        count_words += 1;
         //dma for new ndoe
         node *n = malloc(sizeof(node));
         //checks for null
@@ -96,7 +99,7 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    return 0;
+    return count_words;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
