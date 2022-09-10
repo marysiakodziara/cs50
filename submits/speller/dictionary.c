@@ -37,6 +37,7 @@ unsigned int hash(const char *word)
     {
         if (word[i] != \0)
         {
+            if ()
             count += (word[i] - 97)
         }
         else
