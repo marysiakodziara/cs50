@@ -38,7 +38,14 @@ bool load(const char *dictionary)
 {
     // TODO
     //fopen to dictionary
+    FILE *input = fopen(argv[1], "r");
+
     //checks for null
+    if (input == NULL)
+    {
+        printf("Could not open file.\n");
+        return 1;
+    }
 
     //(loop i guess
 
@@ -50,7 +57,7 @@ bool load(const char *dictionary)
     //call the hash function on the given string
     //copy string into node using strcpy
     //-set tmp var to point at node chaing, -set head to point at new beginning
-    
+
 
     //)
 
