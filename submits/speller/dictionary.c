@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>
+#include <stdlib.h>
 
 #include "dictionary.h"
 
@@ -47,11 +48,11 @@ bool load(const char *dictionary)
         return false;
     }
 
-    char word[LENGHT + 1];
+    char word[LENGTH + 1];
     while(fscanf(file, "%s", word) != EOF) //run till reaching end of the file
     {
         //dma for new ndoe
-        node n* = malloc(sizeof(node));
+        node *n = malloc(sizeof(node));
         //checks for null
         if (n == NULL)
         {
