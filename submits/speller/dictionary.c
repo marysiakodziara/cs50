@@ -38,10 +38,10 @@ bool load(const char *dictionary)
 {
     // TODO
     //fopen to dictionary
-    FILE *input = fopen(dictionary, "r");
+    FILE *file = fopen(dictionary, "r");
 
     //checks for null
-    if (input == NULL)
+    if (file == NULL)
     {
         printf("Could not open file.\n");
         return 1;
@@ -50,6 +50,7 @@ bool load(const char *dictionary)
     //(loop i guess
 
     //fscanf(file, "%s", word) it runs till reaching end of file
+
     while(fscanf)
     //getting one string at a time, and returns EOF
 
