@@ -17,7 +17,7 @@ typedef struct node
 node;
 
 // TODO: Choose number of buckets in hash table
-const unsigned int N = 26;
+const unsigned int N = 1170; //26*45
 
 // Hash table
 node *table[N];
@@ -27,9 +27,19 @@ bool check(const char *word)
 {
     // TODO
     int index = hash(word);
-    //go to node in hash table
-    
-    //check elements in list until finding the word or setting pointer to null
+    //go to node in hash table and compare word to nodes from list until true or pointer set to NULL
+    node *new_node = table[index];
+    while (new_node != NULL)
+    {
+        if (strcmp(new_node->word, word) != 0)
+        {
+            new_node = new_node->next;
+        }
+        else
+        {
+            return true;
+        }
+    }
 
     return false;
 }
