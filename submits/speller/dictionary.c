@@ -133,7 +133,7 @@ bool unload(void)
     {
         //iterate trought every node from hash array
         //in every node go into the list end free its nodes
-        node *n = table[i];
+        node *n = *table[i];
 
         while (table[i] != NULL)
         {
