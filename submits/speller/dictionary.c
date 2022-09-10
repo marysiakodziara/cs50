@@ -129,6 +129,12 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
-    for (int i = 0; i < LENGHT; )
+    for (int i = 0; i < N; i++)
+    {
+        //iterate trought every node from hash array
+        //in every node go into the list end recursively free its nodes
+
+        
+    }
     return false;
 }
