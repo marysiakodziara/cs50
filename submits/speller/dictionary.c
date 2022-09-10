@@ -35,11 +35,11 @@ unsigned int hash(const char *word)
     int count;
     for (int i = 0; i < LENGTH; i++)
     {
-        if (strcmp(word[i], "\0") != 
+        if (strcmp(&word[i], "\0") != 0)
         {
-            if ((isalpha(word[i])) != 0)
+            if ((isalpha(&word[i])) != 0)
             {
-                count += (word[i] - 97);
+                count += (&word[i] - 97);
             }
             else
             {
