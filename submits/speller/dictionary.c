@@ -114,7 +114,6 @@ bool load(const char *dictionary)
         table[index] = n;
     }
 
-    fclose(file);
     return false;
 }
 
