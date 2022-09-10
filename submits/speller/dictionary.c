@@ -41,9 +41,9 @@ bool load(const char *dictionary)
     //checks for null
 
     //fscanf(file, "%s", word) it runs till reaching end of file
-    //and returns EOF
+    //getting one string at a time, and returns EOF
 
-    
+
 
 
     return false;
