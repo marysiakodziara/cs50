@@ -26,7 +26,8 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
-    int index = 
+    int index = hash(word);
+    
     return false;
 }
 
@@ -91,7 +92,7 @@ bool load(const char *dictionary)
             return 1;
         }
         //call the hash function on the given string
-        int index = hash(&word[0]);
+        int index = hash(word);
         //copy string into node using strcpy
         strcpy(n->word, word);
         //insert new node into hash table
