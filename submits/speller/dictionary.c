@@ -52,7 +52,7 @@ bool load(const char *dictionary)
     while(fscanf(file, "%s", word) != EOF) //run till reaching end of the file
     {
         //dma for each string
-        
+        node n* = malloc(sizeof(node));
         //checks for null
         //call the hash function on the given string
         //copy string into node using strcpy
