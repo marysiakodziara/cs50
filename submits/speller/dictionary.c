@@ -44,10 +44,9 @@ bool load(const char *dictionary)
     if (file == NULL)
     {
         printf("Could not open file.\n");
-        return 1;
+        return false;
     }
 
-    //(loop i guess
     char word[LENGHT + 1];
     while(fscanf(file, "%s", word) != EOF) //run till reaching end of the file
     {
@@ -65,15 +64,9 @@ bool load(const char *dictionary)
         //insert new node into hash table
         n->next = table[index];
         table[index] = n;
-
     }
 
-
-    //)
-
-
-
-
+    fclose(file);
     return false;
 }
 
