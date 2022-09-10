@@ -48,17 +48,16 @@ bool load(const char *dictionary)
     }
 
     //(loop i guess
-
-    //fscanf(file, "%s", word) it runs till reaching end of file
     char word[LENGHT + 1];
-    while(fscanf(file, "%s", word) != )
-    //getting one string at a time, and returns EOF
+    while(fscanf(file, "%s", word) != EOF) //run till reaching end of the file
+    {
+        //dma for each string
+        //checks for null
+        //call the hash function on the given string
+        //copy string into node using strcpy
+        //-set tmp var to point at node chaing, -set head to point at new beginning
 
-    //dma for each string
-    //checks for null
-    //call the hash function on the given string
-    //copy string into node using strcpy
-    //-set tmp var to point at node chaing, -set head to point at new beginning
+    }
 
 
     //)
