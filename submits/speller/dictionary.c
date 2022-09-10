@@ -51,7 +51,7 @@ bool load(const char *dictionary)
     char word[LENGHT + 1];
     while(fscanf(file, "%s", word) != EOF) //run till reaching end of the file
     {
-        //dma for each string
+        //dma for new ndoe
         node n* = malloc(sizeof(node));
         //checks for null
         if (n == NULL)
@@ -63,6 +63,7 @@ bool load(const char *dictionary)
         //copy string into node using strcpy
         n->word = strcpy(n->word, word);
         //insert new node into hash table
+        n->next = table[index];
         
 
     }
