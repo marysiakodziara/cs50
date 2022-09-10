@@ -133,18 +133,19 @@ bool unload(void)
     {
         //iterate trought every node from hash array
         //in every node go into the list end recursively free its nodes
+        node *n = table[i]
 
-        if (p == NULL)
-    {
-        return;
-    }
+        //base case
+        if (n == NULL)
+        {
+            return;
+        }
+        //free nodes recursively
+        
 
-    // TODO: Free parents recursively
-    free_family(p->parents[0]);
-    free_family(p->parents[1]);
 
-    // TODO: Free child
-    free(p);
+        // TODO: Free child
+        free(n);
     }
     return false;
 }
