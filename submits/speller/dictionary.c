@@ -64,7 +64,7 @@ bool load(const char *dictionary)
         n->word = strcpy(n->word, word);
         //insert new node into hash table
         n->next = table[index];
-        
+        table[index] = n;
 
     }
 
