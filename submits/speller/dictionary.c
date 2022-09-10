@@ -52,7 +52,7 @@ unsigned int hash(const char *word)
         }
     }
 
-    return toupper(word[0]) - 'A';
+    return count;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
