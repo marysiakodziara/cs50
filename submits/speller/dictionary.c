@@ -32,14 +32,14 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
-    int count;
+    int count = 0;
     for (int i = 0; i < LENGTH; i++)
     {
         if (strcmp(&word[i], "\0") != 0)
         {
             if (strcmp(&word[i], "'") != 0 && strcmp(&word[i], "-") != 0)
             {
-                count += (&word[i] - 'a' + 1);
+                count += (word[i] - 'a' + 1);
             }
             else
             {
