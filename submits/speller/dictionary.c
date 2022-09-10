@@ -28,7 +28,8 @@ bool check(const char *word)
     // TODO
     int index = hash(word);
     //go to node in hash table
-    //check elements in list until finding the word or setting pointer to null 
+    
+    //check elements in list until finding the word or setting pointer to null
 
     return false;
 }
