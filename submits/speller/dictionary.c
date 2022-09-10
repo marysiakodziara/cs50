@@ -62,7 +62,7 @@ bool load(const char *dictionary)
         //call the hash function on the given string
         int index = hash(&word[0]);
         //copy string into node using strcpy
-        n->word = strcpy(n->word, word);
+        strcpy(n->word, word);
         //insert new node into hash table
         n->next = table[index];
         table[index] = n;
