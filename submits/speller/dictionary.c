@@ -40,7 +40,14 @@ unsigned int hash(const char *word)
         {
             if (strcmp(&word[i], "'") != 0 && strcmp(&word[i], "-") != 0)
             {
-                count += (word[i] - 'a' + 1);
+                if (islower(word[i]))
+                {
+                    count += (word[i] - 'a' + 1);
+                }
+                else
+                {
+                    count += (word[i] - 'A' + 1);
+                }
             }
             else
             {
