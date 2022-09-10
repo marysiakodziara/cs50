@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
+#include <strings.h>
 
 #include "dictionary.h"
 int count_words;
@@ -31,7 +32,7 @@ bool check(const char *word)
     node *new_node = table[index];
     while (new_node != NULL)
     {
-        if (strcmp(new_node->word, word) != 0)
+        if (strcasecmp(new_node->word, word) != 0)
         {
             new_node = new_node->next;
         }
