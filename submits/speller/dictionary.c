@@ -39,7 +39,13 @@ bool load(const char *dictionary)
     // TODO
     //fopen to dictionary
     //checks for null
+
+    //fscanf(file, "%s", word) it runs till reaching end of file
+    //and returns EOF
+
     
+
+
     return false;
 }
 
