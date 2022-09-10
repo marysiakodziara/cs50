@@ -38,7 +38,7 @@ bool load(const char *dictionary)
 {
     // TODO
     //fopen to dictionary
-    FILE *input = fopen(argv[1], "r");
+    FILE *input = fopen(dictionary, "r");
 
     //checks for null
     if (input == NULL)
