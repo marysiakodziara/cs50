@@ -40,8 +40,16 @@ bool load(const char *dictionary)
     //fopen to dictionary
     //checks for null
 
+    //(loop i guess
+    
     //fscanf(file, "%s", word) it runs till reaching end of file
     //getting one string at a time, and returns EOF
+
+    //dma for each string
+    //checks for null
+    //copy string into node using strcpy
+
+    //)
 
 
 
