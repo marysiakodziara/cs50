@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 #include "dictionary.h"
 
@@ -37,7 +38,7 @@ unsigned int hash(const char *word)
     {
         if (strcmp(&word[i], "\0") != 0)
         {
-            if (isalpha(&word[i]) != 0)
+            if (isalpha(&word[i]))
             {
                 count += (&word[i] - 97);
             }
