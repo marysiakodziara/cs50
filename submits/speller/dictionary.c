@@ -51,7 +51,7 @@ bool load(const char *dictionary)
 
     //fscanf(file, "%s", word) it runs till reaching end of file
     char word[LENGHT + 1];
-    while(fscanf())
+    while(fscanf(file, "%s", word) != )
     //getting one string at a time, and returns EOF
 
     //dma for each string
