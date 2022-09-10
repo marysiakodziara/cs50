@@ -137,7 +137,7 @@ bool unload(void)
 
         while (table[i] != NULL)
         {
-            while (n =! NULL)
+            while (n != NULL)
             {
                 n = n->next;
             }
