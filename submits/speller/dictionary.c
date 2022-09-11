@@ -29,7 +29,11 @@ bool check(const char *word)
     // TODO
     int index = hash(word);
     //go to node in hash table and compare word to nodes from list until true or pointer set to NULL
-    node *new_node = table[index];
+    node *new_node = malloc(sizeof(node));
+    if (new_node == NULL)
+    {
+        return false;
+    }
     while (new_node != NULL)
     {
         if (strcasecmp(new_node->word, word) != 0)
@@ -41,6 +45,7 @@ bool check(const char *word)
             return true;
         }
     }
+    free(new_node);
 
     return false;
 }
@@ -128,7 +133,7 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    node *n = table[0];
+    node *n = malloc;
     node *tmp = table[0];
     // TODO
     for (int i = 0; i < N; i++)
@@ -138,7 +143,7 @@ bool unload(void)
 
         while (table[i] != NULL)
         {
-            n->next = table[i]
+            n->next = table[i];
             while (n->next != NULL)
             {
                 n = n->next;
