@@ -31,7 +31,7 @@ bool check(const char *word)
     hash_code = hash(word);
     //go to node in hash table and compare word to nodes from list until true or pointer set to NULL
     node *new_node = table[hash_code];
-    while (new_node != NULL)
+    while (new_node != 0)
     {
         if (strcasecmp(new_node->word, word) != 0)
         {
