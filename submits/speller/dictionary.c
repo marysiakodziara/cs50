@@ -56,7 +56,7 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
     int count = 0;
-    for (int i = 0; i < LENGTH; i++)
+    for (int i = 0; i < (LENGTH + 1); i++)
     {
         if (strcmp(&word[i], "\0") != 0)
         {
