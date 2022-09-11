@@ -90,7 +90,7 @@ bool load(const char *dictionary)
     //checks for null
     if (file == NULL)
     {
-        printf("Could not open file.\n", dictionary);
+        printf("Could not open file %s\n", dictionary);
         return false;
     }
 
@@ -113,7 +113,7 @@ bool load(const char *dictionary)
         //insert new node into hash table
         n->next = table[hash_code];
         table[hash_code] = n;
-        count_words += 1;
+        count_words ++;
     }
 
     fclose(file);
@@ -147,7 +147,7 @@ bool unload(void)
         {
             node *tmp = n;
             n = n->next;
-            free(tmp)
+            free(tmp);
         }
         if (n == NULL)
         {
