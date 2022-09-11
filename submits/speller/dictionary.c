@@ -28,7 +28,7 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
-    int index = hash(word);
+    hash_code = hash(word);
     //go to node in hash table and compare word to nodes from list until true or pointer set to NULL
     node *new_node = malloc(sizeof(node));
     if (new_node == NULL)
