@@ -73,7 +73,7 @@ unsigned int hash(const char *word)
         }
     }
 
-    return count;
+    return count % N;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
@@ -142,7 +142,7 @@ bool unload(void)
             n = n->next;
             free(tmp);
         }
-        if (n == NULL)
+        if (n == NULL )
         {
             return true;;
         }
