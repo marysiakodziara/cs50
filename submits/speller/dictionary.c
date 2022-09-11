@@ -50,34 +50,7 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
-    int count = 0;
-    for (int i = 0; i < (LENGTH); i++)
-    {
-        if (strcmp(&word[i], "\0") != 0)
-        {
-            if (strcmp(&word[i], "'") != 0 && strcmp(&word[i], "-") != 0)
-            {
-                if (islower(word[i]))
-                {
-                    count += (word[i] - 'a' + 1);
-                }
-                else
-                {
-                    count += (word[i] - 'A' + 1);
-                }
-            }
-            else
-            {
-                count += word[i];
-            }
-        }
-        else
-        {
-            break;
-        }
-    }
-
-    return count;
+    
 }
 
 // Loads dictionary into memory, returning true if successful, else false
