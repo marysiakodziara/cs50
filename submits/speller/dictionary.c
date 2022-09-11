@@ -145,12 +145,8 @@ bool unload(void)
         while (n != NULL)
         {
             node *tmp = n;
-            n = table[i];
-            while (n->next != NULL)
-            {
-                n = n->next;
-            }
-            free(n);
+            n = n->next;
+            free(tmp)
         }
 
     }
