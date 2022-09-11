@@ -142,20 +142,17 @@ bool unload(void)
 
         node *n = table[i];
 
-        while (n != NULL)
+        while (n)
         {
             node *tmp = n;
             n = n->next;
             free(tmp)
         }
+        if (n == NULL)
+        {
+            return true;
+        }
 
     }
-    for (int j = 0; j < N; j++)
-    {
-        if (table[j] != NULL)
-        {
-            return false;
-        }
-    }
-    return true;
+    return false;
 }
