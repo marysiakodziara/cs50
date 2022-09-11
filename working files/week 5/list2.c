@@ -85,10 +85,6 @@ int count = 0;
                     count += (word[i] - 'A' + 1);
                 }
             }
-            else
-            {
-                count += word[i];
-            }
         }
         else
         {
@@ -97,3 +93,12 @@ int count = 0;
     }
 
     return count;
+
+
+    //yt hash
+    unsigned long total = 0;
+    for (int i = 0; i < strlen(word); i++)
+    {
+        total += tolower(word[i]);
+    }
+    return total % N;
