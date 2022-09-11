@@ -90,7 +90,7 @@ bool load(const char *dictionary)
     //checks for null
     if (file == NULL)
     {
-        printf("Could not open file.\n");
+        printf("Could not open file.\n", dictionary);
         return false;
     }
 
