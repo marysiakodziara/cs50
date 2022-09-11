@@ -30,12 +30,11 @@ bool check(const char *word)
     // TODO
     hash_code = hash(word);
     //go to node in hash table and compare word to nodes from list until true or pointer set to NULL
-    node *new_node = malloc(sizeof(node));
+    node *new_node = table[hash_code];
     if (new_node == NULL)
     {
         return false;
     }
-    new_node = table[hash_code];
     while (new_node != NULL)
     {
         if (strcasecmp(new_node->word, word) != 0)
@@ -47,7 +46,6 @@ bool check(const char *word)
             return true;
         }
     }
-    free(new_node);
 
     return false;
 }
