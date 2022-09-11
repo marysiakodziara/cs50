@@ -142,7 +142,7 @@ bool unload(void)
             n = n->next;
             free(tmp);
         }
-        if (n == NULL )
+        if (n == NULL && i == N -1)
         {
             return true;;
         }
