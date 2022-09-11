@@ -8,6 +8,7 @@
 
 #include "dictionary.h"
 int count_words;
+int hash_code;
 
 // Represents a node in a hash table
 typedef struct node
@@ -111,12 +112,12 @@ bool load(const char *dictionary)
             return 1;
         }
         //call the hash function on the given string
-        int index = hash(word);
+        hash_code = hash(word);
         //copy string into node using strcpy
         strcpy(n->word, word);
         //insert new node into hash table
-        n->next = table[index];
-        table[index] = n;
+        n->next = table[hash_code];
+        table[hash_code] = n;
     }
 
     fclose(file);
