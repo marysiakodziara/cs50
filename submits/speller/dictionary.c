@@ -98,21 +98,22 @@ bool load(const char *dictionary)
     count_words = 0;
     while(fscanf(file, "%s", word) != EOF) //run till reaching end of the file
     {
-        count_words += 1;
         //dma for new ndoe
         node *n = malloc(sizeof(node));
         //checks for null
         if (n == NULL)
         {
-            return 1;
+            return false;
         }
-        //call the hash function on the given string
-        hash_code = hash(word);
         //copy string into node using strcpy
         strcpy(n->word, word);
+        //call the hash function on the given string
+        hash_code = hash(word);
+
         //insert new node into hash table
         n->next = table[hash_code];
         table[hash_code] = n;
+        count_words += 1;
     }
 
     fclose(file);
