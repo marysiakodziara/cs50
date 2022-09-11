@@ -35,6 +35,7 @@ bool check(const char *word)
     {
         return false;
     }
+    new_node = table[hash_code];
     while (new_node != NULL)
     {
         if (strcasecmp(new_node->word, word) != 0)
