@@ -133,8 +133,8 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    node *n = malloc;
-    node *tmp = table[0];
+    node *n = malloc(sizeof(node));
+    node *tmp = malloc(sizeof(node));
     // TODO
     for (int i = 0; i < N; i++)
     {
@@ -143,7 +143,7 @@ bool unload(void)
 
         while (table[i] != NULL)
         {
-            n->next = table[i];
+            n = table[i];
             while (n->next != NULL)
             {
                 n = n->next;
