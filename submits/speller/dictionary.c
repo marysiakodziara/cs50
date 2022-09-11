@@ -115,7 +115,7 @@ bool load(const char *dictionary)
         //copy string into node using strcpy
         strcpy(n->word, word);
         //insert new node into hash table
-        n = table[index];
+        n->next = table[index];
         table[index] = n;
     }
 
