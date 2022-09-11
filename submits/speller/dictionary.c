@@ -134,16 +134,17 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    node *n = malloc(sizeof(node));
-    node *tmp = malloc(sizeof(node));
     // TODO
     for (int i = 0; i < N; i++)
     {
         //iterate trought every node from hash array
         //in every node go into the list end free its nodes
 
-        while (table[i] != NULL)
+        node *n = table[i];
+
+        while (n != NULL)
         {
+            node *tmp = n;
             n = table[i];
             while (n->next != NULL)
             {
