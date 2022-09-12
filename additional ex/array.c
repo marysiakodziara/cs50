@@ -7,12 +7,12 @@ int main(void)
 
     for (int i = 0; i < 5; i++)
     {
-        arr[i] = get_int("element - %i: ", i);
+        arr[i] = get_int("element - %i : ", i);
     }
 
     for (int j = 0; j < 5; j++)
     {
-        printf("element - %i : %i\n", j, *(arr + 1));
+        printf("element - %i : %p\n", j, *(arr[j]));
     }
 
     return 1;
