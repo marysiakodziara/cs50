@@ -11,11 +11,8 @@ int main(void)
 
 int count(int x)
 {
-    if (x == 0)
+    if (x  )
     {
-        return 1;
-    }
-        printf("%i, ", count(x - 1));
 
-    return count(x - 1) ;
+    }
 }
