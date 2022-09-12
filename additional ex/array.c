@@ -12,7 +12,7 @@ int main(void)
 
     for (int j = 0; j < 5; j++)
     {
-        printf("element - %i : %i\n", j, *&(arr[j]));
+        printf("element - %i : %i\n", j, *(arr + j));
     }
 
     return 1;
