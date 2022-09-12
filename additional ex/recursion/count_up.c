@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
-void count(int x);
+int count(int x);
 
 int main(void)
 {
@@ -9,14 +9,15 @@ int main(void)
     count(x);
 }
 
-void count(int x)
+int count(int x)
 {
     if (x == 0)
     {
-        return;
+        return 1;
     }
     else
     {
         printf("%i, ", count(x - 1));
     }
+    return 0;
 }
