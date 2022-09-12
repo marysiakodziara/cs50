@@ -13,6 +13,8 @@ int main(void)
 
     printf("%i is the maximum number.\n", bigger(st, nd));
 
+    return 0;
+
 }
 
 int bigger(int *st, int *nd)
