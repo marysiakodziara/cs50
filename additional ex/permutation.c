@@ -16,5 +16,6 @@ int main(void)
 
 void permutation(string word, int index)
 {
+    tmp[o] = *word[index];
     
 }
