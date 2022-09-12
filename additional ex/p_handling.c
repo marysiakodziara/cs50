@@ -8,6 +8,10 @@ int main(void)
 
     int *ab = &m;
 
-    printf("Now ab is assigned with the address of m.\nAddress of pointer ab : %p\nContent of pointer ab : %i\n", *ab, ab);
+    printf("Now ab is assigned with the address of m.\nAddress of pointer ab : %p\nContent of pointer ab : %i\n", ab, *ab);
+
+    m = 34;
+
+    printf("The value of m assigned to 34 now.\nAddress of pointer ab : %p\nContent of pointer ab : %i\n", ab, *ab);
 
 }
