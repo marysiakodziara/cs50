@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
-void permutation(string word);
+void permutation(string word, int index);
 
 int main(void)
 {
@@ -11,11 +11,6 @@ int main(void)
     }
 }
 
-void permutation(string word)
+void permutation(string word,m int index)
 {
-    int len = srtlen(word);
-    for(int i = 0; i < len; i++)
-    {
-
-    }
 }
