@@ -6,5 +6,5 @@ int main(void)
     int *z = &m;
     printf("z stores the address of m  = %p\n", z);
 
-    return;
+    return 0;
 }
