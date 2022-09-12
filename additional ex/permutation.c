@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
-string permutation()
+void permutation(string word);
 
 int main(void)
 {
