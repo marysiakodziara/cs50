@@ -6,7 +6,7 @@ void count(int x);
 int main(void)
 {
     int x = get_int("number : ");
-    printf("%i ", count(x));
+    count(x);
 }
 
 void count(int x)
