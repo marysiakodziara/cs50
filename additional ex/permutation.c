@@ -2,10 +2,12 @@
 #include <cs50.h>
 
 void permutation(string word, int index);
+int len;
+tmp array[len]
 
 int main(void)
 {
-    int len = srtlen(word);
+    len = srtlen(word);
     for(int i = 0; i < len; i++)
     {
         permutation(word, i);
