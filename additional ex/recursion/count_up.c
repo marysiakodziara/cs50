@@ -15,9 +15,7 @@ int count(int x)
     {
         return 1;
     }
-    else
-    {
         printf("%i, ", count(x - 1));
-    }
-    return 0;
+
+    return count(x - 1) ;
 }
