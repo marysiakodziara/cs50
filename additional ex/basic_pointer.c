@@ -7,6 +7,8 @@ int main(void)
     int n;
     int o;
 
+    printf("Pointer : Show the basic declaration of pointer:\n");
+    printf("-------------------------------------------------\n");
     printf("z stores the address of m  = %p\n", z);
     printf("*z stores the value of m = %i\n", *z);
     printf("&m is the address of m = %p\n", &m);
