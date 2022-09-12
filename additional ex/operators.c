@@ -12,9 +12,11 @@ int main(void)
 
     printf("Using & operator :\n");
     printf("-----------------------\n");
-    printf("address of m = %p\naddress of fx = %p\naddress of cht = %p\n", &m, &fx, %cht);
+    printf("address of m = %p\naddress of fx = %p\naddress of cht = %p\n", &m, &fx, &cht);
 
-    
+    printf("Using & and * operator :\n");
+    printf("-----------------------------\n");
+    printf("value at address of m = %i\nvalue at address of fx = %f\nvalue at address of cht = %c\n", *&m, *&fx, *&cht);
 
     return 1;
 }
