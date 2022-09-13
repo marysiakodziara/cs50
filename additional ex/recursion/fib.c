@@ -3,6 +3,7 @@
 
 int sum(int x);
 int sumof = 0;
+int k = 1;
 
 int main(void)
 {
@@ -12,16 +13,17 @@ int main(void)
 
 int fib(int x)
 {
-    if (x > 0)
+    while (k < x)
     {
-        x--;
-        sumof += ;
-        x--;
-        sum(x);
+    if (k < x)
+    {
+        k++;
+        sumof += fib(k)
     }
     else
     {
         return sumof;
+    }
     }
 
     return 0;
