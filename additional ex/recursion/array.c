@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
+int x;
 int print(int elem, int arr[x]);
 
 int main(void)
