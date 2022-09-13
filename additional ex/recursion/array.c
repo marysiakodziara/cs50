@@ -12,23 +12,17 @@ int main(void)
     {
         arr[i] = 2 + (2 * i);
     }
-    print(index, &arr[elem]);
+    print(elem, &arr[elem]);
 }
 
 int print(int elem, int arr[elem])
 {
-    static int i = elem - 1;
-    if (i == 0)
+    static int i = 0;
+    if (i < elem - 1)
     {
         printf("%i ", arr[i]);
-        i
-        return 0;
-    }
-    else
-    {
-        elem--;
-        print(elem, &arr[elem]);
-        printf("%i ", arr[elem - 1]);
+        i++;
+        print(elem, &arr[i]);
     }
 
     return 1;
