@@ -12,7 +12,7 @@ int main(void)
 
 int fib(int x)
 {
-    if (x > 2)
+    if (x > 1)
     {
         x--;
         k = fib(x) + fib(x - 1);
