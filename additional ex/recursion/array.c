@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int x;
-int print(int elem, int arr[x]);
+int print(int elem, int arr[elem]);
 
 int main(void)
 {
     int elem = get_int("number of elements: ");
     int arr[elem];
-    int index = elem - 1;
 
     for (int i = 0; i < elem; i++)
     {
@@ -17,11 +15,13 @@ int main(void)
     print(index, &arr[elem]);
 }
 
-int print(int elem, int arr[x])
+int print(int elem, int arr[elem])
 {
-    if (elem == 0)
+    static int i = elem - 1;
+    if (i == 0)
     {
-        printf("%i ", arr[elem]);
+        printf("%i ", arr[i]);
+        i
         return 0;
     }
     else
