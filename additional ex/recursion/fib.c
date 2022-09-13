@@ -16,13 +16,13 @@ int fib(int k)
     if (x > 2)
     {
         x--;
-        k = fib(k - 1) + fib (k - 2);
+        k = fib(x) + fib (x - 1);
         printf("%i ", k);
     }
     if (x == 2)
     {
         x--;
-        k = fib(k);
+        k = fib(x);
         printf("%i ", k);
     }
     else
