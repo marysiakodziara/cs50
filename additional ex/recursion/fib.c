@@ -10,15 +10,18 @@ int main(void)
     fib(x);
 }
 
-int fib(int k)
+int fib(int x)
 {
-    if (x > 2)
+    if (x > 1)
     {
         k = fib(x - 1) + fib(x - 2);
         printf("%i ", k);
     }
-    else if (x == 2)
+    else
     {
-        k 
+        return k;
     }
+
+    return 1;
+
 }
