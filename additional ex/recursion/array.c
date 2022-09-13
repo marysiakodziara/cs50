@@ -21,9 +21,10 @@ int main(void)
 int print(int elem, int arr[])
 {
     static int i = 0;
-    if (i < elem)
+    if (elem > 0)
     {
         printf("%i ", arr[i]);
+        elem--;
         print(elem, &arr[i + 1]);
     }
     else
