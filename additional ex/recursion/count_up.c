@@ -33,12 +33,11 @@ int count_nd(int x)
 {
     if (x >= 1)
     {
-        x--;
-        printf("%i ", count_nd(x));
+        count_nd(x-1);
+        printf("%i ", x);
     }
     else
     {
-        x++;
         return x;
     }
 
