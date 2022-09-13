@@ -7,15 +7,16 @@ int main(void)
 {
     int i = 0;
     int x = get_int("number: ");
-    printf("%i\n", digit(x, i));
+    i = digit(x, i);
+    printf("%i\n", i);
 
 }
 
 int digit(int x, int i)
 {
-    if (x < 1 && x != 0)
+    if (x < 1)
     {
-        return i;
+        return 0;
     }
     else
     {
@@ -24,5 +25,5 @@ int digit(int x, int i)
         digit(x, i);
     }
 
-    return i;
+    return 10;
 }
