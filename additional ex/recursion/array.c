@@ -12,19 +12,19 @@ int main(void)
     {
         arr[i] = 2 + (2 * i);
     }
-    print(elem, arr);
+    print(elem, arr[elem]);
 }
 
 int print(int elem, int arr[elem])
 {
-    if (elem == o)
+    if (elem == 0)
     {
         return 0;
     }
     else
     {
         elem--;
-        print(x);
+        print(elem, arr[elem]);
         printf("%i ", arr[elem - 1]);
     }
 
