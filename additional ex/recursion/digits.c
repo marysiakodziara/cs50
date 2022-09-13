@@ -26,5 +26,6 @@ int digit(int x, int i)
         digit(x, i);
     }
 
+    printf("\n");
     return i;
 }
