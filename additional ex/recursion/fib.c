@@ -21,7 +21,7 @@ int fib(int x)
     else if (x == 1)
     {
         printf("%i ", k);
-        return k;
+        return 0;
     }
     else
     {
