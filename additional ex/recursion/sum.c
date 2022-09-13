@@ -5,12 +5,7 @@ int sum(int x);
 
 int main(void)
 {
-    int x;
-    do
-    {
-        x = get_int("input number: ");
-    }
-    while (x <= 5 && x >= 1);
+    int x = get_int("input number: ");
     sum(x);
 }
 
