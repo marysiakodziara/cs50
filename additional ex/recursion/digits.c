@@ -7,14 +7,22 @@ int main(void)
 {
     int i = 0;
     int x = get_int("number: ");
-    digit(x, i);
+    printf("%i\n", digit(x, i));
+
 }
 
 int digit(int x, int i)
 {
-    static int i
     if (x / 10 < 1 && x / 10 > 0)
     {
-        i
+        return i;
     }
+    else
+    {
+        x = x/10;
+        i++;
+        digit(x, i);
+    }
+
+    return i;
 }
