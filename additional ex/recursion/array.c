@@ -11,14 +11,17 @@ int main(void)
     for (int i = 0; i < elem; i++)
     {
         arr[i] = 2 + (2 * i);
+        printf("%i ", arr[i]);
     }
+
+    printf("\n");
     print(elem, &arr[elem]);
 }
 
 int print(int elem, int arr[elem])
 {
     static int i = 0;
-    if (i < elem - 1)
+    if (i < elem)
     {
         printf("%i ", arr[i]);
         i++;
