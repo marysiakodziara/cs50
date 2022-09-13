@@ -2,33 +2,23 @@
 #include <cs50.h>
 
 int fib(int x);
-int x;
+int k = 1;
 
 int main(void)
 {
-    int k = 1;
-    x = get_int("number of series: ");
-    fib(k);
+    int x = get_int("number of series: ");
+    fib(x);
 }
 
 int fib(int k)
 {
     if (x > 2)
     {
-        x--;
-        k = fib(x) + fib (x - 1);
+        k = fib(x - 1) + fib(x - 2);
         printf("%i ", k);
     }
-    if (x == 2)
+    else if (x == 2)
     {
-        x--;
-        k = fib(x);
-        printf("%i ", k);
+        k 
     }
-    else
-    {
-        return k;
-    }
-
-    return 0;
 }
