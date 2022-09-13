@@ -26,6 +26,6 @@ int digit(float x, int i)
         digit(x, i);
     }
 
-    printf("\n");
+    printf("%i\n", i);
     return i;
 }
