@@ -10,5 +10,5 @@ int main(void)
 
 int digit(int x)
 {
-    
+    if ()
 }
