@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int print(int elem, int arr[elem]);
+int print(int elem, int arr[]);
 
 int main(void)
 {
@@ -15,10 +15,10 @@ int main(void)
     }
 
     printf("\n");
-    print(elem, &arr[elem]);
+    print(elem, arr);
 }
 
-int print(int elem, int arr[elem])
+int print(int elem, int arr[])
 {
     static int i = 0;
     if (i < elem)
