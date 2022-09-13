@@ -8,6 +8,7 @@ int main(void)
 {
     ser = get_int("number of series: ");
     int x = 0, y = 1;
+    printf("%i ", y);
     fib(x, y);
 }
 
