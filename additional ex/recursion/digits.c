@@ -25,5 +25,5 @@ int digit(int x, int i)
         digit(x, i);
     }
 
-    return 10;
+    return i;
 }
