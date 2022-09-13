@@ -6,7 +6,9 @@ int x;
 
 int main(void)
 {
-
+    int k = 1;
+    x = get_int("number of series: ");
+    fib(k);
 }
 
 int fib(int k)
@@ -14,10 +16,13 @@ int fib(int k)
     if (x > 1)
     {
         x--;
-        k =
+        k = fib(x - 1) + fib (x - 2);
+        printf("%i ", k);
     }
     else
     {
-        k 
+        return 1;
     }
+
+    return 0;
 }
