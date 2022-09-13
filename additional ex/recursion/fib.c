@@ -12,10 +12,11 @@ int main(void)
 
 int fib(int x)
 {
+    int k = 1;
     if (x > 1)
     {
         x--;
-        sum = k + fib(x);
+        sum = fib(x) + fib(x - 1);
         printf("%i ", sum);
     }
     else if (x == 1)
