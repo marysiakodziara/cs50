@@ -2,7 +2,7 @@
 #include <cs50.h>
 
 int count(int x);
-void count_nd(int x);
+int count_nd(int x);
 
 int main(void)
 {
@@ -29,18 +29,18 @@ int count(int x)
     return 0;
 }
 
-void count_nd(int x)
+int count_nd(int x)
 {
     if (x >= 1)
     {
         x--;
-        printf("%i ", count(x));
+        printf("%i ", count_nd(x));
     }
     else
     {
         x++;
-        return;
+        return x;
     }
 
-    return;
+    return 0;
 }
