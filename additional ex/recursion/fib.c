@@ -15,7 +15,7 @@ int fib(int x)
     if (x > 1)
     {
         x--;
-        k = fib(x) + fib(x - 1);
+        k += fib(x);
         printf("%i ", k);
     }
     else if (x == 1)
