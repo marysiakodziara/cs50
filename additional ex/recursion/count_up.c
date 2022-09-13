@@ -9,6 +9,7 @@ int main(void)
     int x = 1;
     int k = 50;
     count(x);
+    printf("\n");
     count_nd(k);
 }
 
@@ -34,6 +35,11 @@ void count_nd(int x)
     {
         x--;
         printf("%i ", count(x));
+    }
+    else
+    {
+        x++;
+        return;
     }
 
     return;
