@@ -1,31 +1,35 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int sum(int x);
-int sumof = 0;
-int k = 1;
+int sum(int x,int y);
+int ser;
 
 int main(void)
 {
-    int x = get_int("number of series: ");
-    fib(x);
+    ser = get_int("number of series: ");
+    int x = 0, y = 1;
+    fib(x, y);
 }
 
-int fib(int x)
+int fib(int x, int y)
 {
-    while (k < x)
+    static int i = 1;
+    int next;
+
+    if (i == term)
     {
-    if (k < x)
-    {
-        k++;
-        sumof += fib(k)
+        return 0;
     }
     else
     {
-        return sumof;
-    }
-    }
+        next = x + y;
+        x = y;
+        y = next;
+        printf("%i ", next);
 
+        i++;
+        fib(x, y);
+    }
     return 0;
 
 }
