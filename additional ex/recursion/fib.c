@@ -3,7 +3,6 @@
 
 int fib(int x);
 int sum;
-int k = 1;
 
 int main(void)
 {
