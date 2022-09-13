@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int print()
+int print(int elem, int arr[elem]);
 
 int main(void)
 {
@@ -12,17 +12,21 @@ int main(void)
     {
         arr[i] = 2 + (2 * i);
     }
+    print(elem, arr);
 }
 
-int print()
+int print(int elem, int arr[elem])
 {
-    if (x == o)
+    if (elem == o)
     {
         return 0;
     }
     else
     {
-        x--;
-        printf
+        elem--;
+        print(x);
+        printf("%i ", arr[elem - 1]);
     }
+
+    return 1;
 }
