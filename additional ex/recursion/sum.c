@@ -2,6 +2,7 @@
 #include <cs50.h>
 
 int sum(int x);
+int sumof = 0;
 
 int main(void)
 {
@@ -13,11 +14,14 @@ int sum(int x)
 {
     if (x >= 1)
     {
-        x = x + sum(x - 1);
-        printf("sum is: %i\n", x);
+        x--;
+        sum(x);
+        sumof += x;
+        printf("sum is: %i\n", sumof);
     }
     else
     {
+        x++;
         return x;
     }
 
