@@ -2,6 +2,7 @@
 #include <cs50.h>
 
 int count(int x);
+void count_nd(int x);
 
 int main(void)
 {
@@ -23,4 +24,18 @@ int count(int x)
     }
 
     return 0;
+}
+
+void count_nd(int x)
+{
+    int k;
+    if (x > 1)
+    {
+        k = 
+        count_nd(x - 1)
+    }
+    else
+    {
+        printf()
+    }
 }
