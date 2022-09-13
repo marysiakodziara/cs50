@@ -2,14 +2,14 @@
 #include <cs50.h>
 
 int fib(int x);
-int k = 1
+int x;
 
 int main(void)
 {
 
 }
 
-int fib(int x)
+int fib(int k)
 {
     if (x > 1)
     {
@@ -18,7 +18,6 @@ int fib(int x)
     }
     else
     {
-        
-        return x;
+        k 
     }
 }
