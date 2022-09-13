@@ -20,8 +20,9 @@ int digit(int x, int i)
     }
     else
     {
-        x = x/10;
         i++;
+        x = x/10;
+        printf("%i ", x);
         digit(x, i);
     }
 
