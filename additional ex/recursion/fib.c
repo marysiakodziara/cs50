@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int sum(int x,int y);
+int fib(int x,int y);
 int ser;
 
 int main(void)
@@ -16,7 +16,7 @@ int fib(int x, int y)
     static int i = 1;
     int next;
 
-    if (i == term)
+    if (i == ser)
     {
         return 0;
     }
