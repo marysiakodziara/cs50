@@ -11,7 +11,7 @@ int main(void)
 
 int sum(int x)
 {
-    if (x > 1)
+    if (x >= 1)
     {
         x = x + sum(x - 1);
         printf("sum is: %i\n", x);
