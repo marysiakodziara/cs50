@@ -16,5 +16,13 @@ int main(void)
 
 int print()
 {
-    
+    if (x == o)
+    {
+        return 0;
+    }
+    else
+    {
+        x--;
+        printf
+    }
 }
