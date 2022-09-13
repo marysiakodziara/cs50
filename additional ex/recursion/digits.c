@@ -13,7 +13,7 @@ int main(void)
 
 int digit(int x, int i)
 {
-    if (x < 1 && x > 0)
+    if (x < 1 && x != 0)
     {
         return i;
     }
