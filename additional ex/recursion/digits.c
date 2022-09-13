@@ -10,5 +10,6 @@ int main(void)
 
 int digit(int x)
 {
-    if ()
+    static int i 
+    if (x / 10 < )
 }
