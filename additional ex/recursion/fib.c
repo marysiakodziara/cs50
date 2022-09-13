@@ -2,6 +2,7 @@
 #include <cs50.h>
 
 int fib(int x);
+int sum;
 int k = 1;
 
 int main(void)
@@ -15,13 +16,13 @@ int fib(int x)
     if (x > 1)
     {
         x--;
-        k += fib(x);
-        printf("%i ", k);
+        sum = k + fib(x);
+        printf("%i ", sum);
     }
     else if (x == 1)
     {
         printf("%i ", k);
-        return 0;
+        return k;
     }
     else
     {
