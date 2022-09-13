@@ -17,9 +17,13 @@ int fib(int x)
         k = fib(x - 1) + fib(x - 2);
         printf("%i ", k);
     }
-    else
+    else if (x == 1)
     {
         return k;
+    }
+    else
+    {
+        return 0;
     }
 
     return 1;
