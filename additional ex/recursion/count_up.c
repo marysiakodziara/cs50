@@ -5,14 +5,20 @@ int count(int x);
 
 int main(void)
 {
-    int x = get_int("number : ");
+    int x = 1;
     count(x);
 }
 
 int count(int x)
 {
-    if (x  )
+    if (x <= 50)
     {
-
+        printf("%i ", x);
+        x++;
+        count(x);
+    }
+    else
+    {
+        return;
     }
 }
