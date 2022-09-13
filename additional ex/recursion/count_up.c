@@ -7,7 +7,9 @@ void count_nd(int x);
 int main(void)
 {
     int x = 1;
+    int k = 50;
     count(x);
+    count_nd(k);
 }
 
 int count(int x)
@@ -28,14 +30,11 @@ int count(int x)
 
 void count_nd(int x)
 {
-    int k;
-    if (x > 1)
+    if (x >= 1)
     {
-        k = 
-        count_nd(x - 1)
+        x--;
+        printf("%i ", count(x));
     }
-    else
-    {
-        printf()
-    }
+
+    return;
 }
