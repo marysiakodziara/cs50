@@ -12,7 +12,7 @@ int main(void)
     {
         arr[i] = 2 + (2 * i);
     }
-    print(elem, arr[elem]);
+    print(elem, &arr[elem]);
 }
 
 int print(int elem, int arr[elem])
@@ -24,7 +24,7 @@ int print(int elem, int arr[elem])
     else
     {
         elem--;
-        print(elem, arr[elem]);
+        print(elem, &arr[elem]);
         printf("%i ", arr[elem - 1]);
     }
 
