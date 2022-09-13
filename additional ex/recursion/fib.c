@@ -12,23 +12,6 @@ int main(void)
 
 int fib(int x)
 {
-    int k = 1;
-    if (x > 1)
-    {
-        sum += fib(x - 1);
-        printf("%i ", sum);
-    }
-    else if (x == 1)
-    {
-        sum = k;
-        printf("%i ", k);
-        return sum;
-    }
-    else
-    {
-        return 0;
-    }
-
-    return 1;
+    
 
 }
