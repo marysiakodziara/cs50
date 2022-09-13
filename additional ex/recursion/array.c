@@ -24,7 +24,6 @@ int print(int elem, int arr[])
     if (i < elem)
     {
         printf("%i ", arr[i]);
-        i++;
         print(elem, &arr[i]);
     }
 
