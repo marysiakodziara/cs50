@@ -1,18 +1,17 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int digit(float x, int i);
+int digit(float x);
+int i = 0;
 
 int main(void)
 {
-    int i = 0;
     float x = get_int("number: ");
-    i = digit(x, i);
-    printf("%i\n", i);
-
+    digit(x);
+    printf("\n%i\n", i);
 }
 
-int digit(float x, int i)
+int digit(float x)
 {
     if (x < 1)
     {
@@ -22,10 +21,8 @@ int digit(float x, int i)
     {
         i++;
         x = x/10;
-        printf("%f, %i\n ", x, i);
-        digit(x, i);
+        digit(x);
     }
 
-    printf("%i\n", i);
-    return i;
+    return 0;
 }
