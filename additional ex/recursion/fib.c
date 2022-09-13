@@ -13,15 +13,20 @@ int main(void)
 
 int fib(int k)
 {
-    if (x > 1)
+    if (x > 2)
     {
         x--;
         k = fib(k - 1) + fib (k - 2);
         printf("%i ", k);
     }
+    if (x == 2)
+    {
+        x--;
+        k = fib(k);
+        printf("%i ", k);
+    }
     else
     {
-        printf("%i ", k);
         return k;
     }
 
