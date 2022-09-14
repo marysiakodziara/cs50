@@ -18,6 +18,6 @@ node *create(void)
 {
     int x;
     node *new_node;
-    new_node = malloc(sizeof(node));
-    
+    new_node = (node n) malloc(sizeof(node));
+
 }
