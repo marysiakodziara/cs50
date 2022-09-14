@@ -1,11 +1,16 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int reverse(int arr[], int x);
+char word[];
+int reverse(char arr[], int x);
 
 int main(void)
 {
+    word = get_string("word: ");
+    int x = strlen(word);
+    printf("reversed word: %s", word);
 
+    return 0;
 }
 
 int reverse(int arr[], int x)
@@ -20,6 +25,12 @@ int reverse(int arr[], int x)
     else
     {
         tmp = arr[i];
-        arr[x - 1]
+        arr[i] = arr[x];
+        arr[x] = tmp;
+        i++;
+        x--;
+        reverse(arr, x);
     }
+
+    return 0;
 }
