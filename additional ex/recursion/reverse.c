@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <cs50.h>
 
-char word[];
-int reverse(char arr[], int x);
+string word;
+int reverse(string w, int x);
 
 int main(void)
 {
@@ -13,10 +13,10 @@ int main(void)
     return 0;
 }
 
-int reverse(int arr[], int x)
+int reverse(string w, int x)
 {
     static int i = 0;
-    int tmp;
+    char tmp;
 
     if (i == x || i = x -1)
     {
@@ -24,12 +24,12 @@ int reverse(int arr[], int x)
     }
     else
     {
-        tmp = arr[i];
-        arr[i] = arr[x];
-        arr[x] = tmp;
+        tmp = w[i];
+        w[i] = w[x];
+        w[x] = tmp;
         i++;
         x--;
-        reverse(arr, x);
+        reverse(w, x);
     }
 
     return 0;
