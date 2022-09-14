@@ -8,7 +8,7 @@ int reverse(string w, int x);
 int main(void)
 {
     word = get_string("word: ");
-    int x = strlen(word);
+    int x = strlen(word) - 1;
     reverse(word, x);
     printf("reversed word: %s\n", word);
 
