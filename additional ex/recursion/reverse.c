@@ -23,7 +23,12 @@ int reverse(string w, int x)
     if (i == x || i + 1 == x)
     {
         printf("x: %i, i: %i\n", x, i);
-        break;
+        return 0;
+    }
+    else if (i + 1 == x)
+    {
+        i++;
+        return 0;
     }
     else
     {
