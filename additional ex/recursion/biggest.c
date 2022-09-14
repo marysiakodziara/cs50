@@ -26,9 +26,8 @@ int biggest(int arr[], int x)
     {
         i++;
         bigger = arr[i];
-        return 0;
     }
-    if (i < x - 1)
+    if (i < x)
     {
         if (bigger > arr[i])
         {
