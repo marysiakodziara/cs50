@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <string.h>
 
 string word;
 int reverse(string w, int x);
@@ -8,7 +9,8 @@ int main(void)
 {
     word = get_string("word: ");
     int x = strlen(word);
-    printf("reversed word: %s", word);
+    reverse(word, x);
+    printf("reversed word: %s\n", word);
 
     return 0;
 }
@@ -18,7 +20,7 @@ int reverse(string w, int x)
     static int i = 0;
     char tmp;
 
-    if (i == x || i = x -1)
+    if (i == x || i == x -1)
     {
         return 0;
     }
