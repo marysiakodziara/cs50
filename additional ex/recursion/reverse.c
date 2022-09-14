@@ -20,7 +20,7 @@ int reverse(string w, int x)
     static int i = 0;
     char tmp;
 
-    if (i == x || i + 1 == x)
+    if (i == x)
     {
         printf("x: %i, i: %i\n", x, i);
         return 0;
