@@ -20,11 +20,7 @@ int reverse(string w, int x)
     static int i = 0;
     char tmp;
 
-    if (i == x)
-    {
-        return 0;
-    }
-    else if (x - i == 2)
+    if (i == x || i + 1 == x)
     {
         return 0;
     }
