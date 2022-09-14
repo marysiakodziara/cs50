@@ -25,12 +25,7 @@ int reverse(string w, int x)
         printf("x: %i, i: %i\n", x, i);
         return 0;
     }
-    else if (i + 1 == x)
-    {
-        i++;
-        return 0;
-    }
-    else
+    else if (i < x)
     {
         tmp = w[i];
         w[i] = w[x];
