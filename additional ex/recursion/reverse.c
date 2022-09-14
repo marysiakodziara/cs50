@@ -32,6 +32,7 @@ int reverse(string w, int x)
         w[x] = tmp;
         i++;
         x--;
+        printf("x: %i, i: %i\n", x, i);
         reverse(w, x);
     }
 
