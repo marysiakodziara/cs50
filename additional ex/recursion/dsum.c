@@ -17,7 +17,7 @@ int dsum(int x)
 {
     if (x < 10)
     {
-        sum = x;
+        sum += x;
         return 0;
     }
     else
