@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int factorial(int x);
+long int factorial(long int x);
 
 int main(void)
 {
-    int x = get_int("number: ");
+    long int x = get_int("number: ");
     x = factorial(x);
-    printf("factorial is: %i\n", x);
+    printf("factorial is: %li\n", x);
 
     return 0;
 }
 
-int factorial(int x)
+long int factorial(long int x)
 {
     if (x == 1)
     {
