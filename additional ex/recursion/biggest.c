@@ -18,8 +18,20 @@ int biggest(int arr[], int x)
         i++;
         return 0;
     }
-    if (i < x)
+    else if (i < x - 1)
     {
-        
+        if (bigger > arr[i])
+        {
+            i++;
+            biggest(arr, x);
+        }
+        else
+        {
+            bigger = arr[i];
+            i++;
+            biggest(arr, x);
+        }
     }
+
+    return 0;
 }
