@@ -5,7 +5,7 @@ long int factorial(long int x);
 
 int main(void)
 {
-    long int x = get_int("number: ");
+    long int x = get_long("number: ");
     x = factorial(x);
     printf("factorial is: %li\n", x);
 
