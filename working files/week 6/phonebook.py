@@ -7,4 +7,4 @@ people = {
 
 name = get_string("Name: ")
 if name in people:
-    print(f"Number: {poeple[name]}")
+    print(f"Number: {people[name]}")
