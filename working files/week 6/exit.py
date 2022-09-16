@@ -1,4 +1,4 @@
-from sys import argv
+from sys import argv, exit
 
 if len(argv) != 2:
     print("Missing command-line argument")
