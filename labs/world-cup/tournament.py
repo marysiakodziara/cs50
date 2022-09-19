@@ -21,7 +21,7 @@ def main():
         teams = list(reader)
         for i in range(len(teams)):
             int(teams[i]['rating'])
-        print(teams)
+            print(type(teams[i]['rating']))
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
