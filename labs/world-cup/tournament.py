@@ -20,10 +20,10 @@ def main():
         reader = csv.DictReader(file)
         teams = list(reader)
 
-    for i in list(rating):
-        int("list("rating")")
+    #for i in list(rating):
+     #   int("list("rating")")
 
-    print(teams)
+    print(list(reader))
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
