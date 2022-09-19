@@ -16,7 +16,7 @@ def main():
 
     teams = []
     # TODO: Read teams into memory from file
-    with open(sys.argv[2], 'r') as file:
+    with open({argv[1]}, 'r') as file:
         reader = csv.DictReader(file)
         teams = list(reader)
         print(teams)
