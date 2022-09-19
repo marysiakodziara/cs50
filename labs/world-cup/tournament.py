@@ -21,7 +21,7 @@ def main():
         teams = list(reader)
 
     for i in list(rating):
-        int("list(rating)")
+        int("list("rating")")
 
     print(teams)
 
