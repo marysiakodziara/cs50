@@ -12,6 +12,7 @@ int main(void)
 
     int digits;
     digits = digits_num(n);
+    printf("%i\n", digits);
 
     int validation;
     validation = lunhs_algorithm(n);
