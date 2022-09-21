@@ -22,3 +22,4 @@ def lunhs_algorithm(x):
 
         sum = sum + prod_digits + remaining_numb
         x = x / 100
+
