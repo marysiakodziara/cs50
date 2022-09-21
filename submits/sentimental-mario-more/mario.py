@@ -3,11 +3,13 @@
 def is_int(n):
     try:
         n = int(n)
-        return True
+        if n => 1 and n < 8:
+            return True
+        else:
+            return False
     except:
         return False
-def in_range(n):
-    
+
 n = "cat"
 while is_int(n) is False:
     n = input("What is the height? ")
