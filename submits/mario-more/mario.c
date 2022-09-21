@@ -29,13 +29,14 @@ int main(void)
 
         printf("  ");
 
-        //for (int k = 0; k < n; k++)
-        //{
-        //    if (z > k)
-        //    {
-        //        printf("#");
-        //    }
-        //}
+        //right half
+        for (int k = 0; k < n; k++)
+        {
+            if (z > k)
+            {
+                printf("#");
+            }
+        }
 
         printf("\n");
         x--;
