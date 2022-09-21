@@ -1,5 +1,5 @@
 # TODO
-from cs50 import get_long()
+from cs50 import get_int
 
 # checks for 15 numbers in cc number
 def digits_num(x):
@@ -43,10 +43,9 @@ def answer(x, k, y):
         print("INVALID\n")
 
 
-n = get_long("What is the number? ")
+n = get_int("What is the number? ")
 
 digits = digits_num(n)
-print(digits)
 
 validation = lunhs_algorithm(n)
 
