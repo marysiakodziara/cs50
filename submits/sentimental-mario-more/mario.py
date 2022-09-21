@@ -1,8 +1,8 @@
 # TODO
 
-n = input("What is the hight?")
+n = get_int("What is the height? ")
 while n > 8 or n < 1:
-    n = input("What is the hight?")
+    n = get_int("What is the hight?")
 
 x = n - 1
 z = 1
