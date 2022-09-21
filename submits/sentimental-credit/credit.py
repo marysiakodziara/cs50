@@ -1,7 +1,7 @@
 # TODO
 
 # checks for 15 numbers in cc number
-int digits_num(long x)
+def digits_num(x)
     k = 1;
     while (x > 1)
     {
@@ -16,7 +16,7 @@ int digits_num(long x)
 }
 
 #lunhs algorithm
-int lunhs_algorithm(long x):
+def lunhs_algorithm(x):
     sum = 0
     for i in range(x):
         every_other = (2 * ((x / 10) - ((x / 100) * 10)))
