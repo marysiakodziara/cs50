@@ -1,6 +1,6 @@
 # TODO
 n = input("What is the height? ")
-while n != int(n):
+if n != int(n):
     n = input("What is the hight?")
 a = 1
 b = 1
