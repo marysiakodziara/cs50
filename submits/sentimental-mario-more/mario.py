@@ -6,10 +6,9 @@ while True:
         while n not in range(1-8):
             n = input("What is the height?")
     except:
-        n = input("What is the height?")
-        n = int(n)
-        while n not in range(1-8):
-            n = input("What is the height?")
+        True
+    else:
+        break
 
 a = 1
 b = 1
