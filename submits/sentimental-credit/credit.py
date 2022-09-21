@@ -24,8 +24,7 @@ def lunhs_algorithm(x):
         sum = sum + prod_digits + remaining_numb
         x = x / 100
 
-def answer(x, k, y)
-{
+def answer(x, k, y):
     start_num = 0
     while x > 99:
         x = x / 10;
