@@ -1,8 +1,7 @@
 # TODO
 n = input("What is the height? ")
 try:
-    if n != int(n):
-        n = input("What is the hight?")
+    n = int(n)
 except:
     n = input("What is the height?")
 
