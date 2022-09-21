@@ -25,4 +25,6 @@ for i in range(n):
     z += 1;
 
 for p in range(n):
-    print()
+    a = 1
+    print((x - p)*" " + a * "#" + "  " + a * "#")
+    a += 1;
