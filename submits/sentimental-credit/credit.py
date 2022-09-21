@@ -1,5 +1,5 @@
 # TODO
-from cs50 import get_long
+from cs50 import get_long()
 
 # checks for 15 numbers in cc number
 def digits_num(x):
@@ -35,9 +35,9 @@ def answer(x, k, y):
 
     if start_num == 4 and (k == 13 or k == 16) and y == 1:
         print("VISA\n")
-    elf start_num == 34 or start_num == 37 and k == 15 and y == 1:
+    elif start_num == 34 or start_num == 37 and k == 15 and y == 1:
         print("AMEX\n")
-    else if start_num == 51 or start_num == 52 or start_num == 53 or start_num == 54 or start_num == 55 and k == 16 and y == 1:
+    elif start_num == 51 or start_num == 52 or start_num == 53 or start_num == 54 or start_num == 55 and k == 16 and y == 1:
         print("MASTERCARD\n")
     else:
         print("INVALID\n")
@@ -49,5 +49,5 @@ digits = digits_num(n)
 print(digits)
 
 validation = lunhs_algorithm(n)
-;
-answer(n, digits, validation);
+
+answer(n, digits, validation)
