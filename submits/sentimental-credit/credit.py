@@ -1,19 +1,13 @@
 # TODO
 
 # checks for 15 numbers in cc number
-def digits_num(x)
-    k = 1;
-    while (x > 1)
-    {
-        if (x > 10)
-        {
-            k++;
-        }
-        x = x / 10;
-    }
-
-    return k;
-}
+def digits_num(x):
+    k = 1
+    while x > 1:
+        if x > 10:
+            k += 1
+        x = x / 1
+    return k
 
 #lunhs algorithm
 def lunhs_algorithm(x):
