@@ -2,7 +2,7 @@
 n = input("What is the height? ")
 try:
     n = int(n)
-    while n is not in range(1-8):
+    while n out of range(1-8):
         n = input("What is the height?")
 
 a = 1
