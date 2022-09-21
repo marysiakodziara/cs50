@@ -24,3 +24,5 @@ for i in range(n):
     x += 1;
     z += 1;
 
+for p in range(n):
+    print()
