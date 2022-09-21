@@ -1,10 +1,12 @@
 # TODO
 
-n = int(input("What is the height? "))
-while n > 8 or n < 1:
-    n = int(input("What is the hight?"))
+n = input("What is the height? ")
 if n is not int:
     exit()
+
+while n > 8 or n < 1:
+    n = int(input("What is the hight?"))
+
 
 a = 1
 b = 1
