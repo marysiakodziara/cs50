@@ -1,5 +1,16 @@
 # TODO
 
+def is_int(n):
+    try:
+        n = int(n)
+        return True
+    except:
+        return False
+def in_range(n):
+    
+n = "cat"
+while is_int(n) is False:
+    n = input("What is the height? ")
 
 
 a = 1
