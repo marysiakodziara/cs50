@@ -23,8 +23,10 @@ for i in range(n):
     #print("\n")
     x += 1;
     z += 1;
+a = 1
+b = 1
 
 for p in range(n):
-    a = 1
-    print((x - p)*" " + a * "#" + "  " + a * "#")
-    a += 1;
+    print((x - b)*"." + a * "#" + "  " + a * "#")
+    a += 1
+    b += 1
