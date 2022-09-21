@@ -1,14 +1,7 @@
 # TODO
-n = input("What is the height? ")
-while True:
-    try:
-        n = int(n)
-        while n not in range(1-8):
-            n = input("What is the height?")
-    except:
-        True
-    else:
-        break
+n = get_int_input("What is the height? ")
+while n > 8 or n < 1:
+    n = get_int_input("What is the height? ")
 
 a = 1
 b = 1
