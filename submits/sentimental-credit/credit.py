@@ -23,6 +23,10 @@ def lunhs_algorithm(x):
 
         sum = sum + prod_digits + remaining_numb
         x = x / 100
+    if sum % 10 == 0:
+        return 1
+    else:
+        return 0
 
 def answer(x, k, y):
     start_num = 0
