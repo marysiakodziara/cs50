@@ -20,7 +20,7 @@ for i in range(n):
         if z > k:
             print("#")
 
-    print("\n")
+    #print("\n")
     x += 1;
     z += 1;
 
