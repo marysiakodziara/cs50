@@ -1,6 +1,9 @@
 # TODO
 n = input("What is the height? ")
-if n != int(n) is ValueError:
+try:
+    if n != int(n):
+        n = input("What is the hight?")
+except:
     n = input("What is the hight?")
 a = 1
 b = 1
