@@ -6,6 +6,7 @@ def main():
     n = get_int("the number is: ")
     digits = digits_num(n)
     validation = lunhs_algorithm(n)
+    print(digits, validation)
     answer(n, digits, validation)
 
 
@@ -47,6 +48,7 @@ def answer(x, k, y):
     if start_num / 10 == 4:
         start_num = 4
 
+    print(start_num)
     if start_num == 4 and ((k == 13 or k == 16) and y == 1):
         print("VISA\n")
     elif ((start_num == 34 or start_num == 37) and k == 15 and y == 1):
