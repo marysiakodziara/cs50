@@ -34,9 +34,11 @@ def lunhs_algorithm(x):
         x = x / 100
 
     if sum % 10 == 0:
-        return 1
+        a = 1
+        return a
     else:
-        return 0
+        a = 0
+        return a
 
 
 if __name__ == "__main__":
