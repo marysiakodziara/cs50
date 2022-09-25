@@ -12,10 +12,10 @@ def count_letters(text):
     n = len(text)
     letters = 0
     for i in range(n):
-        if char(text[i]) in range (65, 90):
+        if isalpha(text[i]):
             letters += 1
-        if text[i] in range (97, 122):
-            letters += 1
+        # if text[i] in range (97, 122):
+            # letters += 1
     return letters
 
 
