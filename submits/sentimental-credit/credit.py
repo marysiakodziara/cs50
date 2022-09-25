@@ -45,5 +45,36 @@ def lunhs_algorithm(x):
         return a
 
 
+def answer(x, k, y)
+{
+    start_num = 0
+    while x > 99:
+        x = x / 10
+        start_num = x
+
+    if (start_num / 10 == 4)
+    {
+        start_num = 4;
+    }
+
+    if (start_num == 4 && (k == 13 || k == 16) && y == 1)
+    {
+        printf("VISA\n");
+    }
+    else if ((start_num == 34 || start_num == 37) && k == 15 && y == 1)
+    {
+        printf("AMEX\n");
+    }
+    else if ((start_num == 51 || start_num == 52 || start_num == 53 || start_num == 54 || start_num == 55) && k == 16 && y == 1)
+    {
+        printf("MASTERCARD\n");
+    }
+    else
+    {
+        printf("INVALID\n");
+    }
+}
+
+
 if __name__ == "__main__":
     main()
