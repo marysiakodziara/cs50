@@ -43,7 +43,7 @@ def lunhs_algorithm(x):
 def answer(x, k, y):
     start_num = 0
     while x > 99:
-        x = x / 10
+        x = int(x / 10)
         start_num = x
 
     if start_num / 10 == 4:
