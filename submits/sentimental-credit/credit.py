@@ -6,6 +6,7 @@ def main():
     n = get_int("the number is: ")
     digits = digits_num(n)
     validation = lunhs_algorithm(n)
+    print(digits, validation)
     answer(n, digits, validation)
 
 
