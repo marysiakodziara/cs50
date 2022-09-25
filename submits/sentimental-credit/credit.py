@@ -17,6 +17,9 @@ def digits_num(x):
 
     return k
 
+def lunhs_algorithm(x):
+    
+
 
 if __name__ == "__main__":
     main()
