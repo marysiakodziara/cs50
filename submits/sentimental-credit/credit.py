@@ -6,8 +6,12 @@ def main():
     n = get_int("the number is: ")
     digits = digits_num(n)
     print(digits)
-    validation = lunhs_algorithm(n)
-    print(validation)
+    try:
+        validation = lunhs_algorithm(n)
+        print(validation)
+    except:
+        print("dupa")
+
 
 
 def digits_num(x):
