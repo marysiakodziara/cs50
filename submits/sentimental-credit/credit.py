@@ -6,6 +6,7 @@ def main():
     n = get_int("the number is: ")
     digits = digits_num(n)
     validation = lunhs_algorithm(n)
+    print(digits, validation)
     answer(n, digits, validation)
 
 
@@ -33,11 +34,9 @@ def lunhs_algorithm(x):
         x = int(x / 100)
 
     if sum % 10 == 0:
-        a = 1
-        return a
+        return 1
     else:
-        a = 0
-        return a
+        return 0
 
 
 def answer(x, k, y):
