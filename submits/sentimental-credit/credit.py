@@ -26,7 +26,7 @@ def digits_num(x):
 def lunhs_algorithm(x):
     sum = 0
     prod_digits = 0
-    while x >= 0:
+    while x > 0:
         every_other = (2 * ((x / 10) - ((x / 100) * 10)))
         remaining_numb = (x - ((x / 10) * 10))
         if every_other > 9:
@@ -36,6 +36,7 @@ def lunhs_algorithm(x):
 
         sum = sum + prod_digits + remaining_numb
         x = x / 100
+        print (x)
 
     if sum % 10 == 0:
         a = 1
