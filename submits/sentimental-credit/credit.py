@@ -21,10 +21,10 @@ def digits_num(x):
 
 def lunhs_algorithm(x):
     sum = 0
-    prod_digits = 0
     while x > 0:
         every_other = int((2 * ((x / 10) - ((x / 100) * 10))))
         remaining_numb = int((x - ((x / 10) * 10)))
+        prod_digits = 0
         if every_other > 9:
             prod_digits = int((every_other / 10) + (every_other - ((every_other / 10) * 10)))
         else :
