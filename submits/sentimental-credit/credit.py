@@ -1,10 +1,7 @@
 from cs50 import get_int
 
 def main():
-    try:
-        n = get_int("the number is: ")
-    except:
-        print("dupa")
+    n = get_int("the number is: ")
     digits = digits_num(n)
     validation = lunhs_algorithm(n)
     print(digits, validation)
