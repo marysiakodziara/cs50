@@ -5,11 +5,8 @@ def main():
 
     n = get_int("the number is: ")
     digits = digits_num(n)
-    print(digits)
     validation = lunhs_algorithm(n)
-    print(validation)
     answer(n, digits, validation)
-
 
 
 def digits_num(x):
