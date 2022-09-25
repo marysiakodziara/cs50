@@ -17,5 +17,7 @@ def count_letters(text):
     return letters
 
 
+
+
 if __name__ == "__main__":
     main()
