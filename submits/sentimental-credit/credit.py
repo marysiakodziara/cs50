@@ -23,14 +23,14 @@ def lunhs_algorithm(x):
     sum = 0
     prod_digits = 0
     while x > 0:
-        every_other = (2 * ((x / 10) - ((x / 100) * 10)))
-        remaining_numb = (x - ((x / 10) * 10))
+        every_other = int((2 * ((x / 10) - ((x / 100) * 10))))
+        remaining_numb = int((x - ((x / 10) * 10)))
         if every_other > 9:
-            prod_digits = (every_other / 10) + (every_other - ((every_other / 10) * 10))
+            prod_digits = int((every_other / 10) + (every_other - ((every_other / 10) * 10)))
         else :
-            prod_digits = every_other
+            prod_digits = int(every_other)
 
-        sum = sum + prod_digits + remaining_numb
+        sum = int(sum + prod_digits + remaining_numb)
         x = int(x / 100)
         print(sum)
 
