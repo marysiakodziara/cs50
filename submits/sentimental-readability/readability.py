@@ -8,6 +8,15 @@ def main():
     words = count_words(text1)
     sentences = count_sentences(text1)
     print(letters, words, sentences)
+    L = letters * 100 / words
+    S = sentences / words * 100
+    index = round(0.0588 * L - 0.296 * S - 15.8)
+    if index > 16:
+        print("Grade 16+\n")
+    elif index < 1:
+        print("Before Grade 1\n")
+    else:
+        print(f"Grade {index}\n")
 
 
 def count_letters(text):
