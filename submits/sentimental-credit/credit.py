@@ -1,1 +1,3 @@
-import get_int from sc50
+from cs50 import get_string
+from cs50 import get_int
+
