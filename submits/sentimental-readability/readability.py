@@ -1,10 +1,10 @@
 # TODO
 
-from sc50 import get_string
+from cs50 import get_string
 
 def main():
     text1 = get_string("Write text sample: ")
-    
+    letters = count_letters(text1)
 
 
 def count_letters(text):
