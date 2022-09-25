@@ -17,9 +17,9 @@ def count_letters(text):
     return letters
 
 def count_words(text):
-    n = strlen(text)
-    words = 1;
-    for (int i = 0; i < n; i++)
+    n = len(text)
+    words = 1
+    for i in range(n)
         if (text[i] == ' ')
             words += 1
 
