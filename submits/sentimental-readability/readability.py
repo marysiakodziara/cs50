@@ -19,10 +19,9 @@ def count_letters(text):
 def count_words(text):
     n = len(text)
     words = 1
-    for i in range(n)
-        if (text[i] == ' ')
+    for i in range(n):
+        if text[i] == ' ':
             words += 1
-
     return words
 
 
