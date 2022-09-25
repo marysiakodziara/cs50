@@ -14,7 +14,7 @@ def digits_num(x):
     while x > 1:
         if x > 10:
             k += 1
-        x = x / 10
+        x = int(x / 10)
 
     return k
 
