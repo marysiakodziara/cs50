@@ -36,6 +36,7 @@ def lunhs_algorithm(x):
 
         sum = sum + prod_digits + remaining_numb
         x = x / 100
+        x = (int) x
         print (x)
 
     if sum % 10 == 0:
