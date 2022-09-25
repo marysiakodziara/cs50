@@ -16,7 +16,14 @@ def count_letters(text):
             letters += 1
     return letters
 
+def count_words(text):
+    n = strlen(text)
+    words = 1;
+    for (int i = 0; i < n; i++)
+        if (text[i] == ' ')
+            words += 1
 
+    return words
 
 
 if __name__ == "__main__":
