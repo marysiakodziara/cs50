@@ -4,7 +4,8 @@ from cs50 import get_int
 def main():
 
     n = get_int("the number is: ")
-    digits = digits_num(x)
+    digits = digits_num(n)
+    print(digits)
 
 
 def digits_num(x):
