@@ -11,9 +11,9 @@ def count_letters(text):
     n = len(text)
     letters = 0
     for i in range(n):
-        if text[i] in range (65 - 90):
+        if text[i] in range (65, 90):
             letters += 1
-        if islower(text[i]):
+        if text[i] in range (65, 90):
             letters += 1
     return letters
 
