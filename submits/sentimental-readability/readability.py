@@ -5,7 +5,8 @@ from cs50 import get_string
 def main():
     text1 = get_string("Write text sample: ")
     letters = count_letters(text1)
-    print(letters)
+    words = count_words(text1)
+    print(letters, words)
 
 
 def count_letters(text):
