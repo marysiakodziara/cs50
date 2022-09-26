@@ -30,8 +30,14 @@ def main():
     sub = firstLine.split(',')
     subNum = len(sub)
     print(subNum)
+
+    # now i want to find the longest sequence for each of subsequences
+    # for sub[i] f
+
+    
     for i in range(1, subNum):
-        
+
+
 
 
     # TODO: Check database for matching profiles
