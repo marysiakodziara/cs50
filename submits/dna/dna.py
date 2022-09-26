@@ -45,8 +45,8 @@ def main():
     # TODO: Check database for matching profiles
 
     for i in range(len(database)):
-        for j in range(len(database[i][j])):
-            database[i][j] = int(database[i][j])
+        for j in range(len(database[j])):
+            database[i][j] = int(database[j])
         print(database[i])
     return
 
