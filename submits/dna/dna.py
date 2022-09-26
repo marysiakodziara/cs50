@@ -37,7 +37,8 @@ def main():
     subDict = {}
 
     for i in range(1, subNum):
-        num = longest_match()
+        num = longest_match(sequence, subNum[i])
+        subDict = 
 
 
 
