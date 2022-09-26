@@ -27,6 +27,7 @@ def main():
     with open(sys.argv[1], 'r') as file:
         firstLine = file.readline()
     firstLine = firstLine.strip('\n')
+    firstLine = firstLine.strip('name')
     sub = firstLine.split(',')
     print(sub)
 
