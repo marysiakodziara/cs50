@@ -26,6 +26,7 @@ def main():
     # TODO: Find longest match of each STR in DNA sequence
     with open(sys.argv[1], 'r') as file:
         firstLine = file.readline()
+    firstLine = firstLine - ('\n')
     sub = firstLine.split(',')
     print(sub)
 
