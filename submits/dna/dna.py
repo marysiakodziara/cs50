@@ -28,7 +28,8 @@ def main():
         firstLine = file.readline()
     firstLine = firstLine.strip('\n')
     sub = firstLine.split(',')
-    
+    subNum = len(sub)
+    print(subNum)
 
 
     # TODO: Check database for matching profiles
