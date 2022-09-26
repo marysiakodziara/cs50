@@ -13,13 +13,12 @@ def main():
     with open(sys.argv[1], 'r') as file:
         reader = csv.DictReader(file)
         database = list(reader)
-        for i in range(len(teams)):
-            teams[i]['rating'] = int(teams[i]['rating'])
-
-
-
+         # i think i should put here a convertion of eements that should be numeric but are gonna be read as strings
+         # if thats gonna be the case
+         # i have to figure out how to check the number of elements that need to be casted
 
     # TODO: Read DNA sequence file into a variable
+    
 
     # TODO: Find longest match of each STR in DNA sequence
 
