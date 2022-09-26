@@ -9,11 +9,11 @@ def main():
     if len(sys.argv) != 2:
         sys.exit("Usage: python dna.py FILENAME")
 
-    database = {}
+    database = []
     # TODO: Read database file into a variable
     with open(sys.argv[1], 'r') as file:
         reader = csv.DictReader(file)
-        database = dict(reader)
+        database = list(reader)
          # i think i should put here a convertion of eements that should be numeric but are gonna be read as strings
          # if thats gonna be the case
          # i have to figure out how to check the number of elements that need to be casted
@@ -22,11 +22,9 @@ def main():
     seqFile = get_string("sequence file" )
     with open(seqFile, 'r') as file:
         sequence = file.read()
-    print(sequence)
-    print(database)
-
 
     # TODO: Find longest match of each STR in DNA sequence
+
 
     # TODO: Check database for matching profiles
 
