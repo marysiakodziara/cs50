@@ -1,5 +1,6 @@
 import csv
 import sys
+from cs50 import get_string
 
 
 def main():
@@ -18,7 +19,11 @@ def main():
          # i have to figure out how to check the number of elements that need to be casted
 
     # TODO: Read DNA sequence file into a variable
-    
+    seqFile = get_string("sequence file" )
+    with open(seqFile, 'r') as file:
+        reader = csv.DictReader(file)
+        sequence = 
+
 
     # TODO: Find longest match of each STR in DNA sequence
 
