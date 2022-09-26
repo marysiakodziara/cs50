@@ -13,7 +13,7 @@ def main():
     # TODO: Read database file into a variable
     with open(sys.argv[1], 'r') as file:
         reader = csv.DictReader(file)
-        database = list(reader)
+        database = dict(reader)
          # i think i should put here a convertion of eements that should be numeric but are gonna be read as strings
          # if thats gonna be the case
          # i have to figure out how to check the number of elements that need to be casted
