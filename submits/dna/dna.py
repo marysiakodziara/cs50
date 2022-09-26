@@ -34,9 +34,10 @@ def main():
     # now i want to find the longest sequence for each of subsequences
     # for sub[i] f
 
-    
+    subDict = {}
 
     for i in range(1, subNum):
+        num = longest_match()
 
 
 
