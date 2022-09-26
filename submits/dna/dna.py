@@ -13,7 +13,10 @@ def main():
     with open(sys.argv[1], 'r') as file:
         reader = csv.DictReader(file)
         database = list(reader)
-        
+        for i in range(len(teams)):
+            teams[i]['rating'] = int(teams[i]['rating'])
+
+
 
 
     # TODO: Read DNA sequence file into a variable
