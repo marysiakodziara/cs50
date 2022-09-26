@@ -8,11 +8,11 @@ def main():
     if len(sys.argv) != 2:
         sys.exit("Usage: python tournament.py FILENAME")
 
-    teams = []
+    database = []
     # TODO: Read database file into a variable
     with open(sys.argv[1], 'r') as file:
         reader = csv.DictReader(file)
-        teams = list(reader)
+        database = list(reader)
 
 
     # TODO: Read DNA sequence file into a variable
