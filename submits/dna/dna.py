@@ -35,6 +35,7 @@ def main():
     # for sub[i] f
 
     
+
     for i in range(1, subNum):
 
 
