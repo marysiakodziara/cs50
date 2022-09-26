@@ -30,6 +30,7 @@ def main():
     sub = firstLine.split(',')
     subNum = len(sub)
     print(subNum)
+    for i in range()
 
 
     # TODO: Check database for matching profiles
