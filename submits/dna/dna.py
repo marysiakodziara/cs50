@@ -37,10 +37,10 @@ def main():
     subDict = {}
 
     for i in range(1, subNum):
-        num = longest_match(sequence, subNum(i))
-        subDict
+        num = longest_match(sequence, subNum[i])
+        subDict[subNum[i]] = num
 
-
+    print(subDict)
 
 
     # TODO: Check database for matching profiles
