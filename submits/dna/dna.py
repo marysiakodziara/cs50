@@ -40,7 +40,7 @@ def main():
         subDict[sub[i]] = num
 
     # TODO: Check database for matching profiles
-    print(int(database[1][sub[2]]), sub[2])
+    print(int(database[1][sub[2]]), sub[2][sub[2]])
     if sub[2] == int(database[1][sub[2]):
         print("check")
 
