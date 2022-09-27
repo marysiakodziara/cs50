@@ -49,6 +49,7 @@ def main():
                     print(database[i]['name'])
             elif j == subNum - 1:
                 print(database[i]['name'], check)
+                print(subDict[j], database[i])
             elif j == subNum - 1 and i == len(database) - 1:
                 print("No matches")
 
