@@ -75,17 +75,4 @@ if __name__ == "__main__":
 
 
 
-    for i in range(1, len(database)):
-       # todo
 
-
-
-    for i in range(len(database)):
-        check = 0
-        for j in range(1, subNum):
-             if subDict[sub[j]] == int(database[i][sub[j]]):
-                check += 1
-                if check == subNum:
-                    print(database[i]['name'])
-                elif j == subNum - 1 and i == len(database) - 1:
-                    print("No matches")
