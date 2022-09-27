@@ -39,12 +39,9 @@ def main():
         num = longest_match(sequence, sub[i])
         subDict[sub[i]] = num
 
-    print(subDict)
-    print(type(database[1][sub[3]]))
-
-
     # TODO: Check database for matching profiles
-
+    for i in range(0, subNum):
+        for j in range()
 
 
 def longest_match(sequence, subsequence):
