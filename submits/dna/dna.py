@@ -47,8 +47,10 @@ def main():
                 check += 1
                 if check == subNum:
                     print(database[i]['name'])
+            elif j == subNum - 1:
+                print(database[i]['name'], check)
             elif j == subNum - 1 and i == len(database) - 1:
-                    print("No matches")
+                print("No matches")
 
 def longest_match(sequence, subsequence):
     """Returns length of longest run of subsequence in sequence."""
