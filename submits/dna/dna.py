@@ -44,8 +44,6 @@ def main():
 
     # TODO: Check database for matching profiles
 
-    for i in range(1, len(database)):
-       # todo
 
 
 def longest_match(sequence, subsequence):
