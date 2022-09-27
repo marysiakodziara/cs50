@@ -43,11 +43,11 @@ def main():
     for i in range(len(database)):
         check = 0
         for j in range(1, subNum):
-             if subDict[sub[j]] == int(database[i][sub[j]]):
+            if subDict[sub[j]] == int(database[i][sub[j]]):
                 check += 1
                 if check == subNum:
                     print(database[i]['name'])
-                elif j == subNum - 1 and i == len(database) - 1:
+            elif j == subNum - 1 and i == len(database) - 1:
                     print("No matches")
 
 def longest_match(sequence, subsequence):
