@@ -40,10 +40,10 @@ def main():
         subDict[sub[i]] = num
 
     # TODO: Check database for matching profiles
-       for i in range(len(database)):
+    for i in range(len(database)):
         check = 0
         for j in range(subNum):
-            subDict[sub[j]] == int(database[i][sub[j]]):
+             if subDict[sub[j]] == int(database[i][sub[j]]):
                 check += 1
                 if check == subNum:
                     print(database[i]['name'])
