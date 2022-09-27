@@ -6,8 +6,8 @@ from cs50 import get_string
 def main():
 
     # TODO: Check for command-line usage
-    if len(sys.argv) != 2:
-        sys.exit("Usage: python dna.py FILENAME")
+    if len(sys.argv) != 3:
+        sys.exit("Usage: python dna.py FILENAME filename")
 
     database = []
     # TODO: Read database file into a variable
@@ -19,8 +19,7 @@ def main():
          # i have to figure out how to check the number of elements that need to be casted
 
     # TODO: Read DNA sequence file into a variable
-    seqFile = get_string("sequence file" )
-    with open(seqFile, 'r') as file:
+    with open(sys.argv[2], 'r') as file:
         sequence = file.read()
 
     # TODO: Find longest match of each STR in DNA sequence
@@ -40,13 +39,18 @@ def main():
         subDict[sub[i]] = num
 
     # TODO: Check database for matching profiles
+    found = 0
     for i in range(len(database)):
         check = 0
         for j in range(1, subNum):
             if subDict[sub[j]] == int(database[i][sub[j]]):
                 check += 1
         if (check == subNum - 1):
+            found = 1
             print(database[i]['name'])
+    if found == 0:
+        print("No match")
+
 
 
 def longest_match(sequence, subsequence):
