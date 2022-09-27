@@ -40,7 +40,7 @@ def main():
         subDict[sub[i]] = num
 
     # TODO: Check database for matching profiles
-    print(int(database[1][sub[2]]))
+    print(int(database[1][sub[2]]), sub[2])
 
 def longest_match(sequence, subsequence):
     """Returns length of longest run of subsequence in sequence."""
