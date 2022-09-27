@@ -41,6 +41,8 @@ def main():
 
     # TODO: Check database for matching profiles
     print(int(database[1][sub[2]]), sub[2])
+    if sub[1] == int(database[1][sub[2]):
+        print("check")
 
 def longest_match(sequence, subsequence):
     """Returns length of longest run of subsequence in sequence."""
