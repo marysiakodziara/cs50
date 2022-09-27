@@ -82,7 +82,7 @@ if __name__ == "__main__":
 
     for i in range(len(database)):
         check = 0
-        for j in range(subNum):
+        for j in range(1, subNum):
              if subDict[sub[j]] == int(database[i][sub[j]]):
                 check += 1
                 if check == subNum:
