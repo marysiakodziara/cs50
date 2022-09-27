@@ -40,6 +40,7 @@ def main():
         subDict[sub[i]] = num
 
     print(subDict)
+    print()
 
 
     # TODO: Check database for matching profiles
