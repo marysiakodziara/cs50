@@ -45,7 +45,8 @@ def main():
         for j in range(1, subNum):
             if subDict[sub[j]] == int(database[i][sub[j]]):
                 check += 1
-        print(check, )
+        if (check == subNum - 1):
+            print(database[i])
 
 
 def longest_match(sequence, subsequence):
