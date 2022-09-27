@@ -40,7 +40,7 @@ def main():
         subDict[sub[i]] = num
 
     print(subDict)
-    print(type(database[1][su]))
+    print(type(database[1][sub[3]]))
 
 
     # TODO: Check database for matching profiles
