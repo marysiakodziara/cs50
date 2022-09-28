@@ -9,8 +9,8 @@ with open("favorites.csv",  "r") as file:
         if title in titles:
             titles[title] += 1
         else:
-            titles[title] = 0
+            titles[title] = 1
 
 for title in titles:
-    print(title)
+    print(title, titles[title])
 
