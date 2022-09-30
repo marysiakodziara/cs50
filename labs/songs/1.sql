@@ -1,2 +1,3 @@
-SELECT name FROM artists;
+SELECT name FROM songs;
+
 
