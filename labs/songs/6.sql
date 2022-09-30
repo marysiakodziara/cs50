@@ -1,1 +1,1 @@
-INSERT INTO songs (artists.name) SELECT name FROM songs WHERE arists.name = 'Post Malone';
+SELECT * FROM artists WHERE name = "Post Malone";
