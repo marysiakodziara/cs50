@@ -1,1 +1,1 @@
-SELECT * FROM artists WHERE name = "Post Malone";
+SELECT id FROM artists WHERE name = "Post Malone";
