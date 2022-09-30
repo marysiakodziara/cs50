@@ -1,1 +1,1 @@
-INSERT INTO songs F
+INSERT INTO atists SELECT name FROM songs WHERE artists.id = songs.id FOR "Post Malone";
