@@ -1,1 +1,1 @@
-JOIN 
+INNER JOIN 
