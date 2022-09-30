@@ -1,1 +1,1 @@
-INSERT INTO atists (name) SELECT name FROM songs WHERE name = 'Post Malone';
+INSERT INTO atists (name) SELECT name FROM songs WHERE arists.name = 'Post Malone';
