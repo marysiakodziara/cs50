@@ -1,4 +1,4 @@
 SELECT name FROM songs
-HAVING COUNT denceability > 0,75
-HAVING COUNT energy > 0,75
-HAVING COUNT valence > 0,75;
+WHERE denceability > 0,75
+WHERE energy > 0,75
+WHERE valence > 0,75;
