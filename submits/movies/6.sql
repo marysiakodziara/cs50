@@ -1,0 +1,1 @@
+SELECT AVG(rating) FROM ratings where movie_id = ()
