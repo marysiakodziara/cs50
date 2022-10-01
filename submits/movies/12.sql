@@ -1,0 +1,1 @@
+SELECT movies.title FROM movies JOIN stars, people 
