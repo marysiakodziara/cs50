@@ -1,2 +1,1 @@
-names of people \ people.name
-from movies of 2004 \ 
+SELECT people.name FROM people JOIN movies, star ON movies.id = stars.movie_id AND stars.person_id = people.id WHERE movie.year = 2004 ORDER BY poeple.birth;
