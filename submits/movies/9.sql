@@ -1,1 +1,1 @@
-SELECT people.name FROM people JOIN movies, star ON movies.id = stars.movie_id AND stars.person_id = people.id WHERE movie.year = 2004 ORDER BY poeple.birth;
+SELECT people.name FROM people JOIN movies, stars ON movies.id = stars.movie_id AND stars.person_id = people.id WHERE movie.year = 2004 ORDER BY poeple.birth;
