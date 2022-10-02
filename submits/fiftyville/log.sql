@@ -63,3 +63,8 @@ AND caller = "(770) 555-1861";
 SELECT name
 FROM people
 WHERE phone_number = "(725) 555-3243";
+
+\\*1
+SELECT license_plate
+FROM bakery_security_logs
+WHERE year = 2021 AND month = 7 AND day = 28 AND hour = 10;
