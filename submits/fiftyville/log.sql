@@ -36,3 +36,10 @@ FROM phone_calls
 WHERE year = 2021 AND month = 7 AND day = 28
 AND (caller = "(367) 555-5533" OR caller = "(770) 555-1861" OR caller = "(122) 555-4581" OR caller = "(826) 555-1652"
 OR caller = "(829) 555-5269" OR caller = "(389) 555-5198" OR caller = "(286) 555-6063" OR caller = "(338) 555-6650");
+
+\\*4
+SELECT id
+FROM flights
+WHERE year = 2021 AND month = 7 AND day = 29 AND origin_airport_id = (SELECT id FROM airports WHERE city = "Fiftyville"); // 18, 23, 36, 43, 53
+
+SELECT name FROM people JOIN flights on 
