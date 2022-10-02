@@ -30,7 +30,7 @@ OR account_number = 16153065 OR account_number = 25506511 OR account_number = 81
 
 \\people who used atm at that street: Bruce (367) 555-5533, Diana (770) 555-1861, Brooke (122) 555-4581, Kenny (826) 555-1652, Iman (829) 555-5269, Luca (389) 555-5198, Taylor (286) 555-6063, Benista (338) 555-6650
 
-\\*3
+\\*3 didnt use it
 SELECT caller, receiver, duration
 FROM phone_calls
 WHERE year = 2021 AND month = 7 AND day = 28
@@ -72,3 +72,13 @@ WHERE year = 2021 AND month = 7 AND day = 28 AND hour = 10 AND minute > 25;
 SELECT name
 FROM people
 WHERE license_plate = "1106N58" OR license_plate = "NRYN856" OR license_plate = "WD5M8I6" OR license_plate = "V47T75I";
+
+\\checking for Taylor
+SELECT caller, receiver, duration
+FROM phone_calls
+WHERE year = 2021 AND month = 7 AND day = 28
+AND caller = "(286) 555-6063";
+
+SELECT name
+FROM people
+WHERE phone_number = "(676) 555-6554" OR phone_number = "(310) 555-8568";
