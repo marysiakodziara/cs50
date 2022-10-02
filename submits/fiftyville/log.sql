@@ -60,4 +60,6 @@ AND caller = "(770) 555-1861";
 
 
 \\now checking the owner of receivers phone number
-SELECT 
+SELECT name
+FROM people
+WHERE phone_number = "(725) 555-3243";
