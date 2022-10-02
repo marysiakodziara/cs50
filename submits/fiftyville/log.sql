@@ -33,4 +33,4 @@ OR account_number = 16153065 OR account_number = 25506511 OR account_number = 81
 \\*3
 SELECT caller, receiver, duration
 FROM phone_calls
-WHERE 
+WHERE year = 2021 AND month = 7 AND day = 28;
