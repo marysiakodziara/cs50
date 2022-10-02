@@ -15,8 +15,10 @@ WHERE year = 2021 AND month = 7 AND day = 28;
 \\3.phone call to the acomplice and probably acomplices phone call to airport
 \\4.flight from fiftyville day after the theft
 
-\\*1
-
+\\*2
 SELECT amount, account_number
 FROM atm_transactions
 WHERE year = 2021 AND month = 7 AND day = 28 AND atm_location = "Leggett Street" AND transaction_type = "withdraw";
+
+\\comparing account numbers to their owners
+SELECT 
