@@ -21,4 +21,8 @@ FROM atm_transactions
 WHERE year = 2021 AND month = 7 AND day = 28 AND atm_location = "Leggett Street" AND transaction_type = "withdraw";
 
 \\comparing account numbers to their owners
-SELECT 
+SELECT name
+FROM people
+JOIN bank_accounts
+ON bank_accounts.person_id = people.id
+WHERE account_number = 
