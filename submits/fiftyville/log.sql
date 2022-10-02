@@ -8,3 +8,5 @@ WHERE year = 2021 AND month = 7 AND day = 28 AND street = "Humphrey Street";
 SELECT transcript
 FROM interviews
 WHERE year = 2021 AND month = 7 AND day = 28;
+
+\\next hint, from interviews: camera footage (hour: around 10:15am as scripted in record above)
