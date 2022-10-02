@@ -9,4 +9,12 @@ SELECT transcript
 FROM interviews
 WHERE year = 2021 AND month = 7 AND day = 28;
 
-\\next hint, from interviews: camera footage (hour: around 10:15am as scripted in record above)
+\\next hint, from interviews:
+\\1.camera footage (hour: around 10:15am as scripted in record above),
+\\2.atm machine from Leggett Street,
+\\3.phone call to the acomplice and probably acomplices phone call to airport
+\\4.flight from fiftyville day after the theft
+
+\\*1
+
+SELECT 
