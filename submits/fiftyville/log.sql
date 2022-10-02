@@ -25,4 +25,9 @@ SELECT name
 FROM people
 JOIN bank_accounts
 ON bank_accounts.person_id = people.id
-WHERE account_number = 
+WHERE account_number = 28500762 OR account_number = 28296815 OR account_number = 76054385 OR account_number = 49610011
+OR account_number = 16153065 OR account_number = 25506511 OR account_number = 81061156 OR account_number = 26013199;
+
+\\people who used atm at that street: Bruce, Diana, Brooke, Kenny, Iman, Luca, Taylor, Benista
+
+\\*3
