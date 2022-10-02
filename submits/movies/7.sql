@@ -6,6 +6,6 @@ WHERE movies.year = 2010
 ORDER BY
     CASE
         WHEN COUNT(ratings.rating) > 1 THEN movies.title
-        ELSE rating.rating DESC
+        ELSE ratings.rating
     END;
 
