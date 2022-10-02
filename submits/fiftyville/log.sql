@@ -67,4 +67,8 @@ WHERE phone_number = "(725) 555-3243";
 \\*1
 SELECT license_plate
 FROM bakery_security_logs
-WHERE year = 2021 AND month = 7 AND day = 28 AND hour = 10;
+WHERE year = 2021 AND month = 7 AND day = 28 AND hour = 10 AND minute > 25;
+
+SELECT name
+FROM people
+WHERE license_plate = "1106N58" OR license_plate = "NRYN856" OR license_plate = "WD5M8I6" OR license_plate = "V47T75I";
