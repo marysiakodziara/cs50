@@ -3,9 +3,9 @@ FROM movies
 JOIN ratings
 ON movies.id = ratings.movie_id
 WHERE movies.year = 2010
-ORDER BY ratings.rating
+ORDER BY
     CASE
         WHEN COUNT(ratings.rating) > 1 THEN movies.title
-        ELSE DESC
+        ELSE rating.rating DESC
     END;
 
