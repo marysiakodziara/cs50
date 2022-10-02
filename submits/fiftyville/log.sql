@@ -38,11 +38,18 @@ AND (caller = "(367) 555-5533" OR caller = "(770) 555-1861" OR caller = "(122) 5
 OR caller = "(829) 555-5269" OR caller = "(389) 555-5198" OR caller = "(286) 555-6063" OR caller = "(338) 555-6650");
 
 \\*4
-SELECT id
+SELECT id, destination_airport_id
 FROM flights
 WHERE year = 2021 AND month = 7 AND day = 29 AND origin_airport_id = (SELECT id FROM airports WHERE city = "Fiftyville"); // 18, 23, 36, 43, 53
 
 SELECT name FROM people
 JOIN passengers
 ON passengers.passport_number = people.passport_number
-WHERE flight_id = 18 OR flight_id = 23;
+WHERE flight_id = 18;
+
+\\destination - BOSTON
+SELECT city
+FROM airports
+WHERE id = 6;
+
+\\acomplice
