@@ -31,3 +31,6 @@ OR account_number = 16153065 OR account_number = 25506511 OR account_number = 81
 \\people who used atm at that street: Bruce, Diana, Brooke, Kenny, Iman, Luca, Taylor, Benista
 
 \\*3
+SELECT caller, receiver, duration
+FROM phone_calls
+WHERE 
