@@ -17,6 +17,6 @@ WHERE year = 2021 AND month = 7 AND day = 28;
 
 \\*1
 
-SELECT amount, transaction_type
+SELECT amount, account_number
 FROM atm_transactions
-WHERE year = 2021 AND month = 7 AND day = 28 AND atm_location = "Leggett Street";
+WHERE year = 2021 AND month = 7 AND day = 28 AND atm_location = "Leggett Street" AND transaction_type = "withdraw";
