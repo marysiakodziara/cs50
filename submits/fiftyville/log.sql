@@ -52,4 +52,8 @@ SELECT city
 FROM airports
 WHERE id = 6;
 
-\\acomplice
+\\acomplice - im gonna go through phone_calls once again, this time looking who Diana called to that day
+SELECT caller, receiver, duration
+FROM phone_calls
+WHERE year = 2021 AND month = 7 AND day = 28
+AND caller = "(770) 555-1861";
