@@ -6,3 +6,6 @@ WHERE people.name = "Johnny Depp" AND people.name = "Helena Bonham Carter";
 
 SELECT movies.title, people.name FROM movies JOIN stars, people
 ON movies.title
+
+people.name = "Helena"
+people.name = "Johnny"
