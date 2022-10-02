@@ -42,4 +42,7 @@ SELECT id
 FROM flights
 WHERE year = 2021 AND month = 7 AND day = 29 AND origin_airport_id = (SELECT id FROM airports WHERE city = "Fiftyville"); // 18, 23, 36, 43, 53
 
-SELECT name FROM people JOIN passengers on passengers.passport_number = people.pa
+SELECT name FROM people
+JOIN passengers
+ON passengers.passport_number = people.passport_number
+WHERE flight_id = 18;
