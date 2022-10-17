@@ -49,7 +49,8 @@ OR caller = "(829) 555-5269" OR caller = "(389) 555-5198" OR caller = "(286) 555
 //caller
 SELECT name
 FROM people
-WHERE phone_number = "(367) 555-5533" OR phone_number = "(286) 555-6063" OR phone_number = "(770) 555-1861" OR phone_number = "(826) 555-1652" OR phone_number = "(338) 555-6650";
+WHERE phone_number = "(367) 555-5533" OR phone_number = "(286) 555-6063"
+OR phone_number = "(770) 555-1861" OR phone_number = "(826) 555-1652" OR phone_number = "(338) 555-6650";
 //receiver
 SELECT name
 FROM people
