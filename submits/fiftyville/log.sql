@@ -49,11 +49,17 @@ OR caller = "(829) 555-5269" OR caller = "(389) 555-5198" OR caller = "(286) 555
 
 SELECT name
 FROM people
-WHERE id IN (SELECT id
-FROM phone_calls
-WHERE year = 2021 AND month = 7 AND day = 28 AND duration < 60
-AND (caller = "(367) 555-5533" OR caller = "(770) 555-1861" OR caller = "(122) 555-4581" OR caller = "(826) 555-1652"
-OR caller = "(829) 555-5269" OR caller = "(389) 555-5198" OR caller = "(286) 555-6063" OR caller = "(338) 555-6650"));
+JOIN phone_calls
+ON phone_calls.id = people.id
+WHERE caller = "(367) 555-5533" OR caller = "(286) 555-6063" OR caller = "(770) 555-1861" OR caller = "(826) 555-1652" OR caller = "(338) 555-6650";
+
+SELECT name
+FROM people
+JOIN phone_calls
+ON phone_calls.id = people.id
+WHERE caller = "(375) 555-8161" OR caller = "(676) 555-6554" OR caller = "(725) 555-3243" OR caller = "(066) 555-9701" OR caller = "(704) 555-2131";
+
+
 
 \\*4
 SELECT id, destination_airport_id
