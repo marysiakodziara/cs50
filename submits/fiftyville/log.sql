@@ -70,7 +70,7 @@ ON passengers.passport_number = people.passport_number
 WHERE flight_id = 36;
 
 \\destination - New York City
-SELECT city
+SELECT abbreviation, full_name, city
 FROM airports
 JOIN flights ON flights.destination_airport_id = airports.id
 WHERE flights.id = 36;
