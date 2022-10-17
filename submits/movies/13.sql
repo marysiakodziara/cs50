@@ -1,3 +1,6 @@
+SELECT 
+
+
 SELECT movies.id
 FROM movies
 JOIN stars, people
