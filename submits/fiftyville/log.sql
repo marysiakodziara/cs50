@@ -67,7 +67,7 @@ WHERE year = 2021 AND month = 7 AND day = 29 AND origin_airport_id = (SELECT id 
 SELECT name FROM people
 JOIN passengers
 ON passengers.passport_number = people.passport_number
-WHERE flight_id = 18;
+WHERE flight_id = 36;
 
 \\destination - BOSTON
 SELECT city
