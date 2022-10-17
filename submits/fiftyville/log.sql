@@ -19,6 +19,11 @@ WHERE year = 2021 AND month = 7 AND day = 28;
 SELECT amount, account_number
 FROM atm_transactions
 WHERE year = 2021 AND month = 7 AND day = 28 AND atm_location = "Leggett Street" AND transaction_type = "withdraw";
+  \\checking the owners
+SELECT people.name
+FROM people
+JOIN bank_accounts as b
+ON b.person_id = 
 
 \\comparing account numbers to their owners
 SELECT name, phone_number
