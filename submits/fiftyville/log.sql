@@ -102,7 +102,7 @@ FROM phone_calls
 JOIN people
 ON people.id
 WHERE year = 2021 AND month = 7 AND day = 28
-AND caller = "(286) 555-6063";
+AND caller = "(286) 555-6063" OR name = "Taylor";
 
 SELECT name
 FROM people
