@@ -60,7 +60,7 @@ OR phone_number = "(725) 555-3243" OR phone_number = "(066) 555-9701" OR phone_n
 
 
 \\*4
-SELECT id, destination_airport_id
+SELECT id, destination_airport_id, hour, minute
 FROM flights
 WHERE year = 2021 AND month = 7 AND day = 29 AND origin_airport_id = (SELECT id FROM airports WHERE city = "Fiftyville"); // 18, 23, 36, 43, 53
 
