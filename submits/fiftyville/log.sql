@@ -99,6 +99,8 @@ WHERE license_plate = "1106N58" OR license_plate = "NRYN856" OR license_plate = 
 \\checking for Taylor
 SELECT caller, receiver, duration
 FROM phone_calls
+JOIN people
+ON people.id
 WHERE year = 2021 AND month = 7 AND day = 28
 AND caller = "(286) 555-6063";
 
