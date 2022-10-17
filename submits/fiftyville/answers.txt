@@ -1,3 +1,3 @@
-The THIEF is:Taylor
-The city the thief ESCAPED TO:Boston
-The ACCOMPLICE is:Angela
+The THIEF is:Robert
+The city the thief ESCAPED TO:Paris
+The ACCOMPLICE is:Patrick
