@@ -28,16 +28,6 @@ WHERE b.account_number IN (SELECT account_number
                            FROM atm_transactions
                            WHERE year = 2021 AND month = 7 AND day = 28 AND atm_location = "Leggett Street" AND transaction_type = "withdraw");
 
-\\comparing account numbers to their owners
-SELECT name, phone_number
-FROM people
-JOIN bank_accounts
-ON bank_accounts.person_id = people.id
-WHERE account_number = 28500762 OR account_number = 28296815 OR account_number = 76054385 OR account_number = 49610011
-OR account_number = 16153065 OR account_number = 25506511 OR account_number = 81061156 OR account_number = 26013199;
-
-\\people who used atm at that street: Bruce (367) 555-5533, Diana (770) 555-1861, Brooke (122) 555-4581, Kenny (826) 555-1652, Iman (829) 555-5269, Luca (389) 555-5198, Taylor (286) 555-6063, Benista (338) 555-6650
-
 \\*3 didnt use it
 SELECT caller, receiver, duration
 FROM phone_calls
