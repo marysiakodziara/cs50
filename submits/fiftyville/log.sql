@@ -31,6 +31,7 @@ WHERE b.account_number IN (SELECT account_number
 \\*3 didnt use it
 SELECT caller, receiver, duration
 FROM phone_calls
+WHERE year = 2021 AND month = 7 AND day = 28
 AND caller IN (SELECT people.name
                FROM people
                JOIN bank_accounts as b
