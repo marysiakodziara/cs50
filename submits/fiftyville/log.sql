@@ -51,7 +51,7 @@ SELECT name
 FROM people
 JOIN phone_calls
 ON phone_calls.id = people.id
-WHERE caller = "(367) 555-5533" OR caller = "(286) 555-6063" OR caller = "(770) 555-1861" OR caller = "(826) 555-1652" OR caller = "(338) 555-6650";
+WHERE caller == "(367) 555-5533" OR caller == "(286) 555-6063" OR caller == "(770) 555-1861" OR caller == "(826) 555-1652" OR caller == "(338) 555-6650";
 
 SELECT name
 FROM people
