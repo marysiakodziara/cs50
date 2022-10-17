@@ -54,9 +54,8 @@ OR phone_number = "(770) 555-1861" OR phone_number = "(826) 555-1652" OR phone_n
 //receiver
 SELECT name
 FROM people
-JOIN phone_calls
-ON phone_calls.id = people.id
-WHERE phone_number = "(375) 555-8161" OR phone_number = "(676) 555-6554" OR phone_number = "(725) 555-3243" OR phone_number = "(066) 555-9701" OR phone_number = "(704) 555-2131";
+WHERE phone_number = "(375) 555-8161" OR phone_number = "(676) 555-6554"
+OR phone_number = "(725) 555-3243" OR phone_number = "(066) 555-9701" OR phone_number = "(704) 555-2131";
 
 
 
