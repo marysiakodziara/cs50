@@ -72,7 +72,7 @@ WHERE flight_id = 36;
 \\destination - BOSTON
 SELECT city
 FROM airports
-WHERE id = 6;
+WHERE id = 36;
 
 \\acomplice - im gonna go through phone_calls once again, this time looking who Diana called to that day
 SELECT caller, receiver, duration
