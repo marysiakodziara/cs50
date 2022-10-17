@@ -28,17 +28,24 @@ WHERE b.account_number IN (SELECT account_number
                            FROM atm_transactions
                            WHERE year = 2021 AND month = 7 AND day = 28 AND atm_location = "Leggett Street" AND transaction_type = "withdraw");
 
+SELECT caller
+FROM phone_calls
+JOIN people
+ON people.id = phone_calls.id
+WHERE people.name IN (SELECT people.name
+FROM people
+JOIN bank_accounts as b
+ON b.person_id = people.id
+WHERE b.account_number IN (SELECT account_number
+                           FROM atm_transactions
+                           WHERE year = 2021 AND month = 7 AND day = 28 AND atm_location = "Leggett Street" AND transaction_type = "withdraw"));
+
 \\*3 didnt use it
 SELECT caller, receiver, duration
 FROM phone_calls
 WHERE year = 2021 AND month = 7 AND day = 28
-AND caller IN (SELECT people.name
-               FROM people
-               JOIN bank_accounts as b
-               ON b.person_id = people.id
-               WHERE b.account_number IN (SELECT account_number
-                           FROM atm_transactions
-                           WHERE year = 2021 AND month = 7 AND day = 28 AND atm_location = "Leggett Street" AND transaction_type = "withdraw"));
+AND (caller = "(367) 555-5533" OR caller = "(770) 555-1861" OR caller = "(122) 555-4581" OR caller = "(826) 555-1652"
+OR caller = "(829) 555-5269" OR caller = "(389) 555-5198" OR caller = "(286) 555-6063" OR caller = "(338) 555-6650");
 
 \\*4
 SELECT id, destination_airport_id
